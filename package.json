@@ -4,7 +4,11 @@
   "main": "index.js",
   "author": "Jikkai Xiao <sonne@asaki.me>",
   "license": "MIT",
+  "scripts": {
+    "init": "lerna run init",
+    "build": "lerna run build"
+  },
   "devDependencies": {
-    "lerna": "2.0.0-beta.30"
+    "lerna": "2.0.0-beta.31"
   }
 }

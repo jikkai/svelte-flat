@@ -3,5 +3,12 @@
   "version": "0.0.0",
   "main": "index.js",
   "author": "Jikkai Xiao <sonne@asaki.me>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "init": "yarn",
+    "build": "svelte compile -f umd -n Button ./src/index.html > ./dist/index.js"
+  },
+  "devDependencies": {
+    "svelte-cli": "^1.2.1"
+  }
 }

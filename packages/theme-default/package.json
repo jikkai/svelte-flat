@@ -4,8 +4,13 @@
   "main": "index.js",
   "author": "Jikkai Xiao <sonne@asaki.me>",
   "license": "MIT",
+  "scripts": {
+    "init": "yarn",
+    "build": "postcss -c ./postcss.json"
+  },
   "devDependencies": {
     "cssnano": "^3.9.1",
+    "postcss-cli": "^2.6.0",
     "postcss-cssnext": "^2.9.0",
     "postcss-import": "^9.0.0"
   }
