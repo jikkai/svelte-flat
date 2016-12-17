@@ -1,0 +1,10 @@
+{
+  "name": "svelte-flat",
+  "version": "0.0.0",
+  "main": "index.js",
+  "author": "Jikkai Xiao <sonne@asaki.me>",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "2.0.0-beta.30"
+  }
+}

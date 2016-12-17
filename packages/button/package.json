@@ -1,0 +1,7 @@
+{
+  "name": "button",
+  "version": "0.0.0",
+  "main": "index.js",
+  "author": "Jikkai Xiao <sonne@asaki.me>",
+  "license": "MIT"
+}

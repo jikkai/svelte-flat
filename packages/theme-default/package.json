@@ -1,0 +1,12 @@
+{
+  "name": "theme-default",
+  "version": "0.0.0",
+  "main": "index.js",
+  "author": "Jikkai Xiao <sonne@asaki.me>",
+  "license": "MIT",
+  "devDependencies": {
+    "cssnano": "^3.9.1",
+    "postcss-cssnext": "^2.9.0",
+    "postcss-import": "^9.0.0"
+  }
+}
