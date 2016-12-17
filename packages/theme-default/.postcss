@@ -1,0 +1,24 @@
+module.exports = {
+  use: [
+    'postcss-cssnext',
+    'postcss-import',
+    'cssnano'
+  ],
+  input: [
+    './src/components/button.css',
+    './src/index.css'
+  ],
+  dir: './dist/',
+  'postcss-cssnext': {
+    browsers: '> 5%',
+    warnForDuplicates: false
+  },
+  'postcss-import': {
+    plugins: [
+      require('postcss-cssnext')({
+        browsers: '> 5%',
+        warnForDuplicates: false
+      })
+    ]
+  }
+}

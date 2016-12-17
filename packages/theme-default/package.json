@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "init": "yarn",
-    "build": "postcss -c ./postcss.json"
+    "build": "postcss -c ./.postcss"
   },
   "devDependencies": {
     "cssnano": "^3.9.1",

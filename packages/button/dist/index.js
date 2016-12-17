@@ -14,6 +14,7 @@ function renderMainFragment ( root, component ) {
 	button.addEventListener( 'click', clickHandler, false );
 	
 	button.className = "sf-button sf-button--" + ( root.type ? root.type : 'default' );
+	button.disabled = root.disabled;
 	
 	var span = document.createElement( 'span' );
 	
@@ -28,6 +29,7 @@ function renderMainFragment ( root, component ) {
 
 		update: function ( changed, root ) {
 			button.className = "sf-button sf-button--" + ( root.type ? root.type : 'default' );
+			button.disabled = root.disabled;
 			
 			text.data = root.content;
 		},

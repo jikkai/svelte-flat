@@ -1,0 +1,75 @@
+.sf-button {
+  margin: 0;
+  padding: 10px 15px;
+  color: #FFF;
+  text-align: center;
+  line-height: 1;
+  white-space: nowrap;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: inline-block;
+  outline: none;
+  user-select: none;
+  cursor: pointer;
+  transition: all .25s;
+  -webkit-appearance: none;
+}
+
+.sf-button--default {
+  background-color: #34495E;
+  &:hover, &:focus {
+    background-color: #4E6D8D;
+  }
+}
+
+.sf-button--primary {
+  background-color: #1ABC9C;
+  &:hover, &:focus {
+    background-color: #2FE2BF;
+  }
+}
+
+.sf-button--info {
+  background-color: #3498DB;
+  &:hover, &:focus {
+    background-color: #5DADE2;
+  }
+}
+
+.sf-button--danger {
+  background-color: #E74C3C;
+  &:hover, &:focus {
+    background-color: #EC7063;
+  }
+}
+
+.sf-button--success {
+  background-color: #2ECC71;
+  &:hover, &:focus {
+    background-color: #55D98D;
+  }
+}
+
+.sf-button--warning {
+  background-color: #F1C40F;
+  &:hover, &:focus {
+    background-color: #F4D03F;
+  }
+}
+
+.sf-button--inverse {
+  background-color: #34495E;
+  &:hover, &:focus {
+    background-color: #4E6d8D;
+  }
+}
+
+.sf-button[disabled] {
+  background-color: #95A5A6;
+  cursor: not-allowed;
+  &:hover, &:focus {
+    background-color: #95A5A6;
+  }
+}
