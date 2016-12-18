@@ -1,5 +1,5 @@
 # svelte-flat
-![img](/examples/src/logo.png)
+![img](/examples/src/assets/logo.png)
 
 ## Build all components
 ```bash
