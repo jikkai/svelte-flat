@@ -1,26 +1,9 @@
-<!doctype html>
-<html>
-<head>
-  <title>Button</title>
-  <link rel="stylesheet" href="../../../packages/theme-default/dist/button.css">
-  <style>
-    .demo-btn {
-      display: inline-block;
-    }
-  </style>
-</head>
-<body>
-  <div class="demo-btn" id="button1"></div>
-  <div class="demo-btn" id="button2"></div>
-  <div class="demo-btn" id="button3"></div>
-  <div class="demo-btn" id="button4"></div>
-  <div class="demo-btn" id="button5"></div>
-  <div class="demo-btn" id="button6"></div>
-  <div class="demo-btn" id="button7"></div>
-  <div class="demo-btn" id="button8"></div>
+import React from 'react'
+import Button from '../../../packages/button/dist/index'
+import '../../../packages/theme-default/dist/button.css'
 
-  <script src='../../../packages/button/dist/index.js'></script>
-  <script>
+class ButtonRouter extends React.Component {
+  componentDidMount () {
     var button1 = new Button({
       target: document.querySelector('#button1'),
       data: {
@@ -30,8 +13,6 @@
     button1.onclick = function (e) {
       console.log(e)
     }
-  </script>
-  <script>
     var button2 = new Button({
       target: document.querySelector('#button2'),
       data: {
@@ -42,8 +23,6 @@
     button2.onclick = function (e) {
       console.log(e)
     }
-  </script>
-  <script>
     var button3 = new Button({
       target: document.querySelector('#button3'),
       data: {
@@ -54,8 +33,6 @@
     button3.onclick = function (e) {
       console.log(e)
     }
-  </script>
-  <script>
     var button4 = new Button({
       target: document.querySelector('#button4'),
       data: {
@@ -66,8 +43,6 @@
     button4.onclick = function (e) {
       console.log(e)
     }
-  </script>
-  <script>
     var button5 = new Button({
       target: document.querySelector('#button5'),
       data: {
@@ -78,8 +53,6 @@
     button5.onclick = function (e) {
       console.log(e)
     }
-  </script>
-  <script>
     var button6 = new Button({
       target: document.querySelector('#button6'),
       data: {
@@ -90,8 +63,6 @@
     button6.onclick = function (e) {
       console.log(e)
     }
-  </script>
-  <script>
     var button7 = new Button({
       target: document.querySelector('#button7'),
       data: {
@@ -102,8 +73,6 @@
     button7.onclick = function (e) {
       console.log(e)
     }
-  </script>
-  <script>
     var button8 = new Button({
       target: document.querySelector('#button8'),
       data: {
@@ -114,6 +83,24 @@
     button8.onclick = function (e) {
       console.log(e)
     }
-  </script>
-</body>
-</html>
+  }
+
+  render () {
+    return (
+      <div>
+        <h1>Button</h1>
+
+        <div id="button1"></div>
+        <div id="button2"></div>
+        <div id="button3"></div>
+        <div id="button4"></div>
+        <div id="button5"></div>
+        <div id="button6"></div>
+        <div id="button7"></div>
+        <div id="button8"></div>
+      </div>
+    )
+  }
+}
+
+export default ButtonRouter
