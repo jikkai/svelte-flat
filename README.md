@@ -7,6 +7,29 @@
   </a>
 </p>
 
+## Installation
+```bash
+$ yarn add svelte-flat
+```
+
+## Usage
+```
+import { Button } from 'svelte-flat'
+import 'svelte-flat/packages/theme-default/dist/button.css'
+
+const button = new Button({
+  target: document.querySelector('#button'),
+  data: {
+    content: 'Default Button'
+  }
+})
+button.onclick = function (e) {
+  console.log('hello world')
+}
+```
+
+## Documentation
+[Documentation](https://jikkai.github.io/svelte-flat/)
 
 ## Build all components
 ```bash
