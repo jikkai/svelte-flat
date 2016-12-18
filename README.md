@@ -1,5 +1,11 @@
 # svelte-flat
-![img](/examples/src/assets/logo.png)
+<p align="center">
+  <a href="https://blog.asaki.me/">
+    <img alt="svelte-flat" src="https://github.com/jikkai/svelte-flat/raw/master/examples/src/assets/logo.png" width="546">
+  </a>
+</p>
+
+> WIP, Please DO NOT use in production.
 
 ## Build all components
 ```bash
