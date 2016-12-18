@@ -1,13 +1,21 @@
 import React from 'react'
+import HeaderComponent from 'components/Header'
+import MenuComponent from 'components/Menu'
 
-class Layout extends React.Component {
+class LayoutRouter extends React.Component {
   render () {
     return (
-      <main>
-        {this.props.children}
-      </main>
+      <div>
+        <HeaderComponent />
+        <main>
+          <div>
+            <MenuComponent />
+            {this.props.children}
+          </div>
+        </main>
+      </div>
     )
   }
 }
 
-export default Layout
+export default LayoutRouter

@@ -12,7 +12,6 @@ class Routers extends React.Component {
         <Route path="/" component={Layout}>
           <IndexRoute component={Home}/>
           <Route path="button" component={Button}/>
-          <Route path="*" component={Home}/>
         </Route>
       </Router>
     )

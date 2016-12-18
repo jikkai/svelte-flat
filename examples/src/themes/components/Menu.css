@@ -1,0 +1,30 @@
+.examples-menu {
+  width: 220px;
+  margin-right: 24px;
+  border-right: 1px solid #ECF0F1;
+  & ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    & li {
+      & a {
+        height: 42px;
+        color: #7F8C8D;
+        font-size: 14px;
+        line-height: 42px;
+        display: block;
+        transition: all .25s;
+        &:hover {
+          color: #1ABC9C
+        }
+      }
+      & h4 {
+        margin: 0;
+        display: block;
+      }
+      & ul li a {
+        padding-left: 1em;
+      }
+    }
+  }
+}

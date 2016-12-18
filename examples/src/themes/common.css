@@ -1,0 +1,26 @@
+html, body {
+  height: 100%;
+  color: #34495E;
+  background: #ECECEC; 
+}
+
+#app, #app >div, main, main >div {
+  height: 100%;
+  min-height: 100%;
+}
+
+main {
+  margin-bottom: 24px;
+  padding: 0 4%;
+  & >div {
+    width: 100%;
+    padding: 24px;
+    background: #FFF;
+    display: flex;
+    box-sizing: border-box;
+  }
+}
+
+.examples-router {
+  width: 100%;
+}

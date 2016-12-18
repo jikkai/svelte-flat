@@ -87,17 +87,23 @@ class ButtonRouter extends React.Component {
 
   render () {
     return (
-      <div>
-        <h1>Button</h1>
+      <div className="examples-router examples-router-button">
+        <h2>Button 按钮</h2>
 
-        <div id="button1"></div>
-        <div id="button2"></div>
-        <div id="button3"></div>
-        <div id="button4"></div>
-        <div id="button5"></div>
-        <div id="button6"></div>
-        <div id="button7"></div>
-        <div id="button8"></div>
+        <section className="examples1">
+          <h3>按钮类型</h3>
+
+          <div>
+            <div id="button1"></div>
+            <div id="button2"></div>
+            <div id="button3"></div>
+            <div id="button4"></div>
+            <div id="button5"></div>
+            <div id="button6"></div>
+            <div id="button7"></div>
+            <div id="button8"></div>
+          </div>
+        </section>
       </div>
     )
   }

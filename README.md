@@ -1,11 +1,12 @@
 # svelte-flat
+> WIP, Please DO NOT use in production.
+
 <p align="center">
   <a href="https://blog.asaki.me/">
     <img alt="svelte-flat" src="https://github.com/jikkai/svelte-flat/raw/master/examples/src/assets/logo.png">
   </a>
 </p>
 
-> WIP, Please DO NOT use in production.
 
 ## Build all components
 ```bash
