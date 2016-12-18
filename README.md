@@ -1,7 +1,7 @@
 # svelte-flat
 <p align="center">
   <a href="https://blog.asaki.me/">
-    <img alt="svelte-flat" src="https://github.com/jikkai/svelte-flat/raw/master/examples/src/assets/logo.png" width="546">
+    <img alt="svelte-flat" src="https://github.com/jikkai/svelte-flat/raw/master/examples/src/assets/logo.png">
   </a>
 </p>
 
