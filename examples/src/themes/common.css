@@ -1,6 +1,11 @@
 html, body {
   color: #34495E;
-  background: #ECECEC; 
+  background: #ECEFF1; 
+  -webkit-font-smoothing: auto;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 main {
@@ -13,7 +18,31 @@ main {
     display: flex;
     box-sizing: border-box;
   }
+
+  & pre, & code {
+    font-size: 14px;
+    font-family: Monaco, Menlo, Consolas, Courier, monospace;
+    font-variant-ligatures: none;
+  }
+
+  & pre {
+    padding: 1em;
+    color: #FFF;
+    line-height: 1.8;
+    background: #34495E;
+    border-radius: 4px;
+  }
+
+  & p >code {
+    margin: 0 2px;
+    padding: 2px 4px;
+    color: #C7254E;
+    font-size: 14px;
+    background-color: #F9F2F4;
+    border-radius: 3px;
+  }
 }
+
 
 .examples-router {
   width: 100%;
@@ -21,6 +50,7 @@ main {
     & >div {
       display: flex;
       flex-wrap: wrap;
+      align-items: center;
       & >div {
         width: 25%;
         margin-bottom: 24px;

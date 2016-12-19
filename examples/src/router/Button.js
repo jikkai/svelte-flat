@@ -66,21 +66,11 @@ class ButtonRouter extends React.Component {
     const button7 = new Button({
       target: document.querySelector('#button7'),
       data: {
-        content: 'Inverse Button',
-        status: 'inverse'
-      }
-    })
-    button7.onclick = function (e) {
-      console.log(e)
-    }
-    const button8 = new Button({
-      target: document.querySelector('#button8'),
-      data: {
         content: 'Disabled Button',
         disabled: true
       }
     })
-    button8.onclick = function (e) {
+    button7.onclick = function (e) {
       console.log(e)
     }
   }
@@ -99,14 +89,13 @@ class ButtonRouter extends React.Component {
             <div id="button4"></div>
             <div id="button5"></div>
             <div id="button6"></div>
-            <div id="button7"></div>
           </div>
         </section>
 
         <section className="examples">
           <h3>禁用按钮</h3>
           <div>
-            <div id="button8"></div>
+            <div id="button7"></div>
           </div>
         </section>
       </div>

@@ -1,0 +1,7 @@
+.examples-footer {
+  padding: 0 4%;
+  background: #FFF;
+  & >footer {
+    height: 120px;
+  }
+}
