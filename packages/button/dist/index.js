@@ -26,14 +26,14 @@ function renderMainFragment ( root, component ) {
 		mount: function ( target, anchor ) {
 			target.insertBefore( button, anchor );
 		},
-
+		
 		update: function ( changed, root ) {
 			button.className = "sf-button sf-button--" + ( root.status ? root.status : 'default' );
 			button.disabled = root.disabled;
 			
 			text.data = root.content;
 		},
-
+		
 		teardown: function ( detach ) {
 			button.removeEventListener( 'click', clickHandler, false );
 			

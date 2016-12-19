@@ -23,7 +23,7 @@ function renderMainFragment ( root, component ) {
 		mount: function ( target, anchor ) {
 			target.insertBefore( input, anchor );
 		},
-
+		
 		update: function ( changed, root ) {
 			input.className = "sf-input sf-input--" + ( root.status ? root.status : 'default' );
 			input.placeholder = root.placeholder ? root.placeholder : '';
@@ -31,7 +31,7 @@ function renderMainFragment ( root, component ) {
 			input.disabled = root.disabled;
 			input.value = root.value ? root.value : '';
 		},
-
+		
 		teardown: function ( detach ) {
 			input.removeEventListener( 'focus', focusHandler, false );
 			
