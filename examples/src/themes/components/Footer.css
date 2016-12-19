@@ -3,5 +3,25 @@
   background: #FFF;
   & >footer {
     height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.examples-footer-left {
+  display: flex;
+  align-items: center;
+  & h3 {
+    margin: 0;
+  }
+  & img {
+    margin-left: 1em;
+  }
+}
+
+.examples-footer-right {
+  & a {
+    margin-left: 1em;
   }
 }
