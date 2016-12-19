@@ -1,6 +1,7 @@
 <button 
   on:click="onclick(event)" 
-  class="sf-button sf-button--{{ type ? type : 'default' }}"
-  disabled="{{ disabled }}">
+  class="sf-button sf-button--{{ status ? status : 'default' }}"
+  disabled="{{ disabled }}"
+>
   <span>{{ content }}</span>
 </button>

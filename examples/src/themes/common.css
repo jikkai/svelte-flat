@@ -1,12 +1,6 @@
 html, body {
-  height: 100%;
   color: #34495E;
   background: #ECECEC; 
-}
-
-#app, #app >div, main, main >div {
-  height: 100%;
-  min-height: 100%;
 }
 
 main {
@@ -23,4 +17,14 @@ main {
 
 .examples-router {
   width: 100%;
+  & .examples {
+    & >div {
+      display: flex;
+      flex-wrap: wrap;
+      & >div {
+        width: 25%;
+        margin-bottom: 24px;
+      }
+    }
+  }
 }

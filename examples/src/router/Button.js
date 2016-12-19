@@ -17,7 +17,7 @@ class ButtonRouter extends React.Component {
       target: document.querySelector('#button2'),
       data: {
         content: 'Primary Button',
-        type: 'primary'
+        status: 'primary'
       }
     })
     button2.onclick = function (e) {
@@ -27,7 +27,7 @@ class ButtonRouter extends React.Component {
       target: document.querySelector('#button3'),
       data: {
         content: 'Info Button',
-        type: 'info'
+        status: 'info'
       }
     })
     button3.onclick = function (e) {
@@ -37,7 +37,7 @@ class ButtonRouter extends React.Component {
       target: document.querySelector('#button4'),
       data: {
         content: 'Danger Button',
-        type: 'danger'
+        status: 'danger'
       }
     })
     button4.onclick = function (e) {
@@ -47,7 +47,7 @@ class ButtonRouter extends React.Component {
       target: document.querySelector('#button5'),
       data: {
         content: 'Success Button',
-        type: 'success'
+        status: 'success'
       }
     })
     button5.onclick = function (e) {
@@ -57,7 +57,7 @@ class ButtonRouter extends React.Component {
       target: document.querySelector('#button6'),
       data: {
         content: 'Warning Button',
-        type: 'warning'
+        status: 'warning'
       }
     })
     button6.onclick = function (e) {
@@ -67,7 +67,7 @@ class ButtonRouter extends React.Component {
       target: document.querySelector('#button7'),
       data: {
         content: 'Inverse Button',
-        type: 'inverse'
+        status: 'inverse'
       }
     })
     button7.onclick = function (e) {
@@ -90,9 +90,8 @@ class ButtonRouter extends React.Component {
       <div className="examples-router examples-router-button">
         <h2>Button 按钮</h2>
 
-        <section className="examples1">
+        <section className="examples">
           <h3>按钮类型</h3>
-
           <div>
             <div id="button1"></div>
             <div id="button2"></div>
@@ -101,6 +100,12 @@ class ButtonRouter extends React.Component {
             <div id="button5"></div>
             <div id="button6"></div>
             <div id="button7"></div>
+          </div>
+        </section>
+
+        <section className="examples">
+          <h3>禁用按钮</h3>
+          <div>
             <div id="button8"></div>
           </div>
         </section>

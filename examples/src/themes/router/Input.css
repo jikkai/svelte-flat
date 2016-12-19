@@ -1,0 +1,5 @@
+.examples-router-input {
+  & input {
+    width: 80%;
+  }
+}

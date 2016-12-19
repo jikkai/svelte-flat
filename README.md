@@ -1,4 +1,8 @@
-# svelte-flat
+# svelte-flat 
+
+![img](http://img.shields.io/npm/v/svelte-flat.svg)
+![img](http://img.shields.io/badge/license-MIT-blue.svg)
+
 > WIP, Please DO NOT use in production.
 
 <p align="center">
@@ -46,3 +50,6 @@ $ yarn
 $ yarn run dev
 $ yarn run build
 ```
+
+## License
+MIT

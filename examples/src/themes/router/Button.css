@@ -1,18 +1,5 @@
 .examples-router-button {
-  & .examples1 {
-    & h3 {
-
-    }
-    & >div {
-      display: flex;
-      flex-wrap: wrap;
-      & >div {
-        width: 25%;
-        margin-bottom: 24px;
-        & button {
-          width: 80%;
-        }
-      }
-    }
+  & button {
+    width: 80%;
   }
 }

@@ -5,3 +5,4 @@ import './components/Menu.css'
 
 import './router/Home.css'
 import './router/Button.css'
+import './router/Input.css'

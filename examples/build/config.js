@@ -1,7 +1,7 @@
 'use strict'
 
 module.exports = {
-  port: '4000',
+  port: '8000',
   title: 'Svelte Flat',
   vendor: [
     'react',

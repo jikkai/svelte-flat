@@ -4,6 +4,7 @@ import { Router, IndexRoute, Route, hashHistory } from 'react-router'
 import Layout from './Layout'
 import Home from './Home'
 import Button from './Button'
+import Input from './Input'
 
 class Routers extends React.Component {
   render () {
@@ -12,6 +13,7 @@ class Routers extends React.Component {
         <Route path="/" component={Layout}>
           <IndexRoute component={Home}/>
           <Route path="button" component={Button}/>
+          <Route path="input" component={Input}/>
         </Route>
       </Router>
     )

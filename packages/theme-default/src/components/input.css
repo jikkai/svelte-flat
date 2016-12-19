@@ -1,0 +1,43 @@
+.sf-input {
+  padding: 8px 0 9px 10px;
+  color: #34495E;
+  font-size: 14px;
+  text-indent: 1px;
+  border: 2px solid #DCE4EC;
+  border-radius: 6px;
+  transition: all .25s;
+  &:focus {
+    outline: 0;
+  }
+}
+
+.sf-input--default {
+  border-color: #DCE4EC;
+  &:focus {
+    border-color: #1ABC9C;
+  }
+}
+
+.sf-input--error {
+  color: #E74C3C;
+  border-color: #E74C3C;
+  &:focus {
+    border-color: #E74C3C;
+  }
+}
+
+.sf-input--success {
+  color: #2ECC71;
+  border-color: #2ECC71;
+  &:focus {
+    border-color: #2ECC71;
+  }
+}
+
+.sf-input[disabled], 
+.sf-input[readonly] {
+  color: #CAD2D3;
+  border-color: transparent;
+  background-color: #EAEDED;
+  cursor: not-allowed;
+}

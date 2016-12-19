@@ -1,50 +1,46 @@
 (function ( global, factory ) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
 	typeof define === 'function' && define.amd ? define(factory) :
-	(global.Button = factory());
+	(global.Input = factory());
 }(this, (function () { 'use strict';
 
 function renderMainFragment ( root, component ) {
-	var button = document.createElement( 'button' );
+	var input = document.createElement( 'input' );
 	
-	function clickHandler ( event ) {
-		component.onclick(event);
+	function focusHandler ( event ) {
+		component.onfocus(event);
 	}
 	
-	button.addEventListener( 'click', clickHandler, false );
+	input.addEventListener( 'focus', focusHandler, false );
 	
-	button.className = "sf-button sf-button--" + ( root.status ? root.status : 'default' );
-	button.disabled = root.disabled;
-	
-	var span = document.createElement( 'span' );
-	
-	button.appendChild( span );
-	var text = document.createTextNode( root.content );
-	span.appendChild( text );
+	input.className = "sf-input sf-input--" + ( root.status ? root.status : 'default' );
+	input.placeholder = root.placeholder ? root.placeholder : '';
+	input.type = root.type ? root.type : 'text';
+	input.disabled = root.disabled;
 
 	return {
 		mount: function ( target, anchor ) {
-			target.insertBefore( button, anchor );
+			target.insertBefore( input, anchor );
 		},
 
 		update: function ( changed, root ) {
-			button.className = "sf-button sf-button--" + ( root.status ? root.status : 'default' );
-			button.disabled = root.disabled;
-			
-			text.data = root.content;
+			input.className = "sf-input sf-input--" + ( root.status ? root.status : 'default' );
+			input.placeholder = root.placeholder ? root.placeholder : '';
+			input.type = root.type ? root.type : 'text';
+			input.disabled = root.disabled;
 		},
 
 		teardown: function ( detach ) {
-			button.removeEventListener( 'click', clickHandler, false );
+			input.removeEventListener( 'focus', focusHandler, false );
 			
 			if ( detach ) {
-				button.parentNode.removeChild( button );
+				input.parentNode.removeChild( input );
 			}
 		}
 	};
 }
 
-function Button ( options ) {
+function Input ( options ) {
 	options = options || {};
 
 	var component = this;
@@ -153,6 +149,6 @@ function Button ( options ) {
 	if ( options.target ) this._mount( options.target );
 }
 
-return Button;
+return Input;
 
 })));

@@ -12,6 +12,7 @@ class MenuComponent extends React.Component {
             <ul>
               <li>
                 <Link to="/button">Button 按钮</Link>
+                <Link to="/input">Input 输入框</Link>
               </li>
             </ul>
           </li>
