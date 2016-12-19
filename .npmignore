@@ -1,0 +1,9 @@
+docs
+examples
+node_modules
+src
+.babelrc
+.gitignore
+*.sh
+rollup.config.js
+yarn.lock
