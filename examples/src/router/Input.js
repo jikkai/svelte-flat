@@ -4,7 +4,7 @@ import '../../../packages/theme-default/dist/input.css'
 
 class InputRouter extends React.Component {
   componentDidMount () {
-    var input1 = new Input({
+    const input1 = new Input({
       target: document.querySelector('#input1'),
       data: {
         placeholder: 'Inactive'
@@ -14,7 +14,7 @@ class InputRouter extends React.Component {
       console.log(e)
     }
 
-    var input2 = new Input({
+    const input2 = new Input({
       target: document.querySelector('#input2'),
       data: {
         placeholder: 'Password',
@@ -25,32 +25,28 @@ class InputRouter extends React.Component {
       console.log(e)
     }
 
-    var input3 = new Input({
+    const input3 = new Input({
       target: document.querySelector('#input3'),
       data: {
         placeholder: 'Error',
         status: 'error'
       }
     })
-    input3.onfocus = function (e) {
-      console.log(e)
-    }
+    input3.set({ value: 'Error' })
 
-    var input4 = new Input({
+    const input4 = new Input({
       target: document.querySelector('#input4'),
       data: {
         placeholder: 'Success',
         status: 'success'
       }
     })
-    input4.onfocus = function (e) {
-      console.log(e)
-    }
+    input4.set({ value: 'Success' })
 
-    var input5 = new Input({
+    const input5 = new Input({
       target: document.querySelector('#input5'),
       data: {
-        placeholder: 'Disabled Input',
+        value: 'Disabled Input',
         disabled: true
       }
     })

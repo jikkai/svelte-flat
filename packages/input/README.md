@@ -5,6 +5,7 @@
 ## Attributes
 |参数|说明|类型|可选值|默认值|
 |---|---|---|---|---|
+|value|值|String|-|-|
 |type|类型|String|text,password|text|
 |status|状态|String|default,error,success|default|
 |placeholder|占位文本|String|-|-|

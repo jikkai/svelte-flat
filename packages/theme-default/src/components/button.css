@@ -1,6 +1,6 @@
 .sf-button {
   margin: 0;
-  padding: 10px 15px;
+  padding: 12px 0;
   color: #FFF;
   text-align: center;
   line-height: 1;
@@ -14,7 +14,6 @@
   user-select: none;
   cursor: pointer;
   transition: all .25s;
-  -webkit-appearance: none;
 }
 
 .sf-button--default {

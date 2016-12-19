@@ -17,6 +17,7 @@ function renderMainFragment ( root, component ) {
 	input.placeholder = root.placeholder ? root.placeholder : '';
 	input.type = root.type ? root.type : 'text';
 	input.disabled = root.disabled;
+	input.value = root.value ? root.value : '';
 
 	return {
 		mount: function ( target, anchor ) {
@@ -28,6 +29,7 @@ function renderMainFragment ( root, component ) {
 			input.placeholder = root.placeholder ? root.placeholder : '';
 			input.type = root.type ? root.type : 'text';
 			input.disabled = root.disabled;
+			input.value = root.value ? root.value : '';
 		},
 
 		teardown: function ( detach ) {

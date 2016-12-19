@@ -4,7 +4,7 @@ import '../../../packages/theme-default/dist/button.css'
 
 class ButtonRouter extends React.Component {
   componentDidMount () {
-    var button1 = new Button({
+    const button1 = new Button({
       target: document.querySelector('#button1'),
       data: {
         content: 'Default Button'
@@ -13,7 +13,7 @@ class ButtonRouter extends React.Component {
     button1.onclick = function (e) {
       console.log(e)
     }
-    var button2 = new Button({
+    const button2 = new Button({
       target: document.querySelector('#button2'),
       data: {
         content: 'Primary Button',
@@ -23,7 +23,7 @@ class ButtonRouter extends React.Component {
     button2.onclick = function (e) {
       console.log(e)
     }
-    var button3 = new Button({
+    const button3 = new Button({
       target: document.querySelector('#button3'),
       data: {
         content: 'Info Button',
@@ -33,7 +33,7 @@ class ButtonRouter extends React.Component {
     button3.onclick = function (e) {
       console.log(e)
     }
-    var button4 = new Button({
+    const button4 = new Button({
       target: document.querySelector('#button4'),
       data: {
         content: 'Danger Button',
@@ -43,7 +43,7 @@ class ButtonRouter extends React.Component {
     button4.onclick = function (e) {
       console.log(e)
     }
-    var button5 = new Button({
+    const button5 = new Button({
       target: document.querySelector('#button5'),
       data: {
         content: 'Success Button',
@@ -53,7 +53,7 @@ class ButtonRouter extends React.Component {
     button5.onclick = function (e) {
       console.log(e)
     }
-    var button6 = new Button({
+    const button6 = new Button({
       target: document.querySelector('#button6'),
       data: {
         content: 'Warning Button',
@@ -63,7 +63,7 @@ class ButtonRouter extends React.Component {
     button6.onclick = function (e) {
       console.log(e)
     }
-    var button7 = new Button({
+    const button7 = new Button({
       target: document.querySelector('#button7'),
       data: {
         content: 'Inverse Button',
@@ -73,7 +73,7 @@ class ButtonRouter extends React.Component {
     button7.onclick = function (e) {
       console.log(e)
     }
-    var button8 = new Button({
+    const button8 = new Button({
       target: document.querySelector('#button8'),
       data: {
         content: 'Disabled Button',
