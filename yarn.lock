@@ -741,7 +741,7 @@ lazy-cache@^1.0.3:
   version "1.0.4"
   resolved "http://registry.npm.taobao.org/lazy-cache/download/lazy-cache-1.0.4.tgz#a1d78fc3a50474cb80845d3b3b6e1da49a446e8e"
 
-lerna@2.0.0-beta.31:
+lerna@^2.0.0-beta.31:
   version "2.0.0-beta.31"
   resolved "http://registry.npm.taobao.org/lerna/download/lerna-2.0.0-beta.31.tgz#68da53b860f8193d4653a6d0601ef300b8d7176d"
   dependencies:
@@ -1102,9 +1102,9 @@ rollup-watch@^2.5.0:
   dependencies:
     semver "^5.1.0"
 
-rollup@^0.36.4:
-  version "0.36.4"
-  resolved "http://registry.npm.taobao.org/rollup/download/rollup-0.36.4.tgz#a224494c5386c1d73d38f7bb86f69f5eb011a3d2"
+rollup@^0.37.0:
+  version "0.37.0"
+  resolved "http://registry.npm.taobao.org/rollup/download/rollup-0.37.0.tgz#759a51708ac08b027597babff171a026cf712d8d"
   dependencies:
     source-map-support "^0.4.0"
 
