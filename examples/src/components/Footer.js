@@ -7,7 +7,7 @@ class HeaderComponent extends React.Component {
         <footer>
           <div className="examples-footer-left">
             <h3>Svelte Flat</h3>
-            <img src="http://img.shields.io/npm/v/svelte-flat.svg" />
+            <img src="https://img.shields.io/npm/v/svelte-flat.svg" />
           </div>
           <div className="examples-footer-right">
             <a href="https://blog.asaki.me" target="_blank">Blog</a>
