@@ -1,13 +1,14 @@
 import React from 'react'
 import Video from '../../../packages/video/dist/index'
 import '../../../packages/theme-default/dist/video.css'
+import mp4 from '../assets/demo.mp4'
 
 class InputRouter extends React.Component {
   componentDidMount () {
     const video1 = new Video({
       target: document.querySelector('#video1'),
       data: {
-        src: 'https://s3-us-west-2.amazonaws.com/coverr/mp4/Big-Apple.mp4',
+        src: mp4,
         width: 620,
         height: 350,
         loop: false

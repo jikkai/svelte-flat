@@ -9,7 +9,7 @@
   </video>
   <div class="sf-video-controls">
     <label class="sf-video-controls--play">
-      <input type="checkbox" on:change="togglePlay()" />
+      <input ref:togglePlay type="checkbox" on:change="togglePlay()" />
       <span></span>
     </label>
   </div>
@@ -17,6 +17,13 @@
 
 <script>
   export default {
+    onrender: function () {
+      var video = this.refs.video
+      var togglePlay = this.refs.togglePlay
+      video.onended = function () {
+        togglePlay.checked = false
+      }
+    },
     methods: {
       togglePlay: function () {
         var video = this.refs.video

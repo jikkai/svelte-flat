@@ -9,7 +9,7 @@ module.exports = {
     client: './src/index.js'
   },
   output: {
-    path: path.join(__dirname, '../dist'),
+    path: path.join(__dirname, '../../docs'),
     filename: '[name].js',
     publicPath: './'
   },
@@ -35,7 +35,7 @@ module.exports = {
         exclude: /node_modules/
       },
       {
-        test: /\.(ico|jpg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
+        test: /\.(ico|jpg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4)(\?.*)?$/,
         loader: 'file-loader?limit=8192'
       }
     ]

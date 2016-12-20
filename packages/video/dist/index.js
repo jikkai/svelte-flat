@@ -6,6 +6,13 @@
 
 var template = (function () {
   return {
+    onrender: function () {
+      var video = this.refs.video
+      var togglePlay = this.refs.togglePlay
+      video.onended = function () {
+        togglePlay.checked = false
+      }
+    },
     methods: {
       togglePlay: function () {
         var video = this.refs.video
@@ -45,6 +52,7 @@ function renderMainFragment ( root, component ) {
 	div1.appendChild( label );
 	
 	var input = document.createElement( 'input' );
+	component.refs.togglePlay = input;
 	input.type = "checkbox";
 	
 	function changeHandler ( event ) {
@@ -76,6 +84,7 @@ function renderMainFragment ( root, component ) {
 		
 		teardown: function ( detach ) {
 			if ( component.refs.video === video ) component.refs.video = null;
+			if ( component.refs.togglePlay === input ) component.refs.togglePlay = null;
 			input.removeEventListener( 'change', changeHandler, false );
 			
 			if ( detach ) {
@@ -193,6 +202,12 @@ this.refs = {}
 
 	var mainFragment = renderMainFragment( state, this );
 	if ( options.target ) this._mount( options.target );
+	
+	if ( options.root ) {
+		options.root.__renderHooks.push({ fn: template.onrender, context: this });
+	} else {
+		template.onrender.call( this );
+	}
 }
 
 Video.prototype = template.methods;
