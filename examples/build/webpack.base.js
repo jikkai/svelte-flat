@@ -9,7 +9,7 @@ module.exports = {
     client: './src/index.js'
   },
   output: {
-    path: path.join(__dirname, '../../docs'),
+    path: path.join(__dirname, '../dist'),
     filename: '[name].js',
     publicPath: './'
   },
@@ -32,7 +32,7 @@ module.exports = {
       {
         test: /\.js[x]?$/,
         loader: 'babel-loader',
-        exclude: [/node_modules/]
+        exclude: /node_modules/
       },
       {
         test: /\.(ico|jpg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
