@@ -1,0 +1,31 @@
+<div class="sf-video" style="width: {{ width }}px; height: {{ height }}px;">
+  <video 
+    ref:video
+    width="{{ width }}"
+    height="{{ height }}"
+    src="{{ src }}"
+    loop="{{ loop }}"
+  >
+  </video>
+  <div class="sf-video-controls">
+    <label class="sf-video-controls--play">
+      <input type="checkbox" on:change="togglePlay()" />
+      <span></span>
+    </label>
+  </div>
+</div>
+
+<script>
+  export default {
+    methods: {
+      togglePlay: function () {
+        var video = this.refs.video
+        if (video.paused) {
+          video.play()
+        } else {
+          video.pause()
+        }
+      }
+    }
+  }
+</script>

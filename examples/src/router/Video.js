@@ -1,0 +1,36 @@
+import React from 'react'
+import Video from '../../../packages/video/dist/index'
+import '../../../packages/theme-default/dist/video.css'
+
+class InputRouter extends React.Component {
+  componentDidMount () {
+    const video1 = new Video({
+      target: document.querySelector('#video1'),
+      data: {
+        src: 'https://s3-us-west-2.amazonaws.com/coverr/mp4/Big-Apple.mp4',
+        width: 620,
+        height: 350,
+        loop: false
+      }
+    })
+    console.log(video1)
+  }
+
+  render () {
+    return (
+      <div className="examples-router examples-router-video">
+        <h2>Video 视频播放器</h2>
+
+        <section className="examples">
+          <h3>基础播放器</h3>
+
+          <div>
+            <div id="video1"></div>
+          </div>
+        </section>
+      </div>
+    )
+  }
+}
+
+export default InputRouter

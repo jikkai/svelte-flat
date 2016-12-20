@@ -19,7 +19,7 @@ echo "{
   \"license\": \"MIT\",
   \"scripts\": {
     \"init\": \"yarn\",
-    \"build\": \"svelte compile -f umd -n Button ./src/index.html > ./dist/index.js\"
+    \"build\": \"svelte compile -f umd -n $name ./src/index.html > ./dist/index.js\"
   }
 }" > package.json
 

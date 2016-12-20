@@ -2,7 +2,7 @@
 cd ..
 
 yarn run build:components
-yarn run build:all
+yarn run build
 
 cd examples
 yarn run build

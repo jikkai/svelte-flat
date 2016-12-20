@@ -14,4 +14,4 @@
 ## Events
 |事件名称|说明|回调参数|
 |---|---|---|
-|onfocus|获得焦点时触发|event
+|onfocus|获得焦点时触发|event|

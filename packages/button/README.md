@@ -12,4 +12,4 @@
 ## Events
 |事件名称|说明|回调参数|
 |---|---|---|
-|onclick|点击触发|event
+|onclick|点击触发|event|
