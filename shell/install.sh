@@ -1,4 +1,6 @@
 #!/bin/sh
+cd ..
+
 yarn
 yarn run init
 

@@ -20,7 +20,7 @@ class HomeRouter extends React.Component {
         <p>全局引入，方便快捷。</p>
         <pre>
           <code>
-            import Svelte from 'svelte-flat' {'\n'}
+            import Flat from 'svelte-flat' {'\n'}
             import 'svelte-flat/packages/theme-default/dist/index.css'
           </code>
         </pre>

@@ -1,4 +1,6 @@
 #!/bin/sh
+cd ..
+
 yarn run build:components
 yarn run build:all
 

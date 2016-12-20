@@ -8,6 +8,6 @@ export default {
     })
   ],
   format: 'umd',
-  moduleName: "svelteFlat",
+  moduleName: "Flat",
   dest: './dist/index.js'
 }
