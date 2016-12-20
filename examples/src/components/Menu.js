@@ -14,6 +14,7 @@ class MenuComponent extends React.Component {
                 <Link to="/button">Button 按钮</Link>
                 <Link to="/input">Input 输入框</Link>
                 <Link to="/video">Video 视频播放器</Link>
+                <Link to="/slider">Slider 滑块</Link>
               </li>
             </ul>
           </li>

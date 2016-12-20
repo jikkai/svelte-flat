@@ -3,7 +3,7 @@ import Video from '../../../packages/video/dist/index'
 import '../../../packages/theme-default/dist/video.css'
 import mp4 from '../assets/demo.mp4'
 
-class InputRouter extends React.Component {
+class VideoRouter extends React.Component {
   componentDidMount () {
     const video1 = new Video({
       target: document.querySelector('#video1'),
@@ -34,4 +34,4 @@ class InputRouter extends React.Component {
   }
 }
 
-export default InputRouter
+export default VideoRouter

@@ -1,0 +1,8 @@
+.examples-router-slider {
+  & >section >div {
+    width: 100%;
+    & >div {
+      width: 100%!important;
+    }
+  }
+}
