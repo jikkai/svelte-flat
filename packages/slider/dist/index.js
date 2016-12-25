@@ -7,7 +7,7 @@
 var template = (function () {
   return {
     methods: {
-      handleMousedown (event) {
+      handleMousedown: function (event) {
         console.log(event)
       }
     }
