@@ -1,4 +1,18 @@
 <div class="sf-slider">
   <div class="sf-slider__range" style="width: {{ value }}%"></div>
-  <a class="sf-slider__handle" style="left: {{ value }}%"></a>
+  <a 
+    class="sf-slider__handle" 
+    style="left: {{ value }}%" 
+    on:mousedown="handleMousedown(event)">
+  </a>
 </div>
+
+<script>
+  export default {
+    methods: {
+      handleMousedown (event) {
+        console.log(event)
+      }
+    }
+  }
+</script>

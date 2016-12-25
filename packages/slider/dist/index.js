@@ -4,6 +4,16 @@
 	(global.Slider = factory());
 }(this, (function () { 'use strict';
 
+var template = (function () {
+  return {
+    methods: {
+      handleMousedown (event) {
+        console.log(event)
+      }
+    }
+  }
+}());
+
 function renderMainFragment ( root, component ) {
 	var div = document.createElement( 'div' );
 	div.className = "sf-slider";
@@ -19,6 +29,12 @@ function renderMainFragment ( root, component ) {
 	a.className = "sf-slider__handle";
 	a.style.cssText = "left: " + ( root.value ) + "%";
 	
+	function mousedownHandler ( event ) {
+		component.handleMousedown(event);
+	}
+	
+	a.addEventListener( 'mousedown', mousedownHandler, false );
+	
 	div.appendChild( a );
 
 	return {
@@ -33,6 +49,8 @@ function renderMainFragment ( root, component ) {
 		},
 		
 		teardown: function ( detach ) {
+			a.removeEventListener( 'mousedown', mousedownHandler, false );
+			
 			if ( detach ) {
 				div.parentNode.removeChild( div );
 			}
@@ -148,6 +166,8 @@ function Slider ( options ) {
 	var mainFragment = renderMainFragment( state, this );
 	if ( options.target ) this._mount( options.target );
 }
+
+Slider.prototype = template.methods;
 
 return Slider;
 

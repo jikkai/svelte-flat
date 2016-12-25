@@ -5,7 +5,7 @@ import mp4 from '../assets/demo.mp4'
 
 class VideoRouter extends React.Component {
   componentDidMount () {
-    const video1 = new Video({
+    new Video({
       target: document.querySelector('#video1'),
       data: {
         src: mp4,
@@ -14,7 +14,6 @@ class VideoRouter extends React.Component {
         loop: false
       }
     })
-    console.log(video1)
   }
 
   render () {

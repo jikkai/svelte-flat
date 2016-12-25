@@ -4,55 +4,46 @@ import '../../../packages/theme-default/dist/input.css'
 
 class InputRouter extends React.Component {
   componentDidMount () {
-    const input1 = new Input({
+    new Input({
       target: document.querySelector('#input1'),
       data: {
         placeholder: 'Inactive'
       }
     })
-    input1.onfocus = function (e) {
-      console.log(e)
-    }
 
-    const input2 = new Input({
+    new Input({
       target: document.querySelector('#input2'),
       data: {
         placeholder: 'Password',
         type: 'password'
       }
     })
-    input2.onfocus = function (e) {
-      console.log(e)
-    }
 
-    const input3 = new Input({
+    new Input({
       target: document.querySelector('#input3'),
       data: {
         placeholder: 'Error',
-        status: 'error'
+        status: 'error',
+        value: 'Error'
       }
     })
-    input3.set({ value: 'Error' })
 
-    const input4 = new Input({
+    new Input({
       target: document.querySelector('#input4'),
       data: {
         placeholder: 'Success',
-        status: 'success'
+        status: 'success',
+        value: 'Success'
       }
     })
-    input4.set({ value: 'Success' })
 
-    const input5 = new Input({
+    new Input({
       target: document.querySelector('#input5'),
       data: {
         value: 'Disabled Input',
         disabled: true
       }
     })
-    input5.onfocus = function (e) {
-      console.log(e)
-    }
   }
 
   render () {

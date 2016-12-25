@@ -4,6 +4,14 @@
 	(global.Input = factory());
 }(this, (function () { 'use strict';
 
+var template = (function () {
+  return {
+    methods: {
+      onfocus: function (event) {}
+    }
+  }
+}());
+
 function renderMainFragment ( root, component ) {
 	var input = document.createElement( 'input' );
 	
@@ -150,6 +158,8 @@ function Input ( options ) {
 	var mainFragment = renderMainFragment( state, this );
 	if ( options.target ) this._mount( options.target );
 }
+
+Input.prototype = template.methods;
 
 return Input;
 

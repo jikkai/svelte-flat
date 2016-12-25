@@ -4,7 +4,7 @@ import '../../../packages/theme-default/dist/slider.css'
 
 class SliderRouter extends React.Component {
   componentDidMount () {
-    const slider1 = new Slider({
+    new Slider({
       target: document.querySelector('#slider1'),
       data: {
         min: 0,
@@ -12,7 +12,6 @@ class SliderRouter extends React.Component {
         value: 30
       }
     })
-    console.log(slider1)
   }
 
   render () {

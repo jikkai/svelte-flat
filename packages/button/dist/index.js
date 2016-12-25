@@ -4,6 +4,14 @@
 	(global.Button = factory());
 }(this, (function () { 'use strict';
 
+var template = (function () {
+  return {
+    methods: {
+      onclick: function (event) {}
+    }
+  }
+}());
+
 function renderMainFragment ( root, component ) {
 	var button = document.createElement( 'button' );
 	
@@ -152,6 +160,8 @@ function Button ( options ) {
 	var mainFragment = renderMainFragment( state, this );
 	if ( options.target ) this._mount( options.target );
 }
+
+Button.prototype = template.methods;
 
 return Button;
 
