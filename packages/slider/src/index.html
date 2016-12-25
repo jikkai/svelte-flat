@@ -1,17 +1,65 @@
-<div class="sf-slider">
-  <div class="sf-slider__range" style="width: {{ value }}%"></div>
-  <a 
+<div ref:slider class="sf-slider">
+  <div ref:range class="sf-slider__range" style="width: {{ value }}%"></div>
+  <span 
     class="sf-slider__handle" 
     style="left: {{ value }}%" 
-    on:mousedown="handleMousedown(event)">
-  </a>
+    on:mousedown="onButtonDown(event)"
+    on:mouseup="onDragEnd(event)"
+  >
+  </span>
 </div>
 
 <script>
   export default {
+    data: function () {
+      return {
+        width: 0,
+        offset: 0,
+        dragging: false
+      }
+    },
     methods: {
-      handleMousedown: function (event) {
-        console.log(event)
+      onButtonDown: function (event) {
+        this.onDragStart(event)
+        window.addEventListener('mousemove', this.onDragging.bind(this))
+        window.addEventListener('mouseup', this.onDragEnd.bind(this))
+        window.addEventListener('contextmenu', this.onDragEnd.bind(this))
+
+      },
+
+      onDragStart: function (event) {
+        var slider = this.refs.slider
+        var range = this.refs.range
+
+        this.set({
+          width: slider.clientWidth,
+          offset: event.clientX - range.clientWidth,
+          dragging: true
+        })
+      },
+
+      onDragging: function (event) {
+        if (this.get('dragging')) {
+          var clientX = event.clientX
+          var width = this.get('width')
+          var offset = this.get('offset')
+
+          var newRange = event.clientX - offset
+          var newValue = parseInt(newRange / width * 100)
+          if (newValue > 100) newValue = 100
+          if (newValue < 0) newValue = 0
+
+          this.set({ value: newValue })
+        }
+      },
+
+      onDragEnd: function () {
+        if (this.get('dragging')) {
+          this.set({ dragging: false })
+          window.removeEventListener('mousemove', this.onDragging)
+          window.removeEventListener('mouseup', this.onDragEnd)
+          window.removeEventListener('contextmenu', this.onDragEnd)
+        }
       }
     }
   }

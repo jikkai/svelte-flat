@@ -17,7 +17,7 @@ $ yarn add svelte-flat
 ```
 
 ## Usage
-```
+```javascript
 import { Button } from 'svelte-flat'
 import 'svelte-flat/packages/theme-default/dist/button.css'
 

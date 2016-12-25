@@ -22,7 +22,8 @@
   background: #16A085;
   border-radius: 50%;
   display: block;
-  transition: all .25s;
+  transition: background .25s;
+  user-select: none;
   &:hover {
     background: #2FE2BF;
     cursor: pointer;
