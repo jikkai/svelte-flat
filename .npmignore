@@ -1,9 +1,12 @@
+node_modules
+*.log
+tools
 docs
 examples
-node_modules
 src
 .babelrc
 .gitignore
 *.sh
 rollup.config.js
 yarn.lock
+.DS_Store
