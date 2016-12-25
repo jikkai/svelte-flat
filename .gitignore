@@ -2,3 +2,5 @@ node_modules
 *.log
 tools
 .DS_Store
+**/dist/index.js
+**/theme-default/dist
