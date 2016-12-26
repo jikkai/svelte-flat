@@ -1,1 +1,2 @@
-*.html linguist-language=JavaScript
+*.html  linguist-language=JavaScript
+docs    export-ignore
