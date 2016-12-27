@@ -1,0 +1,19 @@
+.examples-router-typography {
+  & .examples {
+    & >div {
+      margin-bottom: 40px;
+      display: flex;
+      align-items: center;
+      & >label {
+        width: 25%;
+        color: #C0C1C2;
+        font-size: 14px;
+        display: block;
+      }
+      & .typography-right {
+        width: 75%;
+        margin: 0;
+      }
+    }
+  }
+}

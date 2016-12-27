@@ -1,6 +1,6 @@
 import React from 'react'
 
-class ButtonRouter extends React.Component {
+class ColorRouter extends React.Component {
   constructor (params) {
     super(params)
     this.state = {
@@ -55,4 +55,4 @@ class ButtonRouter extends React.Component {
   }
 }
 
-export default ButtonRouter
+export default ColorRouter

@@ -40,7 +40,6 @@ button.onclick = function (e) {
 $ yarn 
 $ yarn run init
 $ yarn run build:components
-$ yarn run build:all
 ```
 
 ## Build docs

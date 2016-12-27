@@ -12,6 +12,7 @@ class MenuComponent extends React.Component {
             <ul>
               <li>
                 <Link activeClassName="active" to="/color">Color 色彩</Link>
+                <Link activeClassName="active" to="/typography">Typography 排版</Link>
                 <Link activeClassName="active" to="/icon">Icon 图标</Link>
               </li>
             </ul>

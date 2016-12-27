@@ -14,7 +14,7 @@ module.exports = {
     publicPath: './'
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.json'],
+    extensions: ['.js', '.react', '.jsx', '.json'],
     alias: {
       root: path.join(__dirname, '../src'),
       components: path.join(__dirname, '../src/components')
@@ -32,6 +32,11 @@ module.exports = {
       {
         test: /\.js[x]?$/,
         loader: 'babel-loader',
+        exclude: /node_modules/
+      },
+      {
+        test: /\.react[x]?$/,
+        loader: 'single-react-loader',
         exclude: /node_modules/
       },
       {

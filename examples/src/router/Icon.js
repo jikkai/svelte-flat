@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../../packages/theme-default/dist/icon.css'
 
-class ButtonRouter extends React.Component {
+class IconRouter extends React.Component {
   render () {
     return (
       <div className="examples-router examples-router-icon">
@@ -120,4 +120,4 @@ class ButtonRouter extends React.Component {
   }
 }
 
-export default ButtonRouter
+export default IconRouter
