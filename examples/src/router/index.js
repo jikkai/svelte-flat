@@ -1,5 +1,5 @@
 import React from 'react'
-import { Router, IndexRoute, Route, hashHistory } from 'react-router'
+import { Router, Route, IndexRoute, hashHistory } from 'react-router'
 
 import Layout from './Layout'
 import Home from './Home'
@@ -15,13 +15,14 @@ class Routers extends React.Component {
     return (
       <Router history={hashHistory}>
         <Route path="/" component={Layout}>
-          <IndexRoute component={Home}/>
-          <Route path="color" component={Color}/>
-          <Route path="icon" component={Icon}/>
-          <Route path="button" component={Button}/>
-          <Route path="input" component={Input}/>
-          <Route path="video" component={Video}/>
-          <Route path="slider" component={Slider}/>
+          <IndexRoute component={Home} />
+          <Route path="color" component={Color} />
+          <Route path="icon" component={Icon} />
+          <Route path="button" component={Button} />
+          <Route path="input" component={Input} />
+          <Route path="video" component={Video} />
+          <Route path="slider" component={Slider} />
+          <Route path="*" component={Home} />
         </Route>
       </Router>
     )

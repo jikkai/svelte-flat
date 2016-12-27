@@ -14,6 +14,10 @@
         line-height: 42px;
         display: block;
         transition: all .25s;
+        &.active {
+          color: #1ABC9C;
+          font-weight: bold;
+        }
         &:hover {
           color: #1ABC9C
         }
