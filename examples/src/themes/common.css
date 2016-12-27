@@ -46,6 +46,7 @@ main {
 
 .examples-router {
   width: 100%;
+  padding-bottom: 36px;
   & .examples {
     & >div {
       display: flex;
@@ -55,6 +56,33 @@ main {
         width: 25%;
         margin-bottom: 24px;
       }
+    }
+  }
+}
+
+.documents {
+  & table {
+    width: 100%;
+    padding: 0;
+    font-size: 14px;
+    border-spacing: 0;
+    border-radius: 4px;
+    overflow: hidden;
+    & thead {
+      color: #FFF;
+      background: #34495E;
+    }
+    & th {
+      font-weight: normal;
+      text-align: left;
+    }
+    & td {
+      border-bottom: 1px dotted #34495E;
+    }
+    & th,
+    & td {
+      height: 28px;
+      padding: 4px 18px;
     }
   }
 }

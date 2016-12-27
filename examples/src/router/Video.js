@@ -28,6 +28,51 @@ class VideoRouter extends React.Component {
             <div id="video1"></div>
           </div>
         </section>
+
+        <section className="documents">
+          <h3>Attributes</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>参数</th>
+                <th>说明</th>
+                <th>类型</th>
+                <th>可选值</th>
+                <th>默认值</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>width</td>
+                <td>宽度</td>
+                <td>Number</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>height</td>
+                <td>高度</td>
+                <td>Number</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>src</td>
+                <td>视频链接</td>
+                <td>String</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>loop</td>
+                <td>是否开启循环</td>
+                <td>Boolean</td>
+                <td>-</td>
+                <td>false</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
       </div>
     )
   }
