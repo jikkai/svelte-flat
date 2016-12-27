@@ -1,0 +1,12 @@
+.examples-router-icon {
+  & .examples {
+    & >div {
+      & >span {
+        display: inline-block;
+        margin: 0 0 32px 35px;
+        width: 24px;
+        font-size: 24px;
+      }
+    }
+  }
+}
