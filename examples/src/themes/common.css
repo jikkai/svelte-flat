@@ -47,6 +47,9 @@ main {
 .examples-router {
   width: 100%;
   padding-bottom: 36px;
+  & h3 {
+    font-size: 20px;
+  }
   & .examples {
     & >div {
       display: flex;

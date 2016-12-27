@@ -1,8 +1,7 @@
 .sf-input {
-  padding: 8px 0 9px 10px;
+  padding: 6px 0 6px 10px;
   color: #34495E;
   font-size: 14px;
-  text-indent: 1px;
   border: 2px solid #BDC3C7;
   border-radius: 6px;
   transition: all .25s;

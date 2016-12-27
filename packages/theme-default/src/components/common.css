@@ -1,0 +1,66 @@
+@import "../../node_modules/typo.css/typo.css";
+
+/* 修复typo.css的main默认不设为块级标签的问题 */
+main {
+  display: block;
+}
+
+/* 修改typo.css的默认字体 */
+body, button, input, select, textarea {
+  font-weight: 400;
+  font-family: Helvetica Neue, Helvetica, Arial, Han Heiti, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: PingFang SC, Verdana, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+  font-weight: bold;
+  color: inherit;
+}
+
+/* flat-ui样式重设 */
+h1, h2, h3, h4, h5, h6 {
+  color: inherit;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+h1, h2, h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h4, h5, h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0 0 10px;
+}

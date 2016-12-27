@@ -5,7 +5,9 @@
       flex-wrap: wrap;
       & dl {
         width: 22%;
-        height: 120px;
+        height: 100px;
+        margin-bottom: 24px;
+        font-size: 14px;
         display: flex;
         flex-direction: column;
         align-items: center;
