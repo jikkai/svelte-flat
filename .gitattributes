@@ -1,2 +1,3 @@
-# *.html  linguist-language=JavaScript
-docs/*    linguist-documentation=false
+*.html      linguist-language=JavaScript
+docs/*      linguist-documentation=false
+examples/*  linguist-documentation=true
