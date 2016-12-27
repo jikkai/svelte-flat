@@ -3,7 +3,7 @@
   color: #34495E;
   font-size: 14px;
   text-indent: 1px;
-  border: 2px solid #DCE4EC;
+  border: 2px solid #BDC3C7;
   border-radius: 6px;
   transition: all .25s;
   &:focus {
@@ -12,7 +12,7 @@
 }
 
 .sf-input--default {
-  border-color: #DCE4EC;
+  border-color: #BDC3C7;
   &:focus {
     border-color: #1ABC9C;
   }
@@ -37,7 +37,7 @@
 .sf-input[disabled], 
 .sf-input[readonly] {
   color: #CAD2D3;
-  border-color: transparent;
-  background-color: #EAEDED;
+  border-color: #D5DBDB;
+  background-color: #F4F6F6;
   cursor: not-allowed;
 }

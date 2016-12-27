@@ -1,6 +1,7 @@
 .sf-video {
   position: relative;
   margin-bottom: 48px;
+  background: #000;
   border-radius: 6px 6px 0 0;
   & video {
     border-radius: 6px 6px 0 0;

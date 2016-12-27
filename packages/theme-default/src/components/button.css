@@ -17,9 +17,9 @@
 }
 
 .sf-button--default {
-  background-color: #34495E;
+  background-color: #BDC3C7;
   &:hover, &:focus {
-    background-color: #4E6D8D;
+    background-color: #CACFD2;
   }
 }
 
@@ -66,9 +66,10 @@
 }
 
 .sf-button[disabled] {
-  background-color: #95A5A6;
+  color: rgba(255, 255, 255, .75);
+  background-color: #BDC3C7;
   cursor: not-allowed;
   &:hover, &:focus {
-    background-color: #95A5A6;
+    background-color: #BDC3C7;
   }
 }

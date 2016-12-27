@@ -7,21 +7,21 @@ class ButtonRouter extends React.Component {
     new Button({
       target: document.querySelector('#button1'),
       data: {
-        content: 'Default Button'
-      }
-    })
-    new Button({
-      target: document.querySelector('#button2'),
-      data: {
         content: 'Primary Button',
         status: 'primary'
       }
     })
     new Button({
+      target: document.querySelector('#button2'),
+      data: {
+        content: 'Warning Button',
+        status: 'warning'
+      }
+    })
+    new Button({
       target: document.querySelector('#button3'),
       data: {
-        content: 'Info Button',
-        status: 'info'
+        content: 'Default Button'
       }
     })
     new Button({
@@ -41,12 +41,19 @@ class ButtonRouter extends React.Component {
     new Button({
       target: document.querySelector('#button6'),
       data: {
-        content: 'Warning Button',
-        status: 'warning'
+        content: 'Inverse Button',
+        status: 'inverse'
       }
     })
     new Button({
       target: document.querySelector('#button7'),
+      data: {
+        content: 'Info Button',
+        status: 'info'
+      }
+    })
+    new Button({
+      target: document.querySelector('#button8'),
       data: {
         content: 'Disabled Button',
         disabled: true
@@ -68,13 +75,14 @@ class ButtonRouter extends React.Component {
             <div id="button4"></div>
             <div id="button5"></div>
             <div id="button6"></div>
+            <div id="button7"></div>
           </div>
         </section>
 
         <section className="examples">
           <h3>禁用按钮</h3>
           <div>
-            <div id="button7"></div>
+            <div id="button8"></div>
           </div>
         </section>
 
@@ -102,7 +110,7 @@ class ButtonRouter extends React.Component {
                 <td>status</td>
                 <td>类型</td>
                 <td>String</td>
-                <td>default,primary,info,danger,success,warning</td>
+                <td>default,primary,info,danger,success,warning,inverse</td>
                 <td>default</td>
               </tr>
               <tr>
