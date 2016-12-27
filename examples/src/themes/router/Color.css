@@ -1,0 +1,25 @@
+.examples-router-color {
+  & .examples {
+    & >div {
+      display: flex;
+      flex-wrap: wrap;
+      & dl {
+        width: 22%;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &:nth-child(2n) {
+          margin-right: 2%;
+        }
+        &:nth-child(2n - 1) {
+          margin-left: 2%;
+        }
+        & dt {
+          color: #FFF;
+        }
+      }
+    }
+  }
+}

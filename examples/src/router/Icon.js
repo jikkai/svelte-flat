@@ -2,9 +2,6 @@ import React from 'react'
 import '../../../packages/theme-default/dist/icon.css'
 
 class ButtonRouter extends React.Component {
-  componentDidMount () {
-  }
-
   render () {
     return (
       <div className="examples-router examples-router-icon">

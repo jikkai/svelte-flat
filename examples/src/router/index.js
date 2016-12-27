@@ -3,6 +3,7 @@ import { Router, IndexRoute, Route, hashHistory } from 'react-router'
 
 import Layout from './Layout'
 import Home from './Home'
+import Color from './Color'
 import Icon from './Icon'
 import Button from './Button'
 import Input from './Input'
@@ -15,6 +16,7 @@ class Routers extends React.Component {
       <Router history={hashHistory}>
         <Route path="/" component={Layout}>
           <IndexRoute component={Home}/>
+          <Route path="color" component={Color}/>
           <Route path="icon" component={Icon}/>
           <Route path="button" component={Button}/>
           <Route path="input" component={Input}/>
