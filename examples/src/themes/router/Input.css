@@ -1,5 +1,13 @@
 .examples-router-input {
-  & input {
-    width: 80%;
+  & .examples {
+    & >div {
+      & >div {
+        width: 50%;
+        & input {
+          width: 80%;
+          max-width: 260px;
+        }
+      }
+    }
   }
 }

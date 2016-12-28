@@ -1,11 +1,27 @@
 .examples-router-icon {
   & .examples {
     & >div {
-      & >span {
-        display: inline-block;
-        margin: 0 0 32px 35px;
-        width: 24px;
-        font-size: 24px;
+      border: 1px solid #ECF0F1;
+      & >div {
+        width: 25%;
+        height: 130px;
+        margin: 0;
+        text-align: center;
+        white-space: nowrap;
+        border-bottom: 1px solid #ECF0F1;
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: center;
+        &:not(:nth-child(4n)) {
+          border-right: 1px solid #ECF0F1;
+        }
+        & i {
+          font-size: 24px;
+        }
+        & span {
+          font-size: 14px;
+        }
       }
     }
   }
