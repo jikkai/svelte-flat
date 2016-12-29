@@ -5,18 +5,37 @@ import '../../../packages/theme-default/dist/button.css'
 import '../../../packages/theme-default/dist/message.css'
 
 class MessageRouter extends React.Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      button: [
+        { content: '打开消息提示' },
+        { content: '成功', status: 'success' },
+        { content: '警告', status: 'warning' },
+        { content: '信息', status: 'info' },
+        { content: '错误', status: 'danger' }
+      ],
+      message: [
+        { content: 'hello world' },
+        { content: '成功提示', status: 'success' },
+        { content: '警告提示', status: 'warning' },
+        { content: '信息提示', status: 'info' },
+        { content: '错误提示', status: 'danger' }
+      ]
+    }
+  }
+
   componentDidMount () {
-    const button1 = new Button({
-      target: document.querySelector(`#message1`),
-      data: {
-        content: '消息提示',
-        status: 'primary'
-      }
-    })
-    button1.onclick = () => {
-      Message({
-        content: 'hello world'
+    const { button, message } = this.state
+
+    for (let i = 0; i < message.length; i++) {
+      const btn = new Button({
+        target: document.querySelector(`#message${i + 1}`),
+        data: button[i]
       })
+      btn.onclick = () => {
+        Message(message[i])
+      }
     }
   }
 
@@ -30,6 +49,17 @@ class MessageRouter extends React.Component {
 
           <div>
             <div id="message1"></div>
+          </div>
+        </section>
+
+        <section className="examples">
+          <h3>消息类型</h3>
+
+          <div>
+            <div id="message2"></div>
+            <div id="message3"></div>
+            <div id="message4"></div>
+            <div id="message5"></div>
           </div>
         </section>
 
@@ -47,11 +77,18 @@ class MessageRouter extends React.Component {
             </thead>
             <tbody>
               <tr>
-                <td>value</td>
-                <td>值</td>
-                <td>Number</td>
+                <td>content</td>
+                <td>展示文字</td>
+                <td>String</td>
                 <td>-</td>
                 <td>-</td>
+              </tr>
+              <tr>
+                <td>status</td>
+                <td>类型</td>
+                <td>String</td>
+                <td>info,danger,success,warning</td>
+                <td>info</td>
               </tr>
             </tbody>
           </table>

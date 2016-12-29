@@ -10,8 +10,14 @@ class HeaderComponent extends React.Component {
             <img src="https://img.shields.io/npm/v/svelte-flat.svg" />
           </div>
           <div className="examples-footer-right">
-            <a href="https://blog.asaki.me" target="_blank">Blog</a>
-            <a href="https://github.com/jikkai/svelte-flat" target="_blank">Github</a>
+            <a href="https://blog.asaki.me" target="_blank">
+              <i className="fui-link"></i>
+              <span>Blog</span>
+            </a>
+            <a href="https://github.com/jikkai/svelte-flat" target="_blank">
+              <i className="fui-github"></i>
+              <span>Github</span>
+            </a>
           </div>
         </footer>
       </div>

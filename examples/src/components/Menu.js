@@ -23,7 +23,6 @@ class MenuComponent extends React.Component {
               <li>
                 <Link activeClassName="active" to="/button">Button 按钮</Link>
                 <Link activeClassName="active" to="/input">Input 输入框</Link>
-                <Link activeClassName="active" to="/video">Video 视频播放器</Link>
                 <Link activeClassName="active" to="/slider">Slider 滑块</Link>
               </li>
             </ul>
@@ -33,6 +32,14 @@ class MenuComponent extends React.Component {
             <ul>
               <li>
                 <Link activeClassName="active" to="/message">Message 消息提示</Link>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>多媒体组件</h4>
+            <ul>
+              <li>
+                <Link activeClassName="active" to="/video">Video 视频播放器</Link>
               </li>
             </ul>
           </li>

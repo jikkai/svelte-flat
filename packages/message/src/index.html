@@ -1,10 +1,21 @@
 <div class="sf-message sf-message--enter">
-  <div class="sf-message__body">
-    {{ content }}
+  <div class="sf-message__body sf-message__{{ status || 'info' }}">
+    <i class="{{ statusClass[status || 'info'] }}"></i>
+    <span>{{ content }}</span>
   </div>
 </div>
 
 <script>
   export default {
+    data () {
+      return {
+        statusClass: {
+          info: 'fui-info-circle',
+          danger: 'fui-cross-circle',
+          success: 'fui-check-circle',
+          warning: 'fui-alert-circle'
+        }
+      }
+    }
   }
 </script>
