@@ -41,6 +41,13 @@ class SliderRouter extends React.Component {
             </thead>
             <tbody>
               <tr>
+                <td>value</td>
+                <td>值</td>
+                <td>Number</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
                 <td>min</td>
                 <td>最小值</td>
                 <td>Number</td>
