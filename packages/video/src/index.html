@@ -17,15 +17,15 @@
 
 <script>
   export default {
-    onrender: function () {
+    onrender () {
       var video = this.refs.video
       var togglePlay = this.refs.togglePlay
-      video.onended = function () {
+      video.onended = () => {
         togglePlay.checked = false
       }
     },
     methods: {
-      togglePlay: function () {
+      togglePlay () {
         var video = this.refs.video
         if (video.paused) {
           video.play()
