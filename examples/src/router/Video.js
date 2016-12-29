@@ -4,16 +4,23 @@ import '../../../packages/theme-default/dist/video.css'
 import mp4 from '../assets/demo.mp4'
 
 class VideoRouter extends React.Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      video: [
+        { src: mp4, width: 620, height: 350, loop: false }
+      ]
+    }
+  }
+
   componentDidMount () {
-    new Video({
-      target: document.querySelector('#video1'),
-      data: {
-        src: mp4,
-        width: 620,
-        height: 350,
-        loop: false
-      }
-    })
+    const { video } = this.state
+    for (let i = 0; i < video.length; i++) {
+      new Video({
+        target: document.querySelector(`#video${i + 1}`),
+        data: video[i]
+      })
+    }
   }
 
   render () {

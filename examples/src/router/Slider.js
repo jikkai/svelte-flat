@@ -3,15 +3,23 @@ import Slider from '../../../packages/slider/dist/index'
 import '../../../packages/theme-default/dist/slider.css'
 
 class SliderRouter extends React.Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      slider: [
+        { value: 30, min: 0, max: 100 }
+      ]
+    }
+  }
+
   componentDidMount () {
-    new Slider({
-      target: document.querySelector('#slider1'),
-      data: {
-        min: 0,
-        max: 100,
-        value: 30
-      }
-    })
+    const { slider } = this.state
+    for (let i = 0; i < slider.length; i++) {
+      new Slider({
+        target: document.querySelector(`#slider${i + 1}`),
+        data: slider[i]
+      })
+    }
   }
 
   render () {
