@@ -3,9 +3,13 @@ import Input from '../packages/input/src/index.html'
 import Video from '../packages/video/src/index.html'
 import Slider from '../packages/slider/src/index.html'
 
+import Message from '../packages/message/src/index'
+
 export default { 
   Button,
   Input,
   Video,
-  Slider
+  Slider,
+
+  Message
 }
