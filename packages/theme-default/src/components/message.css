@@ -1,0 +1,26 @@
+.sf-message {
+  position: fixed;
+  top: -52px;
+  left: 0;
+  width: 100%;
+}
+
+.sf-message__body {
+  width: 380px;
+  height: 52px;
+  margin: auto;
+  text-align: center;
+  line-height: 52px;
+  background: #FFF;
+}
+
+.sf-message--enter {
+  animation: messageenter 2s;
+}
+
+@keyframes messageenter {
+  0% { transform: translateY(0); }
+  30% { transform: translateY(52px); }
+  70% { transform: translateY(52px); }
+  100% { transform: translateY(0); }
+}

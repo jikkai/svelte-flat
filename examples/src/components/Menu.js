@@ -18,13 +18,21 @@ class MenuComponent extends React.Component {
             </ul>
           </li>
           <li>
-            <h4>组件</h4>
+            <h4>基础组件</h4>
             <ul>
               <li>
                 <Link activeClassName="active" to="/button">Button 按钮</Link>
                 <Link activeClassName="active" to="/input">Input 输入框</Link>
                 <Link activeClassName="active" to="/video">Video 视频播放器</Link>
                 <Link activeClassName="active" to="/slider">Slider 滑块</Link>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>提示组件</h4>
+            <ul>
+              <li>
+                <Link activeClassName="active" to="/message">Message 消息提示</Link>
               </li>
             </ul>
           </li>

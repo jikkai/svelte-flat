@@ -14,3 +14,5 @@ import './router/Button.css'
 import './router/Input.css'
 import './router/Video.css'
 import './router/Slider.css'
+
+import './router/Message.css'

@@ -1,0 +1,5 @@
+.examples-router-message {
+  & button {
+    width: 80%;
+  }
+}

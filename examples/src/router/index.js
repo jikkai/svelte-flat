@@ -10,6 +10,7 @@ import Button from './Button'
 import Input from './Input'
 import Video from './Video'
 import Slider from './Slider'
+import Message from './Message'
 
 class Routers extends React.Component {
   render () {
@@ -24,6 +25,7 @@ class Routers extends React.Component {
           <Route path="input" component={Input} />
           <Route path="video" component={Video} />
           <Route path="slider" component={Slider} />
+          <Route path="message" component={Message} />
           <Route path="*" component={Home} />
         </Route>
       </Router>
