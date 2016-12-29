@@ -1120,9 +1120,9 @@ rollup-watch@^2.5.0:
   dependencies:
     semver "^5.1.0"
 
-rollup@^0.38.0:
-  version "0.38.0"
-  resolved "http://registry.npm.taobao.org/rollup/download/rollup-0.38.0.tgz#b58d99538ad96dd1c0239f1de383a80b0e067f70"
+rollup@^0.38.2:
+  version "0.38.2"
+  resolved "http://registry.npm.taobao.org/rollup/download/rollup-0.38.2.tgz#9719a8b8f5a42def0b54dc4c7f867acc543bb45d"
   dependencies:
     source-map-support "^0.4.0"
 
