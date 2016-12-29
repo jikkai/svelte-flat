@@ -8,6 +8,7 @@
     "dev": "node build/server.js"
   },
   "author": "Jikkai Xiao <sonne@asaki.me>",
+  "license": "MIT",
   "dependencies": {
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
@@ -38,7 +39,7 @@
     "postcss-loader": "^1.2.1",
     "progress-bar-webpack-plugin": "^1.9.1",
     "style-loader": "^0.13.1",
-    "webpack": "^2.2.0-rc.2",
+    "webpack": "^2.2.0-rc.3",
     "webpack-dev-middleware": "^1.9.0",
     "webpack-hot-middleware": "^2.14.0"
   }

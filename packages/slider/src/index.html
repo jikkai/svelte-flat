@@ -1,8 +1,8 @@
 <div ref:slider class="sf-slider">
-  <div ref:range class="sf-slider__range" style="width: {{ value }}%"></div>
+  <div ref:range class="sf-slider__range" style="width: {{ value ? value : 0 }}%"></div>
   <span 
     class="sf-slider__handle" 
-    style="left: {{ value }}%" 
+    style="left: {{ value ? value : 0 }}%" 
     on:mousedown="onButtonDown(event)"
     on:mouseup="onDragEnd(event)"
   >
@@ -28,8 +28,8 @@
       },
 
       onDragStart (event) {
-        var slider = this.refs.slider
-        var range = this.refs.range
+        const slider = this.refs.slider
+        const range = this.refs.range
 
         this.set({
           width: slider.clientWidth,
@@ -40,12 +40,12 @@
 
       onDragging (event) {
         if (this.get('dragging')) {
-          var clientX = event.clientX
-          var width = this.get('width')
-          var offset = this.get('offset')
+          const clientX = event.clientX
+          const width = this.get('width')
+          const offset = this.get('offset')
 
-          var newRange = event.clientX - offset
-          var newValue = parseInt(newRange / width * 100)
+          const newRange = event.clientX - offset
+          let newValue = parseInt(newRange / width * 100)
           if (newValue > 100) newValue = 100
           if (newValue < 0) newValue = 0
 

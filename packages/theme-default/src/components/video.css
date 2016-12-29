@@ -46,3 +46,8 @@
     cursor: pointer;
   }
 }
+
+.sf-video-controls--progress {
+  width: 100%;
+  margin: 0 12px;
+}

@@ -14,7 +14,7 @@ module.exports = {
     publicPath: './'
   },
   resolve: {
-    extensions: ['.js', '.react', '.jsx', '.json'],
+    extensions: ['.js', '.jsx', '.json'],
     alias: {
       root: path.join(__dirname, '../src'),
       components: path.join(__dirname, '../src/components')
@@ -27,17 +27,12 @@ module.exports = {
         enforce: 'pre',
         test: /.js[x]?$/,
         loader: 'eslint-loader',
-        exclude: /node_modules/
+        exclude: [/node_modules/, /dist/]
       },
       {
         test: /\.js[x]?$/,
         loader: 'babel-loader',
-        exclude: /node_modules/
-      },
-      {
-        test: /\.react[x]?$/,
-        loader: 'single-react-loader',
-        exclude: /node_modules/
+        exclude: [/node_modules/, /dist/]
       },
       {
         test: /\.(ico|jpg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4)(\?.*)?$/,

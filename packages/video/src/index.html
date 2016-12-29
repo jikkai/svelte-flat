@@ -1,10 +1,12 @@
 <div class="sf-video" style="width: {{ width }}px; height: {{ height }}px;">
   <video 
     ref:video
+    preload
     width="{{ width }}"
     height="{{ height }}"
     src="{{ src }}"
     loop="{{ loop }}"
+    on:timeupdate="handleTimeupdate()"
   >
   </video>
   <div class="sf-video-controls">
@@ -12,27 +14,55 @@
       <input ref:togglePlay type="checkbox" on:change="togglePlay()" />
       <span></span>
     </label>
+
+    <div class="sf-video-controls--progress">
+      <div id="sf-video-controls--progress" />
+    </div>
   </div>
 </div>
 
 <script>
+  import Slider from '../../slider/src/index.html'
+
   export default {
+    data () {
+      return {
+        slider: null
+      }
+    },
     onrender () {
-      var video = this.refs.video
-      var togglePlay = this.refs.togglePlay
+      const video = this.refs.video
+      const togglePlay = this.refs.togglePlay
       video.onended = () => {
         togglePlay.checked = false
       }
+
+      const slider = new Slider({
+        target: document.querySelector('#sf-video-controls--progress'),
+        value: 0
+      })
+
+      this.set({ slider })
     },
     methods: {
       togglePlay () {
-        var video = this.refs.video
+        const video = this.refs.video
         if (video.paused) {
           video.play()
         } else {
           video.pause()
         }
+      },
+
+      handleTimeupdate () {
+        const video = this.refs.video
+        const progress = parseInt(video.currentTime / video.duration * 100)
+        const slider = this.get('slider')
+        slider.set({ value: progress })
       }
+    },
+    components: {
+      Slider
     }
   }
 </script>
