@@ -8,6 +8,7 @@
 |content|展示文字|String|-|-|
 |status|类型|String|default,primary,info,danger,success,warning,inverse|default|
 |disabled|是否禁用|Boolean|-|false|
+|embossed|是否启用浮雕效果|Boolean|-|false|
 
 ## Events
 |事件名称|说明|回调参数|

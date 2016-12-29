@@ -2,8 +2,8 @@ import React from 'react'
 import '../../../packages/theme-default/dist/icon.css'
 
 class IconRouter extends React.Component {
-  constructor (params) {
-    super(params)
+  constructor (props) {
+    super(props)
     this.state = {
       icon: {
         glyphs: [

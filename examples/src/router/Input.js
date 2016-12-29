@@ -3,47 +3,64 @@ import Input from '../../../packages/input/dist/index'
 import '../../../packages/theme-default/dist/input.css'
 
 class InputRouter extends React.Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      button: [
+        { content: 'Primary Button', status: 'primary' },
+        { content: 'Warning Button', status: 'warning' },
+        { content: 'Default Button' },
+        { content: 'Danger Button', status: 'danger' },
+        { content: 'Success Button', status: 'success' },
+        { content: 'Inverse Button', status: 'inverse' },
+        { content: 'Info Button', status: 'info' },
+        { content: 'Disabled Button', disabled: true },
+        { content: 'Embossed Button', status: 'primary', embossed: true }
+      ]
+    }
+  }
+
   componentDidMount () {
-    new Input({
-      target: document.querySelector('#input1'),
-      data: {
-        placeholder: 'Inactive'
-      }
-    })
+    // new Input({
+    //   target: document.querySelector('#input1'),
+    //   data: {
+    //     placeholder: 'Inactive'
+    //   }
+    // })
 
-    new Input({
-      target: document.querySelector('#input2'),
-      data: {
-        placeholder: 'Password',
-        type: 'password'
-      }
-    })
+    // new Input({
+    //   target: document.querySelector('#input2'),
+    //   data: {
+    //     placeholder: 'Password',
+    //     type: 'password'
+    //   }
+    // })
 
-    new Input({
-      target: document.querySelector('#input3'),
-      data: {
-        placeholder: 'Error',
-        status: 'error',
-        value: 'Error'
-      }
-    })
+    // new Input({
+    //   target: document.querySelector('#input3'),
+    //   data: {
+    //     placeholder: 'Error',
+    //     status: 'error',
+    //     value: 'Error'
+    //   }
+    // })
 
-    new Input({
-      target: document.querySelector('#input4'),
-      data: {
-        placeholder: 'Success',
-        status: 'success',
-        value: 'Success'
-      }
-    })
+    // new Input({
+    //   target: document.querySelector('#input4'),
+    //   data: {
+    //     placeholder: 'Success',
+    //     status: 'success',
+    //     value: 'Success'
+    //   }
+    // })
 
-    new Input({
-      target: document.querySelector('#input5'),
-      data: {
-        value: 'Disabled Input',
-        disabled: true
-      }
-    })
+    // new Input({
+    //   target: document.querySelector('#input5'),
+    //   data: {
+    //     value: 'Disabled Input',
+    //     disabled: true
+    //   }
+    // })
   }
 
   render () {

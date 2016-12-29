@@ -1,9 +1,9 @@
 <button 
   on:click="onclick(event)" 
-  class="sf-button sf-button--{{ status ? status : 'default' }}"
-  disabled="{{ disabled }}"
+  class="sf-button sf-button--{{ status || 'default' }} {{ embossed ? 'sf-button--embossed' : '' }}"
+  disabled="{{ disabled || false }}"
 >
-  <span>{{ content }}</span>
+  {{ content }}
 </button>
 
 <script>

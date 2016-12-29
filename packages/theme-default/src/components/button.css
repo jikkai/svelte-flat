@@ -16,38 +16,14 @@
   transition: all .25s;
 }
 
-.sf-button--default {
-  background-color: #BDC3C7;
-  &:hover, &:focus {
-    background-color: #CACFD2;
-  }
-}
-
 .sf-button--primary {
   background-color: #1ABC9C;
   &:hover, &:focus {
-    background-color: #2FE2BF;
+    background-color: #48C9B0;
   }
-}
-
-.sf-button--info {
-  background-color: #3498DB;
-  &:hover, &:focus {
-    background-color: #5DADE2;
-  }
-}
-
-.sf-button--danger {
-  background-color: #E74C3C;
-  &:hover, &:focus {
-    background-color: #EC7063;
-  }
-}
-
-.sf-button--success {
-  background-color: #2ECC71;
-  &:hover, &:focus {
-    background-color: #55D98D;
+  &:active {
+    background-color: #16A085;
+    border-color: #16A085;
   }
 }
 
@@ -56,6 +32,43 @@
   &:hover, &:focus {
     background-color: #F4D03F;
   }
+  &:active {
+    background-color: #CDA70D;
+    border-color: #CDA70D;
+  }
+}
+
+.sf-button--default {
+  background-color: #BDC3C7;
+  &:hover, &:focus {
+    background-color: #CACFD2;
+  }
+  &:active {
+    background-color: #A1A6A9;
+    border-color: #A1A6A9;
+  }
+}
+
+.sf-button--danger {
+  background-color: #E74C3C;
+  &:hover, &:focus {
+    background-color: #EC7063;
+  }
+  &:active {
+    background-color: #C44133;
+    border-color: #C44133;
+  }
+}
+
+.sf-button--success {
+  background-color: #2ECC71;
+  &:hover, &:focus {
+    background-color: #55D98D;
+  }
+  &:active {
+    background-color: #27AD60;
+    border-color: #27AD60;
+  }
 }
 
 .sf-button--inverse {
@@ -63,13 +76,37 @@
   &:hover, &:focus {
     background-color: #4E6d8D;
   }
+  &:active {
+    background-color: #2C3E50;
+    border-color: #2C3E50;
+  }
+}
+
+.sf-button--info {
+  background-color: #3498DB;
+  &:hover, &:focus {
+    background-color: #5DADE2;
+  }
+  &:active {
+    background-color: #2C81BA;
+    border-color: #2C81BA;
+  }
 }
 
 .sf-button[disabled] {
   color: rgba(255, 255, 255, .75);
   background-color: #BDC3C7;
+  box-shadow: none;
   cursor: not-allowed;
-  &:hover, &:focus {
+  &:hover, &:focus, &:active {
     background-color: #BDC3C7;
+    box-shadow: none;
+  }
+}
+
+.sf-button--embossed {
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .15);
+  &:active {
+    box-shadow: inset 0 2px 0 rgba(0, 0, 0, .15);
   }
 }

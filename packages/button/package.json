@@ -1,6 +1,6 @@
 {
   "name": "button",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "index.js",
   "author": "Jikkai Xiao <sonne@asaki.me>",
   "license": "MIT",

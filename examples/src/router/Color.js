@@ -1,8 +1,8 @@
 import React from 'react'
 
 class ColorRouter extends React.Component {
-  constructor (params) {
-    super(params)
+  constructor (props) {
+    super(props)
     this.state = {
       color: [
         { name: 'TURQUOISE', value: '#1ABC9C' },
