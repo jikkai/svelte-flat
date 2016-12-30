@@ -17,7 +17,8 @@ module.exports = {
     extensions: ['.js', '.jsx', '.json'],
     alias: {
       root: path.join(__dirname, '../src'),
-      components: path.join(__dirname, '../src/components')
+      components: path.join(__dirname, '../src/components'),
+      sf: path.join(__dirname, '../../packages')
     }
   },
   performance: {},

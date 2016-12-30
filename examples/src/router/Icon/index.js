@@ -1,5 +1,7 @@
 import React from 'react'
-import '../../../packages/theme-default/dist/icon.css'
+
+import 'sf/theme-default/dist/icon.css'
+import './style.css'
 
 class IconRouter extends React.Component {
   constructor (props) {

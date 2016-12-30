@@ -1,5 +1,8 @@
 import React from 'react'
-import Image from '../assets/demo.jpg'
+
+import Image from 'root/assets/demo.jpg'
+
+import './style.css'
 
 class TypographyRouter extends React.Component {
   render () {

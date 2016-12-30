@@ -1,7 +1,10 @@
 import React from 'react'
-import Docs from '../../../packages/input/README.md'
-import Input from '../../../packages/input/dist/index'
-import '../../../packages/theme-default/dist/input.css'
+
+import Docs from 'sf/input/README.md'
+import Input from 'sf/input/dist/index'
+import 'sf/theme-default/dist/input.css'
+
+import './style.css'
 
 class InputRouter extends React.Component {
   constructor (props) {

@@ -1,8 +1,11 @@
 import React from 'react'
-import Docs from '../../../packages/video/README.md'
-import Video from '../../../packages/video/dist/index'
-import '../../../packages/theme-default/dist/video.css'
-import mp4 from '../assets/demo.mp4'
+
+import Docs from 'sf/video/README.md'
+import Video from 'sf/video/dist/index'
+import 'sf/theme-default/dist/video.css'
+import mp4 from 'root/assets/demo.mp4'
+
+import './style.css'
 
 class VideoRouter extends React.Component {
   constructor (props) {

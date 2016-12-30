@@ -1,7 +1,10 @@
 import React from 'react'
-import Docs from '../../../packages/slider/README.md'
-import Slider from '../../../packages/slider/dist/index'
-import '../../../packages/theme-default/dist/slider.css'
+
+import Docs from 'sf/slider/README.md'
+import Slider from 'sf/slider/dist/index'
+import 'sf/theme-default/dist/slider.css'
+
+import './style.css'
 
 class SliderRouter extends React.Component {
   constructor (props) {

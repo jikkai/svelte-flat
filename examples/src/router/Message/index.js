@@ -1,9 +1,12 @@
 import React from 'react'
-import Docs from '../../../packages/message/README.md'
-import Button from '../../../packages/button/dist/index'
-import Message from '../../../packages/message/dist/index'
-import '../../../packages/theme-default/dist/button.css'
-import '../../../packages/theme-default/dist/message.css'
+
+import Docs from 'sf/message/README.md'
+import Button from 'sf/button/dist/index'
+import Message from 'sf/message/dist/index'
+import 'sf/theme-default/dist/button.css'
+import 'sf/theme-default/dist/message.css'
+
+import './style.css'
 
 class MessageRouter extends React.Component {
   constructor (props) {

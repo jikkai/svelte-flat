@@ -1,7 +1,10 @@
 import React from 'react'
-import Docs from '../../../packages/button/README.md'
-import Button from '../../../packages/button/dist/index'
-import '../../../packages/theme-default/dist/button.css'
+
+import Docs from 'sf/button/README.md'
+import Button from 'sf/button/dist/index'
+import 'sf/theme-default/dist/button.css'
+
+import './style.css'
 
 class ButtonRouter extends React.Component {
   constructor (props) {

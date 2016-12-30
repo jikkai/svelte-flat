@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './style.css'
+
 class ColorRouter extends React.Component {
   constructor (props) {
     super(props)

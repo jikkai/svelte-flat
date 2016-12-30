@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './style.css'
+
 class HomeRouter extends React.Component {
   render () {
     return (
