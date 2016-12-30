@@ -1,9 +1,12 @@
 {
-  "presets": [
-    ["es2015", { "modules": false }],
-    "stage-1",
-    "react"
-  ],
+  "presets": ["es2015", "stage-0", "react"],
+  "env": {
+    "development": {
+      "presets": [
+        "react-hmre"
+      ]
+    }
+  },
   "ignore": [
     "dist/**"
   ]
