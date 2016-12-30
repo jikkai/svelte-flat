@@ -1,4 +1,5 @@
 import React from 'react'
+import hljs from 'highlightjs'
 
 import Docs from 'sf/button/README.md'
 import Button from 'sf/button/dist/index'
@@ -32,6 +33,11 @@ class ButtonRouter extends React.Component {
         target: document.querySelector(`#button${i + 1}`),
         data: button[i]
       })
+    }
+
+    const code = document.querySelectorAll('pre')
+    for (let i = 0; i < code.length; i++) {
+      hljs.highlightBlock(code[i])
     }
   }
 

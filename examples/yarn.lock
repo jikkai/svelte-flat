@@ -2270,6 +2270,10 @@ he@1.1.x:
   version "1.1.0"
   resolved "http://registry.npm.taobao.org/he/download/he-1.1.0.tgz#29319d49beec13a9b1f3c4f9b2a6dde4859bb2a7"
 
+highlightjs@^9.8.0:
+  version "9.8.0"
+  resolved "http://registry.npm.taobao.org/highlightjs/download/highlightjs-9.8.0.tgz#981418614f45b04fa01623850990e016f950eb54"
+
 history@^3.0.0:
   version "3.2.1"
   resolved "http://registry.npm.taobao.org/history/download/history-3.2.1.tgz#71c7497f4e6090363d19a6713bb52a1bfcdd99aa"

@@ -24,25 +24,21 @@ main {
     font-family: Monaco, Menlo, Consolas, Courier, monospace;
     font-variant-ligatures: none;
   }
-
-  & pre {
-    padding: 1em;
-    color: #FFF;
-    line-height: 1.8;
-    background: #34495E;
-    border-radius: 4px;
-  }
-
-  & p >code {
-    margin: 0 2px;
-    padding: 2px 4px;
-    color: #C7254E;
-    font-size: 14px;
-    background-color: #F9F2F4;
-    border-radius: 3px;
-  }
 }
 
+p code {
+  margin: 0 1px;
+  padding: .2em .4em;
+  color: #2C3E50;
+  font-size: .9em;
+  background: #ECF0F1;
+  border: 1px solid #eee;
+  border-radius: 3px;
+}
+
+.hljs {
+  background: #34495E;
+}
 
 .examples-router {
   width: calc(100% - 220px);

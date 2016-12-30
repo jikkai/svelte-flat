@@ -1,5 +1,7 @@
 ## Button 按钮
 
+提供一系列按钮用于用户点击操作。
+
 <section class="example">
   <h3>按钮类型</h3>
   <div>
@@ -26,3 +28,18 @@
     <div id="button9"></div>
   </div>
 </section>
+
+### 代码示例
+```javascript
+const button = new Button({
+  target: document.querySelector('#button'),
+  data: {
+    content: 'Click me!',
+    status: 'primary'
+  }
+})
+
+button.onclick = () => {
+  alert('hello world!')
+}
+```

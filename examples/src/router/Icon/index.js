@@ -1,5 +1,7 @@
 import React from 'react'
+import hljs from 'highlightjs'
 
+import Examples from './examples.md'
 import 'sf/theme-default/dist/icon.css'
 import './style.css'
 
@@ -36,12 +38,20 @@ class IconRouter extends React.Component {
       }
     }
   }
+
+  componentDidMount () {
+    const code = document.querySelectorAll('pre')
+    for (let i = 0; i < code.length; i++) {
+      hljs.highlightBlock(code[i])
+    }
+  }
+
   render () {
     const { icon } = this.state
 
     return (
       <div className="examples-router examples-router-icon">
-        <h2>Icon 图标</h2>
+        <div dangerouslySetInnerHTML={{ __html: Examples }} />
 
         <section className="example">
           <h3>Glyphs ({icon.glyphs.length})</h3>

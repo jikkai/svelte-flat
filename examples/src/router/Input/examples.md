@@ -1,5 +1,7 @@
 ## Input 输入框
 
+普通的字符输入框。
+
 <section class="example">
   <h3>基础输入框</h3>
 
@@ -25,3 +27,17 @@
     <div id="input5"></div>
   </div>
 </section>
+
+### 代码示例
+```javascript
+const input = new Input({
+  target: document.querySelector('#input'),
+  data: {
+    type: 'text'
+  }
+})
+
+input.onfocus = () => {
+  console.log(button.get('value'))
+}
+```

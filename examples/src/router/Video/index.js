@@ -1,4 +1,5 @@
 import React from 'react'
+import hljs from 'highlightjs'
 
 import Docs from 'sf/video/README.md'
 import Video from 'sf/video/dist/index'
@@ -25,6 +26,11 @@ class VideoRouter extends React.Component {
         target: document.querySelector(`#video${i + 1}`),
         data: video[i]
       })
+    }
+
+    const code = document.querySelectorAll('pre')
+    for (let i = 0; i < code.length; i++) {
+      hljs.highlightBlock(code[i])
     }
   }
 

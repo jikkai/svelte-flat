@@ -10,6 +10,7 @@
   "author": "Jikkai Xiao <sonne@asaki.me>",
   "license": "MIT",
   "dependencies": {
+    "highlightjs": "^9.8.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-router": "^3.0.0"

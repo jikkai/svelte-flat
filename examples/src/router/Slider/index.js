@@ -1,4 +1,5 @@
 import React from 'react'
+import hljs from 'highlightjs'
 
 import Docs from 'sf/slider/README.md'
 import Slider from 'sf/slider/dist/index'
@@ -24,6 +25,11 @@ class SliderRouter extends React.Component {
         target: document.querySelector(`#slider${i + 1}`),
         data: slider[i]
       })
+    }
+
+    const code = document.querySelectorAll('pre')
+    for (let i = 0; i < code.length; i++) {
+      hljs.highlightBlock(code[i])
     }
   }
 

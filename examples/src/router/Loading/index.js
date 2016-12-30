@@ -1,4 +1,5 @@
 import React from 'react'
+import hljs from 'highlightjs'
 
 import Docs from 'sf/loading/README.md'
 import Button from 'sf/button/dist/index'
@@ -26,7 +27,6 @@ class LoadingRouter extends React.Component {
 
   componentDidMount () {
     const { button, loading } = this.state
-
     for (let i = 0; i < loading.length; i++) {
       const btn = new Button({
         target: document.querySelector(`#loading${i + 1}`),
@@ -38,6 +38,11 @@ class LoadingRouter extends React.Component {
           component.teardown()
         }, 3000)
       }
+    }
+
+    const code = document.querySelectorAll('pre')
+    for (let i = 0; i < code.length; i++) {
+      hljs.highlightBlock(code[i])
     }
   }
 

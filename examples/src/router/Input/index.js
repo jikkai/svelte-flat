@@ -1,4 +1,5 @@
 import React from 'react'
+import hljs from 'highlightjs'
 
 import Docs from 'sf/input/README.md'
 import Input from 'sf/input/dist/index'
@@ -28,6 +29,11 @@ class InputRouter extends React.Component {
         target: document.querySelector(`#input${i + 1}`),
         data: input[i]
       })
+    }
+
+    const code = document.querySelectorAll('pre')
+    for (let i = 0; i < code.length; i++) {
+      hljs.highlightBlock(code[i])
     }
   }
 

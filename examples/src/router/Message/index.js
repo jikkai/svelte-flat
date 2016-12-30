@@ -1,4 +1,5 @@
 import React from 'react'
+import hljs from 'highlightjs'
 
 import Docs from 'sf/message/README.md'
 import Button from 'sf/button/dist/index'
@@ -32,7 +33,6 @@ class MessageRouter extends React.Component {
 
   componentDidMount () {
     const { button, message } = this.state
-
     for (let i = 0; i < message.length; i++) {
       const btn = new Button({
         target: document.querySelector(`#message${i + 1}`),
@@ -41,6 +41,11 @@ class MessageRouter extends React.Component {
       btn.onclick = () => {
         Message(message[i])
       }
+    }
+
+    const code = document.querySelectorAll('pre')
+    for (let i = 0; i < code.length; i++) {
+      hljs.highlightBlock(code[i])
     }
   }
 
