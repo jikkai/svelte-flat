@@ -1,6 +1,6 @@
 .examples-router-icon {
-  & .examples {
-    & >div {
+  & .example {
+    & .example-icon {
       border: 1px solid #ECF0F1;
       & >div {
         width: 25%;

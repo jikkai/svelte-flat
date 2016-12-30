@@ -43,9 +43,9 @@ class IconRouter extends React.Component {
       <div className="examples-router examples-router-icon">
         <h2>Icon 图标</h2>
 
-        <section className="examples">
+        <section className="example">
           <h3>Glyphs ({icon.glyphs.length})</h3>
-          <div>
+          <div className="example-icon">
             {
               icon.glyphs.map((item, i) => {
                 return (
@@ -59,9 +59,9 @@ class IconRouter extends React.Component {
           </div>
         </section>
 
-        <section className="examples">
+        <section className="example">
           <h3>Social ({icon.social.length})</h3>
-          <div>
+          <div className="example-icon">
             {
               icon.social.map((item, i) => {
                 return (

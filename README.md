@@ -51,4 +51,4 @@ $ yarn run build
 ```
 
 ## License
-MIT
+[MIT](/LICENSE)
