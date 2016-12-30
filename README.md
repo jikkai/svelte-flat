@@ -39,7 +39,7 @@ button.onclick = function (e) {
 ```bash
 $ yarn 
 $ yarn run init
-$ yarn run build:components
+$ yarn run build
 ```
 
 ## Build docs

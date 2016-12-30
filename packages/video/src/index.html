@@ -6,6 +6,7 @@
     height="{{ height }}"
     src="{{ src }}"
     loop="{{ loop }}"
+    on:contextmenu="handleContextmenu(event)"
     on:timeupdate="handleTimeupdate()"
   >
   </video>
@@ -52,6 +53,10 @@
         } else {
           video.pause()
         }
+      },
+
+      handleContextmenu (event) {
+        event.preventDefault()
       },
 
       handleTimeupdate () {

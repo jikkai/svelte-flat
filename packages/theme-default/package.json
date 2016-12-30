@@ -6,7 +6,9 @@
   "license": "MIT",
   "scripts": {
     "init": "yarn",
-    "build": "postcss -c ./.postcss && cp -r ./src/glyphicons ./dist/"
+    "prebuild": "rm -rf ./dist/glyphicons",
+    "build": "postcss -c ./.postcss",
+    "postbuild": "cp -r ./src/glyphicons ./dist/"
   },
   "devDependencies": {
     "cssnano": "^3.9.1",

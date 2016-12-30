@@ -6,8 +6,7 @@
   "license": "MIT",
   "scripts": {
     "init": "lerna run init",
-    "build": "rollup -c ./rollup.config.js",
-    "build:components": "lerna run build"
+    "build": "lerna run build && rollup -c ./rollup.config.js"
   },
   "keywords": [
     "svelte",
