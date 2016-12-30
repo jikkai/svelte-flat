@@ -441,9 +441,9 @@ rollup-pluginutils@^1.5.0, rollup-pluginutils@^1.5.2:
     estree-walker "^0.2.1"
     minimatch "^3.0.2"
 
-rollup@^0.38.2:
-  version "0.38.2"
-  resolved "http://registry.npm.taobao.org/rollup/download/rollup-0.38.2.tgz#9719a8b8f5a42def0b54dc4c7f867acc543bb45d"
+rollup@^0.39.0:
+  version "0.39.0"
+  resolved "http://registry.npm.taobao.org/rollup/download/rollup-0.39.0.tgz#8a8f81c6c2c43cbce6713fb3510d7d70e8397f4a"
   dependencies:
     source-map-support "^0.4.0"
 

@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="https://jikkai.github.io/svelte-flat/">
-    <img alt="svelte-flat" src="https://github.com/jikkai/svelte-flat/raw/master/examples/src/assets/logo.png">
+    <img alt="svelte-flat" src="/examples/src/assets/logo.png">
   </a>
 </p>
 
@@ -35,18 +35,10 @@ button.onclick = function (e) {
 ## Documentation
 [Documentation](https://jikkai.github.io/svelte-flat/)
 
-## Build all components
 ```bash
+## Build all components
 $ yarn 
 $ yarn run init
-$ yarn run build
-```
-
-## Build docs
-```
-$ cd examples
-$ yarn
-$ yarn run dev
 $ yarn run build
 ```
 
