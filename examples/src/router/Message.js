@@ -1,4 +1,5 @@
 import React from 'react'
+import Docs from '../../../packages/message/README.md'
 import Button from '../../../packages/button/dist/index'
 import Message from '../../../packages/message/dist/index'
 import '../../../packages/theme-default/dist/button.css'
@@ -63,36 +64,10 @@ class MessageRouter extends React.Component {
           </div>
         </section>
 
-        <section className="documents">
-          <h3>Attributes</h3>
-          <table>
-            <thead>
-              <tr>
-                <th>参数</th>
-                <th>说明</th>
-                <th>类型</th>
-                <th>可选值</th>
-                <th>默认值</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>content</td>
-                <td>展示文字</td>
-                <td>String</td>
-                <td>-</td>
-                <td>-</td>
-              </tr>
-              <tr>
-                <td>status</td>
-                <td>类型</td>
-                <td>String</td>
-                <td>info,danger,success,warning</td>
-                <td>info</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
+        <section
+          className="documents"
+          dangerouslySetInnerHTML={{ __html: Docs }}
+        />
       </div>
     )
   }

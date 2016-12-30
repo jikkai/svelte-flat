@@ -1,4 +1,5 @@
 import React from 'react'
+import Docs from '../../../packages/slider/README.md'
 import Slider from '../../../packages/slider/dist/index'
 import '../../../packages/theme-default/dist/slider.css'
 
@@ -35,43 +36,10 @@ class SliderRouter extends React.Component {
           </div>
         </section>
 
-        <section className="documents">
-          <h3>Attributes</h3>
-          <table>
-            <thead>
-              <tr>
-                <th>参数</th>
-                <th>说明</th>
-                <th>类型</th>
-                <th>可选值</th>
-                <th>默认值</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>value</td>
-                <td>值</td>
-                <td>Number</td>
-                <td>-</td>
-                <td>-</td>
-              </tr>
-              <tr>
-                <td>min</td>
-                <td>最小值</td>
-                <td>Number</td>
-                <td>-</td>
-                <td>0</td>
-              </tr>
-              <tr>
-                <td>max</td>
-                <td>最大值</td>
-                <td>Number</td>
-                <td>-</td>
-                <td>100</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
+        <section
+          className="documents"
+          dangerouslySetInnerHTML={{ __html: Docs }}
+        />
       </div>
     )
   }

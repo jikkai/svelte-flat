@@ -1,8 +1,6 @@
-# Button 按钮
+---
 
-按钮组件。
-
-## Attributes
+### Attributes
 |参数|说明|类型|可选值|默认值|
 |---|---|---|---|---|
 |content|展示文字|String|-|-|
@@ -10,7 +8,7 @@
 |disabled|是否禁用|Boolean|-|false|
 |embossed|是否启用浮雕效果|Boolean|-|false|
 
-## Events
+### Events
 |事件名称|说明|回调参数|
 |---|---|---|
 |onclick|点击触发|event|

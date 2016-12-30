@@ -35,6 +35,10 @@ module.exports = {
         exclude: [/node_modules/, /dist/]
       },
       {
+        test: /\.md$/,
+        loader: 'html-loader!markdown-loader'
+      },
+      {
         test: /\.(ico|jpg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4)(\?.*)?$/,
         loader: 'file-loader?limit=8192'
       }

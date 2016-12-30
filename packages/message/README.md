@@ -1,8 +1,6 @@
-# Message 消息提示
+---
 
-页面全局提示消息。
-
-## Attributes
+### Attributes
 |参数|说明|类型|可选值|默认值|
 |---|---|---|---|---|
 |content|展示文字|String|-|-|

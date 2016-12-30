@@ -1,4 +1,5 @@
 import React from 'react'
+import Docs from '../../../packages/button/README.md'
 import Button from '../../../packages/button/dist/index'
 import '../../../packages/theme-default/dist/button.css'
 
@@ -62,68 +63,10 @@ class ButtonRouter extends React.Component {
           </div>
         </section>
 
-        <section className="documents">
-          <h3>Attributes</h3>
-          <table>
-            <thead>
-              <tr>
-                <th>参数</th>
-                <th>说明</th>
-                <th>类型</th>
-                <th>可选值</th>
-                <th>默认值</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>content</td>
-                <td>展示文字</td>
-                <td>String</td>
-                <td>-</td>
-                <td>-</td>
-              </tr>
-              <tr>
-                <td>status</td>
-                <td>类型</td>
-                <td>String</td>
-                <td>default,primary,info,danger,success,warning,inverse</td>
-                <td>default</td>
-              </tr>
-              <tr>
-                <td>disabled</td>
-                <td>是否禁用</td>
-                <td>Boolean</td>
-                <td>-</td>
-                <td>false</td>
-              </tr>
-              <tr>
-                <td>embossed</td>
-                <td>是否启用浮雕效果</td>
-                <td>Boolean</td>
-                <td>-</td>
-                <td>false</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <h3>Events</h3>
-          <table>
-            <thead>
-              <tr>
-                <th>事件名称</th>
-                <th>说明</th>
-                <th>回调参数</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>onclick</td>
-                <td>点击触发</td>
-                <td>event</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
+        <section
+          className="documents"
+          dangerouslySetInnerHTML={{ __html: Docs }}
+        />
       </div>
     )
   }

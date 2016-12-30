@@ -1,4 +1,5 @@
 import React from 'react'
+import Docs from '../../../packages/input/README.md'
 import Input from '../../../packages/input/dist/index'
 import '../../../packages/theme-default/dist/input.css'
 
@@ -57,75 +58,10 @@ class InputRouter extends React.Component {
           </div>
         </section>
 
-        <section className="documents">
-          <h3>Attributes</h3>
-          <table>
-            <thead>
-              <tr>
-                <th>参数</th>
-                <th>说明</th>
-                <th>类型</th>
-                <th>可选值</th>
-                <th>默认值</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>value</td>
-                <td>值</td>
-                <td>String</td>
-                <td>-</td>
-                <td>-</td>
-              </tr>
-              <tr>
-                <td>type</td>
-                <td>类型</td>
-                <td>String</td>
-                <td>text,password</td>
-                <td>text</td>
-              </tr>
-              <tr>
-                <td>status</td>
-                <td>状态</td>
-                <td>String</td>
-                <td>default,error,success</td>
-                <td>default</td>
-              </tr>
-              <tr>
-                <td>placeholder</td>
-                <td>占位文本</td>
-                <td>String</td>
-                <td>-</td>
-                <td>-</td>
-              </tr>
-              <tr>
-                <td>disabled</td>
-                <td>是否禁用</td>
-                <td>Boolean</td>
-                <td>-</td>
-                <td>false</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <h3>Events</h3>
-          <table>
-            <thead>
-              <tr>
-                <th>事件名称</th>
-                <th>说明</th>
-                <th>回调参数</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>onfocus</td>
-                <td>获得焦点时触发</td>
-                <td>event</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
+        <section
+          className="documents"
+          dangerouslySetInnerHTML={{ __html: Docs }}
+        />
       </div>
     )
   }
