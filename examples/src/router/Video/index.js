@@ -5,6 +5,7 @@ import Video from 'sf/video/dist/index'
 import 'sf/theme-default/dist/video.css'
 import mp4 from 'root/assets/demo.mp4'
 
+import Examples from './examples.md'
 import './style.css'
 
 class VideoRouter extends React.Component {
@@ -30,15 +31,7 @@ class VideoRouter extends React.Component {
   render () {
     return (
       <div className="examples-router examples-router-video">
-        <h2>Video 视频播放器</h2>
-
-        <section className="examples">
-          <h3>基础播放器</h3>
-
-          <div>
-            <div id="video1"></div>
-          </div>
-        </section>
+        <div className="examples" dangerouslySetInnerHTML={{ __html: Examples }} />
 
         <section
           className="documents"

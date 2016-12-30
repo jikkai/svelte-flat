@@ -4,6 +4,7 @@ import Docs from 'sf/slider/README.md'
 import Slider from 'sf/slider/dist/index'
 import 'sf/theme-default/dist/slider.css'
 
+import Examples from './examples.md'
 import './style.css'
 
 class SliderRouter extends React.Component {
@@ -29,15 +30,7 @@ class SliderRouter extends React.Component {
   render () {
     return (
       <div className="examples-router examples-router-slider">
-        <h2>Slider 滑块</h2>
-
-        <section className="examples">
-          <h3>基础滑块</h3>
-
-          <div>
-            <div id="slider1"></div>
-          </div>
-        </section>
+        <div className="examples" dangerouslySetInnerHTML={{ __html: Examples }} />
 
         <section
           className="documents"

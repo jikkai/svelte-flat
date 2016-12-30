@@ -53,7 +53,7 @@ main {
   & h3 {
     font-size: 20px;
   }
-  & .examples {
+  & .example {
     & >div {
       display: flex;
       flex-wrap: wrap;

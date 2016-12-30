@@ -6,6 +6,7 @@ import Message from 'sf/message/dist/index'
 import 'sf/theme-default/dist/button.css'
 import 'sf/theme-default/dist/message.css'
 
+import Examples from './examples.md'
 import './style.css'
 
 class MessageRouter extends React.Component {
@@ -46,26 +47,7 @@ class MessageRouter extends React.Component {
   render () {
     return (
       <div className="examples-router examples-router-message">
-        <h2>Message 消息提示</h2>
-
-        <section className="examples">
-          <h3>基础用法</h3>
-
-          <div>
-            <div id="message1"></div>
-          </div>
-        </section>
-
-        <section className="examples">
-          <h3>消息类型</h3>
-
-          <div>
-            <div id="message2"></div>
-            <div id="message3"></div>
-            <div id="message4"></div>
-            <div id="message5"></div>
-          </div>
-        </section>
+        <div className="examples" dangerouslySetInnerHTML={{ __html: Examples }} />
 
         <section
           className="documents"

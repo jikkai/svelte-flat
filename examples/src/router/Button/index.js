@@ -4,6 +4,7 @@ import Docs from 'sf/button/README.md'
 import Button from 'sf/button/dist/index'
 import 'sf/theme-default/dist/button.css'
 
+import Examples from './examples.md'
 import './style.css'
 
 class ButtonRouter extends React.Component {
@@ -37,34 +38,7 @@ class ButtonRouter extends React.Component {
   render () {
     return (
       <div className="examples-router examples-router-button">
-        <h2>Button 按钮</h2>
-
-        <section className="examples">
-          <h3>按钮类型</h3>
-          <div>
-            <div id="button1"></div>
-            <div id="button2"></div>
-            <div id="button3"></div>
-            <div id="button4"></div>
-            <div id="button5"></div>
-            <div id="button6"></div>
-            <div id="button7"></div>
-          </div>
-        </section>
-
-        <section className="examples">
-          <h3>禁用按钮</h3>
-          <div>
-            <div id="button8"></div>
-          </div>
-        </section>
-
-        <section className="examples">
-          <h3>浮雕按钮</h3>
-          <div>
-            <div id="button9"></div>
-          </div>
-        </section>
+        <div className="examples" dangerouslySetInnerHTML={{ __html: Examples }} />
 
         <section
           className="documents"

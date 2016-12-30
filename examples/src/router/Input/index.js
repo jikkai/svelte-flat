@@ -4,6 +4,7 @@ import Docs from 'sf/input/README.md'
 import Input from 'sf/input/dist/index'
 import 'sf/theme-default/dist/input.css'
 
+import Examples from './examples.md'
 import './style.css'
 
 class InputRouter extends React.Component {
@@ -33,33 +34,7 @@ class InputRouter extends React.Component {
   render () {
     return (
       <div className="examples-router examples-router-input">
-        <h2>Input 输入框</h2>
-
-        <section className="examples">
-          <h3>基础输入框</h3>
-
-          <div>
-            <div id="input1"></div>
-            <div id="input2"></div>
-          </div>
-        </section>
-
-        <section className="examples">
-          <h3>带状态的输入框</h3>
-
-          <div>
-            <div id="input3"></div>
-            <div id="input4"></div>
-          </div>
-        </section>
-
-        <section className="examples">
-          <h3>禁用输入框</h3>
-
-          <div>
-            <div id="input5"></div>
-          </div>
-        </section>
+        <div className="examples" dangerouslySetInnerHTML={{ __html: Examples }} />
 
         <section
           className="documents"
