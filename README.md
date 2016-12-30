@@ -1,13 +1,13 @@
 # svelte-flat 
 
+> WIP, Please DO NOT use in production.
+
 ![img](http://img.shields.io/npm/v/svelte-flat.svg)
 ![img](http://img.shields.io/badge/license-MIT-blue.svg)
 
-> WIP, Please DO NOT use in production.
-
 <p align="center">
   <a href="https://jikkai.github.io/svelte-flat/">
-    <img alt="svelte-flat" src="/examples/src/assets/logo.png">
+    <img alt="svelte-flat" src="https://github.com/jikkai/svelte-flat/raw/master/examples/src/assets/logo.png">
   </a>
 </p>
 
@@ -35,6 +35,10 @@ button.onclick = function (e) {
 ## Documentation
 [Documentation](https://jikkai.github.io/svelte-flat/)
 
+## Browser Support
+Unknown.
+
+## Development
 ```bash
 ## Build all components
 $ yarn 
@@ -43,4 +47,4 @@ $ yarn run build
 ```
 
 ## License
-[MIT](/LICENSE)
+[MIT](https://github.com/jikkai/svelte-flat/blob/master/LICENSE)
