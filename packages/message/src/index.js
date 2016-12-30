@@ -20,10 +20,14 @@ const SingleMessageDOM = (function () {
 const Message = (data) => {
   new SingleMessageDOM(data)
 
-  new MessageComponent({
+  const message = new MessageComponent({
     target: document.querySelector('#sf-message--global'),
     data
   })
+
+  setTimeout(() => {
+    message.teardown()
+  }, 2000)
 }
 
 export default Message

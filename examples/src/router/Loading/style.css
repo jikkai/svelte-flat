@@ -1,0 +1,8 @@
+.examples-router-loading {
+  & .examples .example >div >div {
+    width: 50%;
+    & button {
+      width: 80%;
+    }
+  }
+}

@@ -32,6 +32,7 @@ class MenuComponent extends React.Component {
             <ul>
               <li>
                 <Link activeClassName="active" to="/message">Message 消息提示</Link>
+                <Link activeClassName="active" to="/loading">Loading 加载</Link>
               </li>
             </ul>
           </li>
