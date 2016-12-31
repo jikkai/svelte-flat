@@ -9,6 +9,14 @@
     "build": "lerna run build && rollup -c ./rollup.config.js",
     "postbuild": "cp ./packages/theme-default/dist/index.css ./dist"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jikkai/svelte-flat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jikkai/svelte-flat/issues"
+  },
+  "homepage": "https://jikkai.github.io/svelte-flat",
   "keywords": [
     "svelte",
     "flat-ui",

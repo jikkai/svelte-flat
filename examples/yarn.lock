@@ -409,10 +409,6 @@ babel-plugin-check-es2015-constants@^6.3.13:
   dependencies:
     babel-runtime "^6.0.0"
 
-babel-plugin-component@^0.6.0:
-  version "0.6.0"
-  resolved "http://registry.npm.taobao.org/babel-plugin-component/download/babel-plugin-component-0.6.0.tgz#a2e27361c8848919e85b5e3f246c0f6194710fa3"
-
 babel-plugin-syntax-async-functions@^6.8.0:
   version "6.13.0"
   resolved "http://registry.npm.taobao.org/babel-plugin-syntax-async-functions/download/babel-plugin-syntax-async-functions-6.13.0.tgz#cad9cad1191b5ad634bf30ae0872391e0647be95"
@@ -2333,9 +2329,9 @@ html-minifier@^3.0.1, html-minifier@^3.1.0:
     relateurl "0.2.x"
     uglify-js "2.7.x"
 
-html-webpack-plugin@^2.24.1:
-  version "2.24.1"
-  resolved "http://registry.npm.taobao.org/html-webpack-plugin/download/html-webpack-plugin-2.24.1.tgz#7f45fc678f66eac2d433f22336b4399da023b57e"
+html-webpack-plugin@^2.25.0:
+  version "2.25.0"
+  resolved "http://registry.npm.taobao.org/html-webpack-plugin/download/html-webpack-plugin-2.25.0.tgz#945c860c9bf413d725a09f773d09cfeca72e8f8a"
   dependencies:
     bluebird "^3.4.6"
     html-minifier "^3.1.0"
