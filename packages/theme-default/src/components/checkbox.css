@@ -1,0 +1,66 @@
+.sf-checkbox {
+  display: flex;
+  align-items: center;
+  & input {
+    display: none;
+    opacity: 0;
+  }
+}
+
+.sf-checkbox--icons {
+  width: 20px;
+  height: 20px;
+  background: #BDC3C7;
+  border-radius: 4px;
+  display: block;
+  &:hover {
+    cursor: pointer;
+  }
+
+  & i {
+    width: 100%;
+    height: 100%;
+    color: transparent;
+    line-height: 20px;
+    font-size: 12px;
+    text-align: center;
+    background: transparent;
+    border-radius: 4px;
+    display: block;
+    transition: background .25s;
+
+    &.hover {
+      color: #FFF;
+    }
+
+    &.active {
+      color: #FFF;
+      background: #1ABC9C;
+    }
+  }
+}
+
+.sf-checkbox--label {
+  margin-left: 12px;
+  font-size: 14px;
+}
+
+.sf-checkbox__disabled {
+  & .sf-checkbox--icons {
+    background: #E6E8EA;
+    &:hover {
+      cursor: not-allowed;
+    }
+
+    & i {
+      &.hover {
+        color: transparent;
+      }
+
+      &.active {
+        color: #FFF;
+        background: transparent;
+      }
+    }
+  }
+}

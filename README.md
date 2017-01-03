@@ -40,7 +40,7 @@ Unknown.
 
 ## Development
 ```bash
-## Build all components
+# Build all components
 $ yarn 
 $ yarn run init
 $ yarn run build

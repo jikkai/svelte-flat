@@ -1,0 +1,37 @@
+<label 
+  class="sf-checkbox {{ disabled ? 'sf-checkbox__disabled' : '' }}" 
+  on:click="handleSwitch()"
+  on:mouseenter="handleHover()"
+  on:mouseleave="handleHover()"
+>
+  <span class="sf-checkbox--icons">
+    <i class="fui-check {{ hover ? 'hover' : '' }} {{ checked ? 'active' : '' }}"></i>
+  </span>
+  <span class="sf-checkbox--label">{{ label }}</span>
+</label>
+
+<script>
+  export default {
+    data () {
+      return {
+        checked: false,
+        hover: false
+      }
+    },
+    methods: {
+      handleSwitch () {
+        if (!this.get('disabled')) {
+          const checked = this.get('checked')
+          this.set({ checked: !checked })
+        }
+      },
+
+      handleHover () {
+        if (!this.get('disabled')) {
+          const hover = this.get('hover')
+          this.set({ hover: !hover })
+        }
+      }
+    }
+  }
+</script>
