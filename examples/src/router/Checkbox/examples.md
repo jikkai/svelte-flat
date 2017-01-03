@@ -25,6 +25,8 @@
 const checkbox = new Checkbox({
   target: document.querySelector('#checkbox'),
   data: {
+    checked: true,
+    label: 'Checked Checkbox'
   }
 })
 
