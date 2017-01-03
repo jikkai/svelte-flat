@@ -20,7 +20,7 @@ import 'svelte-flat/packages/theme-default/dist/index.css'
 import { Button } from 'svelte-flat' 
 import 'svelte-flat/packages/theme-default/dist/button.css'
 ```
-
+<!--
 ### 按需引入
 如果你使用babel的话，可以安装`babel-plugin-svelteflat`插件自动按需引入组件。
 
@@ -46,3 +46,4 @@ yarn add babel-plugin-svelteflat --dev
 ```javascript
 import { Button } from 'svelte-flat' 
 ```
+-->
