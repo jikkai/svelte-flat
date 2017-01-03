@@ -3773,9 +3773,9 @@ process@^0.11.0:
   version "0.11.9"
   resolved "http://registry.npm.taobao.org/process/download/process-0.11.9.tgz#7bd5ad21aa6253e7da8682264f1e11d11c0318c1"
 
-progress-bar-webpack-plugin@^1.9.1:
-  version "1.9.1"
-  resolved "http://registry.npm.taobao.org/progress-bar-webpack-plugin/download/progress-bar-webpack-plugin-1.9.1.tgz#8cf81ed655c64b31a9c58b6441a1c2d23c5afb21"
+progress-bar-webpack-plugin@^1.9.2:
+  version "1.9.2"
+  resolved "http://registry.npm.taobao.org/progress-bar-webpack-plugin/download/progress-bar-webpack-plugin-1.9.2.tgz#a8bf30e2d27991c90e39137df10ab1d58931e31d"
   dependencies:
     chalk "^1.1.1"
     object.assign "^4.0.1"

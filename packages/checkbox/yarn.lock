@@ -414,7 +414,7 @@ right-align@^0.1.1:
 
 rollup-plugin-babel@^2.7.1:
   version "2.7.1"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-babel/-/rollup-plugin-babel-2.7.1.tgz#16528197b0f938a1536f44683c7a93d573182f57"
+  resolved "http://registry.npm.taobao.org/rollup-plugin-babel/download/rollup-plugin-babel-2.7.1.tgz#16528197b0f938a1536f44683c7a93d573182f57"
   dependencies:
     babel-core "6"
     babel-plugin-transform-es2015-classes "^6.9.0"
@@ -423,14 +423,14 @@ rollup-plugin-babel@^2.7.1:
 
 rollup-plugin-svelte@^1.6.0:
   version "1.6.0"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-svelte/-/rollup-plugin-svelte-1.6.0.tgz#9dd3a13f19f2832313170b0bc61d02ceb08da5a0"
+  resolved "http://registry.npm.taobao.org/rollup-plugin-svelte/download/rollup-plugin-svelte-1.6.0.tgz#9dd3a13f19f2832313170b0bc61d02ceb08da5a0"
   dependencies:
     rollup-pluginutils "^1.5.2"
     svelte "^1.6.0"
 
 rollup-plugin-uglify@^1.0.1:
   version "1.0.1"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-uglify/-/rollup-plugin-uglify-1.0.1.tgz#11d0b0c8bcd2d07e6908f74fd16b0152390b922a"
+  resolved "http://registry.npm.taobao.org/rollup-plugin-uglify/download/rollup-plugin-uglify-1.0.1.tgz#11d0b0c8bcd2d07e6908f74fd16b0152390b922a"
   dependencies:
     uglify-js "^2.6.1"
 
@@ -441,9 +441,9 @@ rollup-pluginutils@^1.5.0, rollup-pluginutils@^1.5.2:
     estree-walker "^0.2.1"
     minimatch "^3.0.2"
 
-rollup@^0.38.2:
-  version "0.38.3"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.38.3.tgz#8a8695d416fe713ff354b7fd3c487f8da4b5c1ad"
+rollup@^0.40.0:
+  version "0.40.0"
+  resolved "http://registry.npm.taobao.org/rollup/download/rollup-0.40.0.tgz#20cfa6ff15687c2c4ddc5caaca3020485d5bc3d2"
   dependencies:
     source-map-support "^0.4.0"
 
