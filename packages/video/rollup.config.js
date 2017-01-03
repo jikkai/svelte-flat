@@ -8,6 +8,6 @@ export default {
     })
   ],
   format: 'umd',
-  moduleName: "Video",
+  moduleName: 'Video',
   dest: './dist/index.js'
 }

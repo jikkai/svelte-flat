@@ -8,6 +8,6 @@ export default {
     })
   ],
   format: 'umd',
-  moduleName: "Input",
+  moduleName: 'Input',
   dest: './dist/index.js'
 }

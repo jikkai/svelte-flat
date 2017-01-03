@@ -8,6 +8,6 @@ export default {
     })
   ],
   format: 'umd',
-  moduleName: "Slider",
+  moduleName: 'Slider',
   dest: './dist/index.js'
 }

@@ -8,6 +8,6 @@ export default {
     })
   ],
   format: 'umd',
-  moduleName: "Loading",
+  moduleName: 'Loading',
   dest: './dist/index.js'
 }

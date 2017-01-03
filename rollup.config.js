@@ -8,6 +8,6 @@ export default {
     })
   ],
   format: 'umd',
-  moduleName: "Flat",
+  moduleName: 'Flat',
   dest: './dist/index.js'
 }
