@@ -29,7 +29,20 @@ import 'svelte-flat/packages/theme-default/dist/button.css'
 yarn add babel-plugin-svelteflat --dev
 ```
 
-#### 使用
+#### 配置及使用
+在`.babelrc`中配置：
+```json
+{
+  "plugins": [
+    ["svelteflat", [{
+      "libraryName": "svelte-flat",
+      "styleLibraryName": "theme-default"
+    }]]
+  ]
+}
+```
+
+然后就可以在代码中使用了：
 ```javascript
 import { Button } from 'svelte-flat' 
 ```
