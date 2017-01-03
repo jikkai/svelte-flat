@@ -2,7 +2,6 @@ import React from 'react'
 import hljs from 'highlightjs'
 
 import Examples from './examples.md'
-import 'sf/theme-default/dist/icon.css'
 import './style.css'
 
 class IconRouter extends React.Component {

@@ -3,7 +3,6 @@ import hljs from 'highlightjs'
 
 import Docs from 'sf/slider/README.md'
 import Slider from 'sf/slider/dist/index'
-import 'sf/theme-default/dist/slider.css'
 
 import Examples from './examples.md'
 import './style.css'

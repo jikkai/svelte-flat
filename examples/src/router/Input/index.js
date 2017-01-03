@@ -3,7 +3,6 @@ import hljs from 'highlightjs'
 
 import Docs from 'sf/input/README.md'
 import Input from 'sf/input/dist/index'
-import 'sf/theme-default/dist/input.css'
 
 import Examples from './examples.md'
 import './style.css'

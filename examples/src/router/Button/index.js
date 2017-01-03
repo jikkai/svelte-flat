@@ -3,7 +3,6 @@ import hljs from 'highlightjs'
 
 import Docs from 'sf/button/README.md'
 import Button from 'sf/button/dist/index'
-import 'sf/theme-default/dist/button.css'
 
 import Examples from './examples.md'
 import './style.css'
