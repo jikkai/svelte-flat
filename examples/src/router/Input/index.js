@@ -2,7 +2,7 @@ import React from 'react'
 import hljs from 'highlightjs'
 
 import Docs from 'sf/input/README.md'
-import Input from 'sf/input/dist/index'
+import Input from 'sf/input/lib'
 
 import Examples from './examples.md'
 import './style.css'

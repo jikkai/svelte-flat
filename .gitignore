@@ -3,4 +3,6 @@ node_modules
 tools
 .DS_Store
 **/dist/**/
+**/lib/**/
 dist
+lib

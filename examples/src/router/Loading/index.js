@@ -2,8 +2,8 @@ import React from 'react'
 import hljs from 'highlightjs'
 
 import Docs from 'sf/loading/README.md'
-import Button from 'sf/button/dist/index'
-import Loading from 'sf/loading/dist/index'
+import Button from 'sf/button/lib'
+import Loading from 'sf/loading/lib'
 
 import Examples from './examples.md'
 import './style.css'

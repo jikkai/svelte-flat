@@ -7,7 +7,7 @@
   "scripts": {
     "init": "yarn",
     "build": "postcss -c ./.postcss",
-    "postbuild": "cp -r ./src/glyphicons ./dist/"
+    "postbuild": "cp -r ./src/glyphicons ./lib/ && cp -r ./lib ../../lib/theme-default/"
   },
   "devDependencies": {
     "cssnano": "^3.9.1",

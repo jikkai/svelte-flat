@@ -2,7 +2,7 @@ import React from 'react'
 import hljs from 'highlightjs'
 
 import Docs from 'sf/button/README.md'
-import Button from 'sf/button/dist/index'
+import Button from 'sf/button/lib'
 
 import Examples from './examples.md'
 import './style.css'

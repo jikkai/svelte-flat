@@ -2,7 +2,7 @@ import React from 'react'
 import hljs from 'highlightjs'
 
 import Docs from 'sf/checkbox/README.md'
-import Checkbox from 'sf/checkbox/dist/index'
+import Checkbox from 'sf/checkbox/lib'
 
 import Examples from './examples.md'
 import './style.css'

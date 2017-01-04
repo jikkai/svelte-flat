@@ -5,9 +5,7 @@ module.exports = {
     'cssnano'
   ],
   input: [
-    './src/components/common.css',
-
-    './src/components/icon.css',
+    './src/base.css',
 
     './src/components/button.css',
     './src/components/input.css',
@@ -20,7 +18,7 @@ module.exports = {
 
     './src/index.css'
   ],
-  dir: './dist/',
+  dir: './lib/',
   'postcss-cssnext': {
     browsers: '> 5%',
     warnForDuplicates: false

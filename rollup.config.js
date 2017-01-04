@@ -9,5 +9,5 @@ export default {
   ],
   format: 'umd',
   moduleName: 'Flat',
-  dest: './dist/index.js'
+  dest: './lib/index.js'
 }

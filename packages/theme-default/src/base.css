@@ -1,4 +1,5 @@
-@import "../../node_modules/typo.css/typo.css";
+@import "../node_modules/typo.css/typo.css";
+@import "./icon.css";
 
 /* 修复typo.css的main默认不设为块级标签的问题 */
 main {

@@ -3,6 +3,6 @@
     "es2015-rollup"
   ]],
   "ignore": [
-    "dist/**"
+    "lib/**"
   ]
 }

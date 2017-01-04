@@ -2,7 +2,7 @@ import React from 'react'
 import hljs from 'highlightjs'
 
 import Docs from 'sf/video/README.md'
-import Video from 'sf/video/dist/index'
+import Video from 'sf/video/lib'
 import mp4 from 'root/assets/demo.mp4'
 
 import Examples from './examples.md'

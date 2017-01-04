@@ -1,13 +1,13 @@
 {
   "name": "svelte-flat",
-  "version": "0.0.9",
-  "main": "dist/index.js",
+  "version": "0.1.0",
+  "main": "lib/index.js",
   "author": "Jikkai Xiao <sonne@asaki.me>",
   "license": "MIT",
   "scripts": {
     "init": "lerna run init",
-    "build": "lerna run build && rollup -c ./rollup.config.js",
-    "postbuild": "cp ./packages/theme-default/dist/index.css ./dist"
+    "prebuild": "rm -rf ./lib && mkdir ./lib",
+    "build": "lerna run build && rollup -c ./rollup.config.js"
   },
   "repository": {
     "type": "git",

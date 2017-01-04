@@ -2,8 +2,8 @@ import React from 'react'
 import hljs from 'highlightjs'
 
 import Docs from 'sf/message/README.md'
-import Button from 'sf/button/dist/index'
-import Message from 'sf/message/dist/index'
+import Button from 'sf/button/lib'
+import Message from 'sf/message/lib'
 
 import Examples from './examples.md'
 import './style.css'

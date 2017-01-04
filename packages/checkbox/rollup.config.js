@@ -9,5 +9,5 @@ export default {
   ],
   format: 'umd',
   moduleName: 'Checkbox',
-  dest: './dist/index.js'
+  dest: './lib/index.js'
 }

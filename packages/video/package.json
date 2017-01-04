@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "init": "yarn",
-    "build": "rollup -c ./rollup.config.js"
+    "build": "rollup -c ./rollup.config.js",
+    "postbuild": "cp ./lib/index.js ../../lib/vedio.js"
   },
   "devDependencies": {
     "rollup": "^0.40.0",

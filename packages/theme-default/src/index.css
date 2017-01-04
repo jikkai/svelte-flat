@@ -1,6 +1,4 @@
-@import "./components/common.css";
-
-@import "./components/icon.css";
+@import "./base.css";
 
 @import "./components/button.css";
 @import "./components/input.css";

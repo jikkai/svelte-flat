@@ -1,4 +1,4 @@
-import '../../../packages/theme-default/dist/index.css'
+import 'sf/theme-default/lib/index.css'
 import './common.css'
 
 import './components/Header.css'

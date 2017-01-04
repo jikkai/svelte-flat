@@ -2,7 +2,7 @@ import React from 'react'
 import hljs from 'highlightjs'
 
 import Docs from 'sf/slider/README.md'
-import Slider from 'sf/slider/dist/index'
+import Slider from 'sf/slider/lib'
 
 import Examples from './examples.md'
 import './style.css'

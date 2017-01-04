@@ -28,12 +28,12 @@ module.exports = {
         enforce: 'pre',
         test: /.js[x]?$/,
         loader: 'eslint-loader',
-        exclude: [/node_modules/, /dist/]
+        exclude: [/node_modules/, /lib/]
       },
       {
         test: /\.js[x]?$/,
         loader: 'babel-loader',
-        exclude: [/node_modules/, /dist/]
+        exclude: [/node_modules/, /lib/]
       },
       {
         test: /\.md$/,
