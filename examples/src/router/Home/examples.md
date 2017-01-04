@@ -11,14 +11,14 @@ $yarn add svelte-flat
 全局引入，方便快捷。
 ```javascript
 import Flat from 'svelte-flat' 
-import 'svelte-flat/packages/theme-default/lib/index.css'
+import 'svelte-flat/lib/theme-default/index.css'
 ```
 
 ### 单一组件引入
 引入单个组件，缩减代码量。
 ```javascript
 import { Button } from 'svelte-flat' 
-import 'svelte-flat/packages/theme-default/lib/button.css'
+import 'svelte-flat/lib/theme-default/button.css'
 ```
 <!--
 ### 按需引入

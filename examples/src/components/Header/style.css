@@ -7,6 +7,7 @@
   border-bottom: 1px solid #eee;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   transition: opacity 0.5s;
   box-sizing: border-box;
 
@@ -40,6 +41,21 @@
           color: #34495E;
         }
       }
+    }
+  }
+}
+
+.examples-header-right {
+  & a {
+    margin-left: 1em;
+    color: #2C3E50;
+    &:hover {
+      color: #34495E;
+    }
+
+    & i {
+      margin-right: 4px;
+      font-size: 20px;
     }
   }
 }

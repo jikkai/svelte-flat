@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link, IndexLink } from 'react-router'
 
+import './style.css'
+
 class MenuComponent extends React.Component {
   render () {
     return (

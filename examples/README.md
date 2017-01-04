@@ -1,21 +1,11 @@
-# examples
+# Documentation for svelte-flat
+---
 
-To start:
+Build with React, lol.
 
-```bash
-$ npm install
+## Development
 ```
-
-To develop:
-
-```bash
-$ npm run dev
-```
-
-
-
-To build for production:
-
-```bash
-$ npm run build
+yarn
+yarn run dev
+yarn run build
 ```

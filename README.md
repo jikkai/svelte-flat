@@ -1,9 +1,10 @@
 # svelte-flat 
-
-> WIP, Please DO NOT use in production.
+> Flat UI Components with SvelteJS
 
 ![img](http://img.shields.io/npm/v/svelte-flat.svg)
 ![img](http://img.shields.io/badge/license-MIT-blue.svg)
+
+---
 
 <p align="center">
   <a href="https://jikkai.github.io/svelte-flat/">
@@ -19,7 +20,7 @@ $ yarn add svelte-flat
 ## Usage
 ```javascript
 import { Button } from 'svelte-flat'
-import 'svelte-flat/packages/theme-default/dist/button.css'
+import 'svelte-flat/lib/theme-default/button.css'
 
 const button = new Button({
   target: document.querySelector('#button'),

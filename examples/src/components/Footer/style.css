@@ -19,12 +19,3 @@
     margin-left: 1em;
   }
 }
-
-.examples-footer-right {
-  & a {
-    margin-left: 1em;
-    & i {
-      margin-right: 4px;
-    }
-  }
-}

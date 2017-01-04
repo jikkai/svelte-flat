@@ -1,6 +1,6 @@
 {
-  "name": "examples",
-  "version": "0.0.9",
+  "name": "svelte-flat-docs",
+  "version": "0.1.0",
   "description": "Documentation for svelte-flat",
   "main": "src/index.js",
   "scripts": {
