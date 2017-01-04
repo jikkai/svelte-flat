@@ -12,7 +12,7 @@
 
 ### 代码示例
 ```javascript
-new Video({
+Video({
   target: document.querySelector('#video'),
   data: {
     src: '...',

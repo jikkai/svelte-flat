@@ -20,7 +20,7 @@ class SliderRouter extends React.Component {
   componentDidMount () {
     const { slider } = this.state
     for (let i = 0; i < slider.length; i++) {
-      new Slider({
+      Slider({
         target: document.querySelector(`#slider${i + 1}`),
         data: slider[i]
       })

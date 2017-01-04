@@ -1,26 +1,26 @@
-import LoadingComponent from './index.html'
+import Component from './index.html'
 
-const SingleLoadingDOM = (function () {
+const SingleDOM = (function () {
   let instance
-  const SingleLoadingDOM = function () {
+  const SingleDOM = function () {
     if (instance) {
       return instance
     }
     this.init()
     return instance = this
   }
-  SingleLoadingDOM.prototype.init = function () {
+  SingleDOM.prototype.init = function () {
     const LoadingDOM = document.createElement('div')
     LoadingDOM.id = 'sf-loaindg--global'
     document.body.appendChild(LoadingDOM)
   }
-  return SingleLoadingDOM
+  return SingleDOM
 })()
 
 const Loading = (data) => {
-  new SingleLoadingDOM(data)
+  new SingleDOM(data)
 
-  const loading = new LoadingComponent({
+  const loading = new Component({
     target: document.querySelector('body'),
     data
   })

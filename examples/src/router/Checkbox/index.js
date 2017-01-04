@@ -23,7 +23,7 @@ class CheckboxRouter extends React.Component {
   componentDidMount () {
     const { checkbox } = this.state
     for (let i = 0; i < checkbox.length; i++) {
-      new Checkbox({
+      Checkbox({
         target: document.querySelector(`#checkbox${i + 1}`),
         data: checkbox[i]
       })

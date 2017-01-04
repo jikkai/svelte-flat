@@ -12,7 +12,7 @@
 
 ### 代码示例
 ```javascript
-new Slider({
+Slider({
   target: document.querySelector('#slider'),
   data: {
     value: 33

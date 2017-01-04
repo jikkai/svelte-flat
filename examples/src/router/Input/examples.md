@@ -30,7 +30,7 @@
 
 ### 代码示例
 ```javascript
-const input = new Input({
+const input = Input({
   target: document.querySelector('#input'),
   data: {
     type: 'text'

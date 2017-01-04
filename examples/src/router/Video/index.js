@@ -21,7 +21,7 @@ class VideoRouter extends React.Component {
   componentDidMount () {
     const { video } = this.state
     for (let i = 0; i < video.length; i++) {
-      new Video({
+      Video({
         target: document.querySelector(`#video${i + 1}`),
         data: video[i]
       })

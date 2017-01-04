@@ -22,7 +22,7 @@
 
 ### 代码示例
 ```javascript
-const checkbox = new Checkbox({
+const checkbox = Checkbox({
   target: document.querySelector('#checkbox'),
   data: {
     checked: true,

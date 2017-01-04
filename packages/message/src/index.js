@@ -1,26 +1,26 @@
-import MessageComponent from './index.html'
+import Component from './index.html'
 
-const SingleMessageDOM = (function () {
+const SingleDOM = (function () {
   let instance
-  const SingleMessageDOM = function () {
+  const SingleDOM = function () {
     if (instance) {
       return instance
     }
     this.init()
     return instance = this
   }
-  SingleMessageDOM.prototype.init = function () {
+  SingleDOM.prototype.init = function () {
     const MessageDOM = document.createElement('div')
     MessageDOM.id = 'sf-message--global'
     document.body.appendChild(MessageDOM)
   }
-  return SingleMessageDOM
+  return SingleDOM
 })()
 
 const Message = (data) => {
-  new SingleMessageDOM(data)
+  new SingleDOM(data)
 
-  const message = new MessageComponent({
+  const message = new Component({
     target: document.querySelector('#sf-message--global'),
     data
   })

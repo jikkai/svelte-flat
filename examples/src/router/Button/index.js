@@ -28,7 +28,7 @@ class ButtonRouter extends React.Component {
   componentDidMount () {
     const { button } = this.state
     for (let i = 0; i < button.length; i++) {
-      new Button({
+      Button({
         target: document.querySelector(`#button${i + 1}`),
         data: button[i]
       })

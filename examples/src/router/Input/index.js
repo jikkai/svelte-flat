@@ -24,7 +24,7 @@ class InputRouter extends React.Component {
   componentDidMount () {
     const { input } = this.state
     for (let i = 0; i < input.length; i++) {
-      new Input({
+      Input({
         target: document.querySelector(`#input${i + 1}`),
         data: input[i]
       })

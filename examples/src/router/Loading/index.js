@@ -26,7 +26,7 @@ class LoadingRouter extends React.Component {
   componentDidMount () {
     const { button, loading } = this.state
     for (let i = 0; i < loading.length; i++) {
-      const btn = new Button({
+      const btn = Button({
         target: document.querySelector(`#loading${i + 1}`),
         data: button[i]
       })

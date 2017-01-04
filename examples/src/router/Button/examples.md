@@ -31,7 +31,7 @@
 
 ### 代码示例
 ```javascript
-const button = new Button({
+const button = Button({
   target: document.querySelector('#button'),
   data: {
     content: 'Click me!',

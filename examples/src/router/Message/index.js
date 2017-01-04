@@ -32,7 +32,7 @@ class MessageRouter extends React.Component {
   componentDidMount () {
     const { button, message } = this.state
     for (let i = 0; i < message.length; i++) {
-      const btn = new Button({
+      const btn = Button({
         target: document.querySelector(`#message${i + 1}`),
         data: button[i]
       })

@@ -1,5 +1,5 @@
 export default {
-  entry: './src/index.html',
+  entry: './src/index.js',
   plugins: [
     require('rollup-plugin-svelte')(),
     require('rollup-plugin-uglify')(),
