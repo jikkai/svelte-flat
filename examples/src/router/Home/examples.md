@@ -22,22 +22,25 @@ import 'svelte-flat/lib/theme-default/button.css'
 ```
 
 ### 按需引入
-如果你使用babel的话，可以安装[`babel-plugin-component`](https://github.com/QingWei-Li/babel-plugin-component)插件自动按需引入组件。
+如果你使用babel的话，可以安装[`babel-plugin-svelteflat`](https://github.com/jikkai/babel-plugin-svelteflat)插件自动按需引入组件。
 
 #### 安装依赖
 ```bash
-yarn add babel-plugin-component --dev
+yarn add babel-plugin-svelteflat --dev
 ```
 
 #### 配置及使用
-在`.babelrc`中配置：
+在`.babelrc`中按下例配置，`typoCss`是一个可选项，默认为`true`，用于选择是否使用默认的`typo.css`重设浏览器样式。
 ```json
 {
   "plugins": [
-    ["component", [{
-      "libraryName": "svelte-flat",
-      "styleLibraryName": "theme-default"
-    }]]
+    ["svelteflat", [
+      { 
+        "libraryName": "svelte-flat",
+        "styleLibraryName": "theme-default", 
+        "typoCss": true
+      }
+    ]]
   ]
 }
 ```
