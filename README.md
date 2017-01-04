@@ -22,7 +22,7 @@ $ yarn add svelte-flat
 import { Button } from 'svelte-flat'
 import 'svelte-flat/lib/theme-default/button.css'
 
-const button = new Button({
+const button = Button({
   target: document.querySelector('#button'),
   data: {
     content: 'Default Button'
