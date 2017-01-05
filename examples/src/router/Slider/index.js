@@ -20,10 +20,13 @@ class SliderRouter extends React.Component {
   componentDidMount () {
     const { slider } = this.state
     for (let i = 0; i < slider.length; i++) {
-      Slider({
+      const s = Slider({
         target: document.querySelector(`#slider${i + 1}`),
         data: slider[i]
       })
+      s.onchange = () => {
+        console.log('object')
+      }
     }
 
     const code = document.querySelectorAll('pre')

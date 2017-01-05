@@ -40,8 +40,16 @@
 
       const slider = new Slider({
         target: document.querySelector('#sf-video-controls--progress'),
-        value: 0
+        data: {
+          value: 0,
+          min: 0,
+          max: 100
+        }
       })
+      
+      slider.onchange = () => {
+        video.currentTime = video.duration * slider.get('value') / 100
+      }
 
       this.set({ slider })
     },
