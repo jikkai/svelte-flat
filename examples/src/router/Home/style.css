@@ -5,4 +5,7 @@
     margin: auto;
     background-image: url("../../assets/logo.png");
   }
+  & h2, & h3 {
+    margin: 20px 0;
+  }
 }
