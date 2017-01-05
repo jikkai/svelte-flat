@@ -11,7 +11,7 @@ const SingleDOM = (function () {
   }
   SingleDOM.prototype.init = function () {
     const LoadingDOM = document.createElement('div')
-    LoadingDOM.id = 'sf-loaindg--global'
+    LoadingDOM.id = 'sf-loading--global'
     document.body.appendChild(LoadingDOM)
   }
   return SingleDOM
@@ -21,7 +21,7 @@ const Loading = (data) => {
   new SingleDOM(data)
 
   const loading = new Component({
-    target: document.querySelector('body'),
+    target: document.querySelector('#sf-loading--global'),
     data
   })
 
