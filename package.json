@@ -9,8 +9,7 @@
     "init": "lerna run init",
     "prebuild": "rm -rf ./lib && mkdir ./lib",
     "build": "lerna run build && rollup -c ./rollup.config.js",
-    "prepublish": "cd ./bin && ./build.sh",
-    "publish": "lerna publish --skip-npm"
+    "prepublish": "cd ./bin && ./build.sh"
   },
   "repository": {
     "type": "git",
