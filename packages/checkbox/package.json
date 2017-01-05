@@ -1,6 +1,6 @@
 {
   "name": "checkbox",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "author": "Jikkai Xiao <sonne@asaki.me>",
   "license": "MIT",
