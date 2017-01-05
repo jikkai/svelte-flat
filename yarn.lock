@@ -755,9 +755,9 @@ lazy-cache@^1.0.3:
   version "1.0.4"
   resolved "http://registry.npm.taobao.org/lazy-cache/download/lazy-cache-1.0.4.tgz#a1d78fc3a50474cb80845d3b3b6e1da49a446e8e"
 
-lerna@^2.0.0-beta.31:
-  version "2.0.0-beta.31"
-  resolved "http://registry.npm.taobao.org/lerna/download/lerna-2.0.0-beta.31.tgz#68da53b860f8193d4653a6d0601ef300b8d7176d"
+lerna@^2.0.0-beta.32:
+  version "2.0.0-beta.32"
+  resolved "https://registry.yarnpkg.com/lerna/-/lerna-2.0.0-beta.32.tgz#67d51b1520ce57a27b8445160726b48f6dba3f1c"
   dependencies:
     async "^1.5.0"
     chalk "^1.1.1"

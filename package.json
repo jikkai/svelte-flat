@@ -1,6 +1,6 @@
 {
   "name": "svelte-flat",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Flat UI Components with SvelteJS",
   "main": "lib/index.js",
   "author": "Jikkai Xiao <sonne@asaki.me>",
@@ -8,7 +8,9 @@
   "scripts": {
     "init": "lerna run init",
     "prebuild": "rm -rf ./lib && mkdir ./lib",
-    "build": "lerna run build && rollup -c ./rollup.config.js"
+    "build": "lerna run build && rollup -c ./rollup.config.js",
+    "prepublish": "cd ./bin && ./build.sh",
+    "publish": "lerna publish --skip-npm"
   },
   "repository": {
     "type": "git",
@@ -25,7 +27,7 @@
   ],
   "devDependencies": {
     "babel-preset-es2015-rollup": "^3.0.0",
-    "lerna": "^2.0.0-beta.31",
+    "lerna": "^2.0.0-beta.32",
     "rollup": "^0.40.0",
     "rollup-plugin-babel": "^2.7.1",
     "rollup-plugin-svelte": "^1.6.0",
