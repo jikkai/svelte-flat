@@ -26,6 +26,7 @@ class MenuComponent extends React.Component {
                 <Link activeClassName="active" to="/button">Button 按钮</Link>
                 <Link activeClassName="active" to="/input">Input 输入框</Link>
                 <Link activeClassName="active" to="/checkbox">Checkbox 多选框</Link>
+                <Link activeClassName="active" to="/radio">Radio 单选框</Link>
                 <Link activeClassName="active" to="/slider">Slider 滑块</Link>
               </li>
             </ul>

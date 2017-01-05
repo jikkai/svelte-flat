@@ -1,0 +1,27 @@
+<label 
+  class="sf-radio {{ disabled ? 'sf-radio__disabled' : '' }}" 
+  on:click="handleSwitch()"
+>
+  <span class="sf-radio--icons {{ hover ? 'hover' : '' }} {{ checked ? 'active' : '' }}">
+    <i class="fui-radio-checked"></i>
+    <i class="fui-radio-unchecked"></i>
+  </span>
+  <span class="sf-radio--label">{{ label }}</span>
+</label>
+
+<script>
+  export default {
+    data () {
+      return {
+        checked: false
+      }
+    },
+    methods: {
+      handleSwitch () {
+        if (!this.get('disabled')) {
+          this.set({ checked: true })
+        }
+      }
+    }
+  }
+</script>
