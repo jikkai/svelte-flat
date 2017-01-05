@@ -4,13 +4,13 @@
 ![img](http://img.shields.io/npm/v/svelte-flat.svg)
 ![img](http://img.shields.io/badge/license-MIT-blue.svg)
 
----
-
 <p align="center">
   <a href="https://jikkai.github.io/svelte-flat/">
     <img alt="svelte-flat" src="https://github.com/jikkai/svelte-flat/raw/master/examples/src/assets/logo.png">
   </a>
 </p>
+
+---
 
 ## Installation
 ```bash
