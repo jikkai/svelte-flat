@@ -10,7 +10,7 @@
     "postbuild": "cp ./lib/index.js ../../lib/input.js"
   },
   "devDependencies": {
-    "rollup": "^0.40.0",
+    "rollup": "^0.40.2",
     "rollup-plugin-babel": "^2.7.1",
     "rollup-plugin-svelte": "^1.6.0",
     "rollup-plugin-uglify": "^1.0.1"

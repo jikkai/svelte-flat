@@ -10,7 +10,7 @@
     "postbuild": "cp -r ./src/glyphicons ./lib/ && cp -r ./lib ../../lib/theme-default/"
   },
   "devDependencies": {
-    "cssnano": "^3.9.1",
+    "cssnano": "^3.10.0",
     "postcss-cli": "^2.6.0",
     "postcss-cssnext": "^2.9.0",
     "postcss-import": "^9.0.0"
