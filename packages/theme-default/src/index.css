@@ -4,8 +4,10 @@
 @import "./components/input.css";
 @import "./components/checkbox.css";
 @import "./components/radio.css";
-@import "./components/video.css";
 @import "./components/slider.css";
 
 @import "./components/message.css";
 @import "./components/loading.css";
+
+@import "./components/audio.css";
+@import "./components/video.css";

@@ -11,6 +11,7 @@ import Input from './Input'
 import Checkbox from './Checkbox'
 import Radio from './Radio'
 import Video from './Video'
+import Audio from './Audio'
 import Slider from './Slider'
 import Message from './Message'
 import Loading from './Loading'
@@ -28,6 +29,7 @@ class Routers extends React.Component {
           <Route path="input" component={Input} />
           <Route path="checkbox" component={Checkbox} />
           <Route path="radio" component={Radio} />
+          <Route path="audio" component={Audio} />
           <Route path="video" component={Video} />
           <Route path="slider" component={Slider} />
           <Route path="message" component={Message} />

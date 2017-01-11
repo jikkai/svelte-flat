@@ -44,6 +44,7 @@ class MenuComponent extends React.Component {
             <h4>多媒体组件</h4>
             <ul>
               <li>
+                <Link activeClassName="active" to="/audio">Audio 音频播放器</Link>
                 <Link activeClassName="active" to="/video">Video 视频播放器</Link>
               </li>
             </ul>

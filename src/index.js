@@ -4,6 +4,7 @@ import Checkbox from '../packages/checkbox/src/index.js'
 import Radio from '../packages/radio/src/index.js'
 import Slider from '../packages/slider/src/index.js'
 
+import Audio from '../packages/audio/src/index.js'
 import Video from '../packages/video/src/index.js'
 
 import Message from '../packages/message/src/index.js'
@@ -16,6 +17,7 @@ export default {
   Radio,
   Slider,
 
+  Audio,
   Video,
 
   Message,

@@ -40,7 +40,7 @@ module.exports = {
         loader: 'html-loader!markdown-loader'
       },
       {
-        test: /\.(ico|jpg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4)(\?.*)?$/,
+        test: /\.(ico|jpg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|mp3)(\?.*)?$/,
         loader: 'file-loader?limit=8192'
       }
     ]
