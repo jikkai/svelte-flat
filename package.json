@@ -1,0 +1,49 @@
+{
+  "name": "svelte-flat",
+  "version": "0.2.0",
+  "description": "Flat UI Components with Svelte",
+  "main": "lib/index.js",
+  "author": "Jikkai Xiao <sonne@asaki.me>",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "rimraf ./lib",
+    "build": "webpack --config build/webpack.prod.js",
+    "dev": "nodemon build/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jikkai/svelte-flat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jikkai/svelte-flat/issues"
+  },
+  "homepage": "https://jikkai.github.io/svelte-flat",
+  "keywords": [
+    "svelte",
+    "flat-ui",
+    "components"
+  ],
+  "devDependencies": {
+    "babel-core": "^7.0.0-beta.1",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^2.0.0-beta.1",
+    "css-loader": "^0.28.7",
+    "express": "^4.15.5",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "happypack": "^4.0.0",
+    "html-webpack-plugin": "^2.30.1",
+    "nodemon": "^1.12.1",
+    "postcss-loader": "^2.0.6",
+    "postcss-salad": "^2.0.1",
+    "progress-bar-webpack-plugin": "^1.10.0",
+    "rimraf": "^2.6.2",
+    "style-loader": "^0.18.2",
+    "svelte": "^1.40.1",
+    "svelte-loader": "^2.1.0",
+    "svelte-router": "^1.2.0",
+    "webpack": "^3.6.0",
+    "webpack-dev-middleware": "^1.12.0",
+    "webpack-hot-middleware": "^2.19.1"
+  }
+}

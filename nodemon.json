@@ -1,0 +1,9 @@
+{
+  "ignore": [
+    ".git",
+    "src/**",
+    "example/**",
+    "dist/**",
+    "lib/**"
+  ]
+}
