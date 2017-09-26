@@ -1,3 +1,4 @@
 @import "./reset.css";
+@import "../../packages/theme-default/index.css";
 
-@import "./router/home.css"
+@import "./router/home.css";

@@ -1,0 +1,8 @@
+@component-namespace flat {
+  @c layout {
+    background: #ECECEC;
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+  }
+}

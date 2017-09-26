@@ -4,6 +4,7 @@
     "src/**",
     "example/**",
     "dist/**",
-    "lib/**"
+    "lib/**",
+    "packages/**"
   ]
 }

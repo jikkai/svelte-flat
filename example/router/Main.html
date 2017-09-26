@@ -1,0 +1,25 @@
+<Layout>
+  <LayoutHeader>header</LayoutHeader>
+
+  <LayoutContent>
+    <slot></slot>
+  </LayoutContent>
+
+  <LayoutFooter>footer</LayoutFooter>
+</Layout>
+
+<script>
+  import Layout from '../../packages/layout'
+  import LayoutHeader from '../../packages/layout-header'
+  import LayoutContent from '../../packages/layout-content'
+  import LayoutFooter from '../../packages/layout-footer'
+
+  export default {
+    components: {
+      Layout,
+      LayoutHeader,
+      LayoutContent,
+      LayoutFooter
+    }
+  }
+</script>

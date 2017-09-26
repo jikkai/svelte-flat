@@ -1,0 +1,9 @@
+@component-namespace flat {
+  @c layout-header {
+    height: 64px;
+    padding: 0 50px;
+    line-height: 64px;
+    background: #404040;
+    flex: 0 0 auto;
+  }
+}

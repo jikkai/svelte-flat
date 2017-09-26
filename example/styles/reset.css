@@ -11,6 +11,10 @@ html, body, #app {
     "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC",
     "WenQuanYi Micro Hei", SimSun, sans-serif;
   -webkit-font-smoothing: antialiased;
+
+  & .flat-layout {
+    size: 100%;
+  }
 }
 
 a {
