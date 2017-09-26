@@ -7,7 +7,7 @@
     align-items: center;
 
     & img {
-      size: 236px 181px;
+      size: 236px;
       display: block;
     }
 
@@ -19,7 +19,7 @@
     }
 
     & p {
-      margin-bottom: 24px;
+      margin-bottom: 36px;
       color: #999;
       font-size: 18px;
     }
