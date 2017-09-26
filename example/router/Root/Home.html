@@ -1,0 +1,22 @@
+<main class="router-home">
+  <img src="{{LogoImg}}" alt="">
+  <h1>Svelte Flat</h1>
+  <p>Flat UI components built with Svelte.</p>
+  <RouterLink to="/intro">中文文档</RouterLink>
+</main>
+
+<script>
+  import SvelteRouter from 'svelte-router'
+  import LogoImg from '../../../build/logo.png'
+
+  export default {
+    data () {
+      return {
+        LogoImg
+      }
+    },
+    components: {
+      RouterLink: SvelteRouter.RouterLink
+    }
+  }
+</script>

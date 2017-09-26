@@ -1,12 +1,6 @@
-<section>
-  <RouterLink to="/">Home</RouterLink>
-  <img src="{{img}}" alt="">
-  <div id="router-view"></div>
-</section>
-
 <script>
   import SvelteRouter from 'svelte-router'
-  import Home from './Root/Home.html'
+  import Home from './router/Root/Home.html'
   import img from '../build/logo.png'
   
   const { createRouter, RouterLink } = SvelteRouter
@@ -21,22 +15,14 @@
         img
       }
     },
-
     oncreate () {
       router.create('#app')
-      // router.create(document.querySelector('#app'))
     },
-  
     ondestroy () {
       router.destroy()
     },
-  
     components: {
       RouterLink
     }
   }
 </script>
-  
-<style>
-
-</style>

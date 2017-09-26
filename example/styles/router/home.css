@@ -1,0 +1,36 @@
+@component-namespace router {
+  @c home {
+    size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & img {
+      size: 236px 181px;
+      display: block;
+    }
+
+    & h1 {
+      color: #A84452;
+      font-family: 'Nova Flat', cursive;
+      font-size: 64px;
+      display: block;
+    }
+
+    & p {
+      margin-bottom: 24px;
+      color: #999;
+      font-size: 18px;
+    }
+
+    & a {
+      size: 120px 36px;
+      color: #FFF #A84452;
+      text-align: center;
+      line-height: 36px;
+      border-radius: 6px;
+      display: block;
+    }
+  }
+}
