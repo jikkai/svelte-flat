@@ -1,25 +1,75 @@
-<Layout>
-  <LayoutHeader>header</LayoutHeader>
+<section class="router-layout">
+  <header class="router-header">
+    <RouterLink to="/">Svelte Flat</RouterLink>
 
-  <LayoutContent>
-    <slot></slot>
-  </LayoutContent>
+    <a href="https://github.com/jikkai/svelte-flat" target="true">
+      <i class="devicon-github-plain"></i>
+    </a>
+  </header>
 
-  <LayoutFooter>footer</LayoutFooter>
-</Layout>
+  <section class="router-content">
+    <section class="router-container">
+      <ul class="router-menu">
+        {{#each menus as menu}}
+          <li>
+            {{#if menu.to}}
+            <RouterLink to="{{menu.to}}">{{menu.title}}</RouterLink>
+            {{else}}
+            <label>{{menu.title}}</label>
+            <ul>
+              {{#each menu.submenus as submenu}}
+              <li>
+                <RouterLink to="{{submenu.to}}">{{submenu.title}}</RouterLink>
+              </li>
+              {{/each}}
+            </ul>
+            {{/if}}
+          </li>
+        {{/each}}
+      </ul>
+
+      <main class="router-main">
+        <slot></slot>
+      </main>
+    </section>
+  </section>
+
+  <footer class="router-footer">
+    <img src="{{LogoImg}}">
+    <p>Svelte Flat <sup>V0.2.0 Sonne</sup></p>
+  </footer>
+</section>
 
 <script>
   import Layout from '../../packages/layout'
   import LayoutHeader from '../../packages/layout-header'
   import LayoutContent from '../../packages/layout-content'
   import LayoutFooter from '../../packages/layout-footer'
+  import SvelteRouter from 'svelte-router'
+
+  import LogoImg from '../../build/logo.png'
 
   export default {
+    data () {
+      return {
+        LogoImg,
+        menus: [
+          { title: '首页', to: '/guide/intro' },
+          {
+            title: '基础组件',
+            submenus: [
+              { title: '按钮', to: '/components/button' }
+            ]
+          }
+        ]
+      }
+    },
     components: {
       Layout,
       LayoutHeader,
       LayoutContent,
-      LayoutFooter
+      LayoutFooter,
+      RouterLink: SvelteRouter.RouterLink
     }
   }
 </script>

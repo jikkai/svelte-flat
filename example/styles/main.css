@@ -2,3 +2,4 @@
 @import "../../packages/theme-default/index.css";
 
 @import "./router/home.css";
+@import "./router/main.css";

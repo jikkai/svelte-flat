@@ -1,0 +1,85 @@
+@component-namespace router {
+  @c layout {
+    background: #ECEFF1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @c header {
+    height: 64px;
+    padding: 0 50px;
+    line-height: 64px;
+    color: #34495E #FFF;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+
+    & a {
+      color: #A84452;
+      font-family: 'Nova Flat', cursive;
+      font-size: 28px;
+      text-decoration: none;
+    }
+  }
+
+  @c content {
+    padding: 24px 50px;
+    box-sizing: border-box;
+  }
+
+  @c footer {
+    padding: 24px 50px;
+    color: #BAC1C8 #EDEFF1;
+    box-sizing: border-box;
+    display: flex;
+    & img {
+      margin-right: 12px;
+      size: 20px;
+    }
+  }
+
+  @c container {
+    padding: 24px;
+    background: #FFF;
+    box-sizing: border-box;
+    display: flex;
+  }
+
+  @c menu {
+    width: 190px;
+    font-size: 14px;
+    border-right: 1px solid #ecf0f1;
+
+    & label {
+      margin: 10px 0;
+      font-size: 16px;
+      display: block;
+    }
+    
+    & ul a {
+      padding-left: 16px;
+    }
+
+    & a {
+      size: 100% 42px;
+      color: #7F8C8D;
+      line-height: 42px;
+      text-decoration: none;
+      display: block;
+      transition: all .2s;
+      &:hover {
+        color: #1ABC9C;
+      }
+      &.router-link-active {
+        color: #1ABC9C;
+        font-weight: bold;
+      }
+    }
+  }
+
+  @c main {
+    width: calc(100% - 190px);
+    padding: 0 24px;
+    box-sizing: border-box;
+  }
+}
