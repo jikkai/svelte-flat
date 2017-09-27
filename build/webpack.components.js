@@ -1,12 +1,16 @@
+const path = require('path')
 const webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const ProgressBarPlugin = require('progress-bar-webpack-plugin')
 
 const base = require('./webpack.base')
+const components = require('./components')
 
-base.entry.index = './src/index.js'
-base.output.libraryTarget = 'umd'
-base.output.library = 'SvelteFlat'
+components.forEach(component => {
+  base.entry[component] = `./packages/${component}/src/index.js`
+})
+base.output.filename = '[name].js'
+base.output.libraryTarget = 'commonjs2'
 base.stats = { children: false }
 
 // Plugins Configuration

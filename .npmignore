@@ -2,6 +2,7 @@ build
 example
 packages
 src
+docs
 
 .babelrc
 .gitignore

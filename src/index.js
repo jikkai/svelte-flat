@@ -1,4 +1,4 @@
-import Button from '~packages/button'
+import Button from '~packages/button/src'
 
 export default {
   Button

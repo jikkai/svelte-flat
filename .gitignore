@@ -1,5 +1,6 @@
 node_modules
 lib
+docs
 
 *.log
 .DS_Store

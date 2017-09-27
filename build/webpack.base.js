@@ -1,5 +1,4 @@
 const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HappyPack = require('happypack')
 
 module.exports = {
@@ -7,9 +6,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, '../lib'),
     filename: 'index.js',
-    publicPath: './',
-    libraryTarget: 'umd',
-    library: 'SvelteFlat'
+    publicPath: './'
   },
   resolve: {
     extensions: ['.js', '.css', '.json'],
@@ -23,7 +20,7 @@ module.exports = {
     rules: [
       {
         test: /\.html$/,
-        use: 'svelte-loader',
+        use: ['happypack/loader?id=babel', 'svelte-loader'],
         exclude: [/build/]
       },
       {

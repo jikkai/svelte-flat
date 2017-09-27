@@ -6,10 +6,11 @@
   "author": "Jikkai Xiao <sonne@asaki.me>",
   "license": "MIT",
   "scripts": {
-    "prebuild": "rimraf ./lib",
-    "build": "npm run build:js && npm run build:css",
-    "build:js": "webpack --config build/webpack.prod.js",
+    "clean": "rimraf ./lib && rimraf ./docs",
+    "build:entry": "webpack --config build/webpack.prod.js",
+    "build:components": "webpack --config build/webpack.components.js",
     "build:css": "gulp css",
+    "build:docs": "webpack --config build/webpack.doc.js",
     "dev": "nodemon build/server.js"
   },
   "repository": {
