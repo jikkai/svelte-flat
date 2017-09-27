@@ -1,13 +1,15 @@
 <Main>
-  intro
+  <img src="{{LogoImg}}" alt="svelte flat" draggable="{{false}}">
 </Main>
 
 <script>
   import Main from '../Main.html'
+  import LogoImg from '../../../build/logo.png'
 
   export default {
     data () {
       return {
+        LogoImg
       }
     },
     components: {

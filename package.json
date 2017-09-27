@@ -7,7 +7,9 @@
   "license": "MIT",
   "scripts": {
     "prebuild": "rimraf ./lib",
-    "build": "webpack --config build/webpack.prod.js",
+    "build": "npm run build:js && npm run build:css",
+    "build:js": "webpack --config build/webpack.prod.js",
+    "build:css": "gulp css",
     "dev": "nodemon build/server.js"
   },
   "repository": {
@@ -31,6 +33,8 @@
     "express": "^4.15.5",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^0.11.2",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.0",
     "happypack": "^4.0.0",
     "html-webpack-plugin": "^2.30.1",
     "nodemon": "^1.12.1",

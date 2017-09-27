@@ -1,6 +1,7 @@
 @component-namespace router {
   @c layout {
-    background: #ECEFF1;
+    min-height: 100%;
+    background: #F0F2F5;
     display: flex;
     flex-direction: column;
   }
@@ -16,7 +17,7 @@
 
     & a {
       color: #A84452;
-      font-family: 'Nova Flat', cursive;
+      font-family: Rajdhani, sans-serif;
       font-size: 28px;
       text-decoration: none;
     }
@@ -28,12 +29,15 @@
   }
 
   @c footer {
-    padding: 24px 50px;
-    color: #BAC1C8 #EDEFF1;
+    height: 64px;
+    padding: 0 50px;
+    color: #BAC1C8 #F0F2F5;
     box-sizing: border-box;
     display: flex;
+    align-items: center;
+
     & img {
-      margin-right: 12px;
+      margin-right: 8px;
       size: 20px;
     }
   }
@@ -48,11 +52,12 @@
   @c menu {
     width: 190px;
     font-size: 14px;
-    border-right: 1px solid #ecf0f1;
+    border-right: 1px solid #ECF0F1;
 
     & label {
       margin: 10px 0;
       font-size: 16px;
+      font-weight: bold;
       display: block;
     }
     

@@ -1,8 +1,9 @@
 const webpack = require('webpack')
 
 const base = require('./webpack.base')
+const config = require('./config')
 
-base.entry.client = './example/index.js'
+base.entry.index = './example/index.js'
 base.devtool = 'eval-source-map'
 base.output.publicPath = '/assets/'
 base.performance.hints = false
@@ -13,7 +14,13 @@ base.plugins.push(
     'process.env.NODE_ENV': JSON.stringify('development')
   }),
   new webpack.HotModuleReplacementPlugin(),
-  new webpack.NoEmitOnErrorsPlugin()
+  new webpack.NoEmitOnErrorsPlugin(),
+  new HtmlWebpackPlugin({
+    title: config.title,
+    template: path.resolve(__dirname, './index.html'),
+    favicon: path.resolve(__dirname, './logo.png'),
+    filename: './index.html'
+  })
 )
 
 // Rules Configuration

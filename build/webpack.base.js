@@ -2,19 +2,20 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HappyPack = require('happypack')
 
-const config = require('./config')
-
 module.exports = {
   entry: {},
   output: {
-    path: path.join(__dirname, '../dist'),
-    filename: '[name].js',
-    publicPath: './'
+    path: path.join(__dirname, '../lib'),
+    filename: 'index.js',
+    publicPath: './',
+    libraryTarget: 'umd',
+    library: 'SvelteFlat'
   },
   resolve: {
     extensions: ['.js', '.css', '.json'],
     alias: {
-      '~': path.join(__dirname, '../src')
+      '~': path.join(__dirname, '../src'),
+      '~packages': path.join(__dirname, '../packages')
     }
   },
   performance: {},
@@ -37,12 +38,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      title: config.title,
-      template: path.resolve(__dirname, './index.html'),
-      favicon: path.resolve(__dirname, './logo.png'),
-      filename: './index.html'
-    }),
     new HappyPack({
       id: 'babel',
       loaders: ['babel-loader'],
