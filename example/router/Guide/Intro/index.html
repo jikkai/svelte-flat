@@ -1,18 +1,20 @@
 <Main>
   <section class="guide-intro">
     <img src="{{LogoImg}}" alt="Svelte Flat" draggable="{{false}}">
-    <h1 class="router-title">Svelte Flat</h1>
+    {{{Examples}}}
   </section>
 </Main>
 
 <script>
-  import Main from '../Main.html'
-  import LogoImg from '../../../build/logo.png'
+  import Main from '../../Main'
+  import LogoImg from '../../../../build/logo.png'
+  import Examples from './examples.md'
 
   export default {
     data () {
       return {
-        LogoImg
+        LogoImg,
+        Examples
       }
     },
     components: {

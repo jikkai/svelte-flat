@@ -1,4 +1,5 @@
 @import "./reset.css";
+@import "highlightjs/styles/dracula.css";
 @import "../../packages/theme-default/index.css";
 
 @import "./router/root/home.css";

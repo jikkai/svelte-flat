@@ -1,4 +1,4 @@
-import App from './App.html'
+import App from './App'
 import './styles/main.css'
 
 new App({

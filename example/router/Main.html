@@ -11,20 +11,20 @@
     <section class="router-container">
       <ul class="router-menu">
         {{#each menus as menu}}
-          <li>
-            {{#if menu.to}}
-            <RouterLink to="{{menu.to}}">{{menu.title}}</RouterLink>
-            {{else}}
-            <label>{{menu.title}}</label>
-            <ul>
-              {{#each menu.submenus as submenu}}
-              <li>
-                <RouterLink to="{{submenu.to}}">{{submenu.title}}</RouterLink>
-              </li>
-              {{/each}}
-            </ul>
-            {{/if}}
-          </li>
+        <li>
+          {{#if menu.to}}
+          <RouterLink to="{{menu.to}}">{{menu.title}}</RouterLink>
+          {{else}}
+          <label>{{menu.title}}</label>
+          <ul>
+            {{#each menu.submenus as submenu}}
+            <li>
+              <RouterLink to="{{submenu.to}}">{{submenu.title}}</RouterLink>
+            </li>
+            {{/each}}
+          </ul>
+          {{/if}}
+        </li>
         {{/each}}
       </ul>
 

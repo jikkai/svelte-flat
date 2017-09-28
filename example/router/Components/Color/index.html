@@ -1,0 +1,31 @@
+<Main>
+  <h1>Color 色彩</h1>
+
+  <section class="component-color">
+    {{#each colors as color}}
+    <dl style="background: {{color.value}}">
+      <dt>{{color.value}}</dt>
+      <dt>{{color.name}}</dt>
+    </dl>
+    {{/each}}
+  </section>
+</Main>
+
+<script>
+  import Main from '../../Main'
+  import Examples from './examples.md'
+  import colors from './colors'
+
+  export default {
+    data () {
+      return {
+        Examples,
+        colors
+      }
+    },
+    components: {
+      Main
+    }
+  }
+</script>
+  

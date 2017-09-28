@@ -9,7 +9,7 @@ module.exports = {
     publicPath: './'
   },
   resolve: {
-    extensions: ['.js', '.css', '.json'],
+    extensions: ['.js', '.html', '.css', '.json'],
     alias: {
       '~': path.join(__dirname, '../src'),
       '~packages': path.join(__dirname, '../packages')
@@ -27,6 +27,10 @@ module.exports = {
         test: /\.js$/,
         use: 'happypack/loader?id=babel',
         exclude: [/node_modules/]
+      },
+      {
+        test: /\.md$/,
+        use: ['html-loader', 'markdown-loader']
       },
       {
         test: /\.(ico|jpg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,

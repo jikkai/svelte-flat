@@ -1,7 +1,7 @@
-import Home from './Root/Home.html'
-import Intro from './Guide/Intro.html'
-import Color from './Components/Color.html'
-import Button from './Components/Button.html'
+import Home from './Root/Home'
+import Intro from './Guide/Intro'
+import Color from './Components/Color'
+import Button from './Components/Button'
 
 const routes = {
   '/': Home,
