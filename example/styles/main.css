@@ -1,5 +1,11 @@
 @import "./reset.css";
 @import "../../packages/theme-default/index.css";
 
-@import "./router/home.css";
+@import "./router/root/home.css";
+
 @import "./router/layout.css";
+
+@import "./router/guide/intro.css";
+
+@import "./router/components/color.css";
+@import "./router/components/button.css";

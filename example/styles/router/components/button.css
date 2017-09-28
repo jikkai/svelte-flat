@@ -1,0 +1,5 @@
+@component-namespace component {
+  @c button {
+    margin-bottom: 24px;
+  }
+}

@@ -43,8 +43,9 @@
   }
 
   @c container {
-    padding: 24px;
+    padding: 24px 0;
     background: #FFF;
+    border-radius: 4px;
     box-sizing: border-box;
     display: flex;
   }
@@ -56,13 +57,18 @@
 
     & label {
       margin: 10px 0;
-      font-size: 16px;
+      padding-left: 24px;
       font-weight: bold;
       display: block;
     }
+
+    & a {
+      padding-left: 24px;
+    }
     
     & ul a {
-      padding-left: 16px;
+      padding-left: 40px;
+      font-size: 14px;
     }
 
     & a {
@@ -70,13 +76,14 @@
       color: #7F8C8D;
       line-height: 42px;
       text-decoration: none;
+      box-sizing: border-box;
       display: block;
       transition: all .2s;
       &:hover {
         color: #1ABC9C;
       }
       &.router-link-active {
-        color: #1ABC9C;
+        color: #1ABC9C #ECF0F1;
         font-weight: bold;
       }
     }
@@ -86,5 +93,19 @@
     width: calc(100% - 190px);
     padding: 0 24px;
     box-sizing: border-box;
+  }
+
+  @c title {
+    margin-top: 8px;
+    margin-bottom: 24px;
+    font-size: 28px 40px;
+    font-weight: 500;
+  }
+
+  @c subtitle {
+    margin-top: 36px;
+    margin-bottom: 12px;
+    font-size: 22px 40px;
+    font-weight: 500;
   }
 }

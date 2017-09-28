@@ -1,0 +1,12 @@
+@component-namespace guide {
+  @c intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & img {
+      margin: auto;
+      display: block;
+    }
+  }
+}

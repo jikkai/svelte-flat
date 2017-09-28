@@ -43,21 +43,14 @@
 <script>
   import SvelteRouter from 'svelte-router'
 
+  import menus from './menus'
   import LogoImg from '../../build/logo.png'
 
   export default {
     data () {
       return {
         LogoImg,
-        menus: [
-          { title: '首页', to: '/guide/intro' },
-          {
-            title: '基础组件',
-            submenus: [
-              { title: '按钮', to: '/components/button' }
-            ]
-          }
-        ]
+        menus
       }
     },
     components: {
