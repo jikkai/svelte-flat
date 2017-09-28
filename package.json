@@ -39,6 +39,7 @@
     "happypack": "^4.0.0",
     "html-webpack-plugin": "^2.30.1",
     "nodemon": "^1.12.1",
+    "postcss-color-mix": "^1.1.0",
     "postcss-loader": "^2.0.6",
     "postcss-salad": "^2.0.1",
     "progress-bar-webpack-plugin": "^1.10.0",

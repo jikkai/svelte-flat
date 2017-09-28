@@ -1,5 +1,142 @@
-@component-namespace router {
+@import "../var.css";
+
+@component-namespace flat {
   @c button {
-    color: red;
+    position: relative;
+    padding: 0 15px;
+    color: #FFF;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    border: none;
+    border-radius: 4px;
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+    transition: all .3s cubic-bezier(.645, .045, .355, 1);
+    &:active,
+    &:focus {
+      outline: 0;
+    }
+    &[disabled] {
+      opacity: .7;
+      cursor: not-allowed;
+    }
+
+    @when normal {
+      height: 28px;
+      font-size: 12px;
+    }
+    @when large {
+      height: 32px;
+      font-size: 14px;
+    }
+
+    @when default {
+      background-color: var(--SILVER);
+      &:active {
+        background-color: mix(var(--SILVER), #000, 85%);
+      }
+      &:hover {
+        background-color: mix(var(--SILVER), #FFF, 80%);
+      }
+      &[disabled] {
+        &:active,
+        &:hover {
+          background-color: var(--SILVER);
+        }
+      }
+    }
+    @when primary {
+      background-color: var(--TURQUOISE);
+      &:active {
+        background-color: mix(var(--TURQUOISE), #000, 85%);
+      }
+      &:hover {
+        background-color: mix(var(--TURQUOISE), #FFF, 80%);
+      }
+      &[disabled] {
+        &:active,
+        &:hover {
+          background-color: var(--TURQUOISE);
+        }
+      }
+    }
+    @when warning {
+      background-color: var(--SUN_FLOWER);
+      &:active {
+        background-color: mix(var(--SUN_FLOWER), #000, 85%);
+      }
+      &:hover {
+        background-color: mix(var(--SUN_FLOWER), #FFF, 80%);
+      }
+      &[disabled] {
+        &:active,
+        &:hover {
+          background-color: var(--SUN_FLOWER);
+        }
+      }
+    }
+    @when danger {
+      background-color: var(--ALIZARIN);
+      &:active {
+        background-color: mix(var(--ALIZARIN), #000, 85%);
+      }
+      &:hover {
+        background-color: mix(var(--ALIZARIN), #FFF, 80%);
+      }
+      &[disabled] {
+        &:active,
+        &:hover {
+          background-color: var(--ALIZARIN);
+        }
+      }
+    }
+    @when success {
+      background-color: var(--EMERALD);
+      &:active {
+        background-color: mix(var(--EMERALD), #000, 85%);
+      }
+      &:hover {
+        background-color: mix(var(--EMERALD), #FFF, 80%);
+      }
+      &[disabled] {
+        &:active,
+        &:hover {
+          background-color: var(--EMERALD);
+        }
+      }
+    }
+    @when info {
+      background-color: var(--PETER_RIVER);
+      &:active {
+        background-color: mix(var(--PETER_RIVER), #000, 85%);
+      }
+      &:hover {
+        background-color: mix(var(--PETER_RIVER), #FFF, 80%);
+      }
+      &[disabled] {
+        &:active,
+        &:hover {
+          background-color: var(--PETER_RIVER);
+        }
+      }
+    }
+    @when inverse {
+      background-color: var(--WET_ASPHALT);
+      &:active {
+        background-color: mix(var(--WET_ASPHALT), #000, 85%);
+      }
+      &:hover {
+        background-color: mix(var(--WET_ASPHALT), #FFF, 80%);
+      }
+      &[disabled] {
+        &:active,
+        &:hover {
+          background-color: var(--WET_ASPHALT);
+        }
+      }
+    }
   }
 }

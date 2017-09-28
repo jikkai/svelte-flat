@@ -1,8 +1,19 @@
-<button>
-  <slot></slot>
+<button
+  class="flat-button is-{{type}} is-{{size}}"
+  disabled="{{disabled}}"
+>
+  <span>
+    <slot></slot>
+  </span>
 </button>
 
 <script>
   export default {
+    data () {
+      return {
+        type: 'default',
+        size: 'normal'
+      }
+    }
   }
 </script>

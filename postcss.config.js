@@ -8,6 +8,7 @@ module.exports = {
           separators: { modifier: '--', descendent: '__' }
         }
       }
-    }
+    },
+    'postcss-color-mix': {}
   }
 }
