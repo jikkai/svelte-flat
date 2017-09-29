@@ -1,5 +1,5 @@
 <button
-  class="flat-button is-{{type}} is-{{size}} {{embossed ? 'is-embossed' : ''}} {{wide ? 'is-wide' : ''}}"
+  class="flat-button is-{{type}} is-{{size}} is-{{shape}} {{embossed ? 'is-embossed' : ''}} {{wide ? 'is-wide' : ''}}"
   disabled="{{disabled}}"
   on:click="fire('click')"
 >
@@ -13,7 +13,8 @@
     data () {
       return {
         type: 'default',
-        size: 'normal'
+        size: 'medium',
+        shape: 'roundcorner'
       }
     }
   }
