@@ -136,4 +136,32 @@
       border-radius: 3px;
     }
   }
+
+  @c docs {
+    font-size: 14px;
+
+    & p code,
+    & table code {
+      margin: 0 1px;
+      padding: 2px 5px;
+      color: #2C3E50;
+      font-size: 13px;
+      background: #ECF0F1;
+      border: 1px solid #EEE;
+      border-radius: 3px;
+    }
+
+    & table {
+      width: 100%;
+
+      & tr {
+        height: 42px;
+        border-bottom: 1px solid #ECF0F1;
+      }
+
+      & th {
+        text-align: left;
+      }
+    }
+  }
 }
