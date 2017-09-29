@@ -31,7 +31,7 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^2.0.0-beta.1",
     "css-loader": "^0.28.7",
-    "express": "^4.15.5",
+    "express": "^4.16.0",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^0.11.2",
     "gulp": "^3.9.1",
