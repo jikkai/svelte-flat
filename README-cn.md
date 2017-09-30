@@ -1,6 +1,6 @@
 # Svelte Flat
 
-> A Svelte Flat UI Toolkit for Web.
+> 一套基于 Svelte 开发的 UI 组件库，轻松使用，简单上手，不依赖于任何框架。
 
 <p align="center">
   <a href="https://jikkai.github.io/svelte-flat">
@@ -8,37 +8,39 @@
   </a>
 </p>
 
-## Installation
+## 安装
 
 ```bash
-npm i svelte-flat --save
+npm i svelte-flat
 ```
 
-## Fully import
+## 全局引入
 
 ```javascript
 import Flat from 'svelte-flat'
 import 'svelte-flat/lib/theme-default/index.css'
 ```
 
-## Single import
+## 单组件引入
 
 ```javascript
 import { Button } from 'svelte-flat'
 import 'svelte-flat/lib/theme-default/button.css'
 ```
 
-## On demand
+## 按需引入
 
-### Install [`babel-plugin-svelteflat`](https://github.com/jikkai/babel-plugin-svelteflat)
+如果使用babel的话，可以安装[`babel-plugin-svelteflat`](https://github.com/jikkai/babel-plugin-svelteflat)插件自动按需引入组件。
+
+### 安装依赖
 
 ```bash
 npm i babel-plugin-svelteflat -D
 ```
 
-### Config files
+### 配置及使用
 
-edit `.babelrc`.
+在`.babelrc`中按下例配置。
 
 ```json
 {
@@ -53,12 +55,8 @@ edit `.babelrc`.
 }
 ```
 
-Then, if you need Button, you can import it without style,
+然后就可以在代码中使用了
 
 ```bash
 import { Button } from 'svelte-flat'
 ```
-
-## Forked version
-
-[Here](https://github.com/gCombinator/svelte-flat-ui) is a forked version which named `svelte-flat-ui`.
