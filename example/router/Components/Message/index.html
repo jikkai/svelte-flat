@@ -1,0 +1,39 @@
+<Main>
+  <h1>Message 消息提示</h1>
+
+  <section class="component-button">
+    <h2>消息类型</h2>
+    <Button type="primary" on:click="openMessage('info')">Info</Button>
+    <Button type="primary" on:click="openMessage('success')">Success</Button>
+    <Button type="primary" on:click="openMessage('warning')">Warning</Button>
+    <Button type="primary" on:click="openMessage('error')">Error</Button>
+  </section>
+
+  <section class="router-docs">
+    {{{Examples}}}
+  </section>
+</Main>
+
+<script>
+  import Main from '../../Main'
+  import Button from '../../../../packages/button/src'
+  import Message from '../../../../packages/message/src'
+  import Examples from './examples.md'
+
+  export default {
+    data () {
+      return {
+        Examples
+      }
+    },
+    methods: {
+      openMessage (type) {
+        Message({ content: type, type })
+      }
+    },
+    components: {
+      Main,
+      Button
+    }
+  }
+</script>

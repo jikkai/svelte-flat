@@ -1,0 +1,22 @@
+<div class="flat-message" style="animation-direction: {{duration}}">
+  <div class="flat-message__body">
+    <i class="flat-message__icon is-{{type}}">{{{icons[type]}}}</i>
+    <span class="flat-message__content">{{ content }}</span>
+  </div>
+</div>
+
+<script>
+  import { info, success, warning, error } from './icons'
+
+  export default {
+    data () {
+      return {
+        icons: { info, success, warning, error },
+        type: 'info'
+      }
+    },
+    ondestroy () {
+      this.fire('destroy')
+    }
+  }
+</script>

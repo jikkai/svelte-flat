@@ -1,0 +1,68 @@
+@component-namespace flat {
+  @c message {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -100%);
+    z-index: 100000;
+    animation: messageenter 1.8s ease-in-out;
+
+    @d body {
+      height: 36px;
+      min-width: 140px;
+      padding-right: 15px;
+      text-align: center;
+      background: #FFF;
+      border-radius: 4px;
+      box-shadow: 0 0 2px 0 rgba(0, 0, 0, .15);
+      display: flex;
+      align-items: center;
+      z-index: 1000;
+
+      & i {
+        width: 36px;
+        height: 100%;
+        color: #FFF;
+        line-height: 42px;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      & span {
+        width: calc(100% - 42px);
+        padding: 0 8px;
+        font-size: 14px;
+      }
+    }
+
+    @d icon {
+      & svg {
+        size: 20px;
+      }
+
+      @when info {
+        background: var(--PETER_RIVER);
+      }
+      @when success {
+        background: var(--TURQUOISE);
+      }
+      @when warning {
+        background: var(--SUN_FLOWER);
+      }
+      @when error {
+        background: var(--ALIZARIN);
+      }
+    }
+  }
+}
+
+@keyframes messageenter {
+  0% { transform: translate(-50%, -100%); opacity: 0; }
+  30% { transform: translate(-50%, 50%); opacity: 1; }
+  70% { transform: translate(-50%, 50%); opacity: 1; }
+  100% { transform: translate(-50%, -100%); opacity: 0; }
+}
