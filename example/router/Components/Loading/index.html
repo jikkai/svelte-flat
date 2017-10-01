@@ -1,0 +1,38 @@
+<Main>
+  <h1>Loading 加载进度条</h1>
+
+  <section class="component-block">
+    <h2>基础用法</h2>
+    <Button type="primary" on:click="openLoading('start')">Start</Button>
+    <Button type="primary" on:click="openLoading('finish')">Finish</Button>
+    <Button type="primary" on:click="openLoading('error')">Error</Button>
+  </section>
+
+  <section class="router-docs">
+    {{{Examples}}}
+  </section>
+</Main>
+
+<script>
+  import Main from '../../Main'
+  import Button from '../../../../packages/button/src'
+  import Loading from '../../../../packages/loading/src'
+  import Examples from './examples.md'
+
+  export default {
+    data () {
+      return {
+        Examples
+      }
+    },
+    methods: {
+      openLoading (type) {
+        Loading[type]()
+      }
+    },
+    components: {
+      Main,
+      Button
+    }
+  }
+</script>

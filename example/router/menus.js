@@ -12,5 +12,11 @@ export default [
     submenus: [
       { title: 'Message 消息提示', to: '/components/message' }
     ]
+  },
+  {
+    title: '导航组件',
+    submenus: [
+      { title: 'Loading 加载进度条', to: '/components/loading' }
+    ]
   }
 ]

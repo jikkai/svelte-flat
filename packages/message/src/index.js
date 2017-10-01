@@ -6,8 +6,7 @@ export default ({ content = '', type = 'info', duration = 3 }) => {
     target: new Singleton(),
     data: {
       content,
-      type,
-      duration
+      type
     }
   })
 
