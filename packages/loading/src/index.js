@@ -23,10 +23,13 @@ export default {
   destroy () {
     setTimeout(_ => {
       if (loading) {
-        loading.destroy()
-        loading = null
+        loading.set({ visible: false })
+        setTimeout(_ => {
+          loading.destroy()
+          loading = null
+        }, 200)
       }
-    }, 1000)
+    }, 600)
   },
 
   start () {

@@ -6,6 +6,7 @@
     top: 0;
     left: 0;
     height: 2px;
+    opacity: 1;
     transition: all .2s linear;
     z-index: 100000;
     @when primary {
@@ -13,6 +14,10 @@
     }
     @when error {
       background-color: var(--ALIZARIN);
+    }
+
+    @when fadeout {
+      opacity: 0;
     }
   }
 }
