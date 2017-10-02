@@ -1,12 +1,17 @@
 <div class="flat-message">
   <div class="flat-message__body">
-    <i class="flat-message__icon is-{{type}}">{{{icons[type]}}}</i>
+    <i class="flat-message__icon is-{{type}}">
+      {{{icons[type]}}}
+    </i>
     <span class="flat-message__content">{{ content }}</span>
   </div>
 </div>
 
 <script>
-  import { info, success, warning, error } from './icons'
+  import info from 'feather-icons/dist/icons/info.svg'
+  import success from 'feather-icons/dist/icons/check-circle.svg'
+  import warning from 'feather-icons/dist/icons/alert-triangle.svg'
+  import error from 'feather-icons/dist/icons/x-circle.svg'
 
   export default {
     data () {

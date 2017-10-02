@@ -33,7 +33,11 @@ module.exports = {
         use: ['html-loader', 'markdown-loader']
       },
       {
-        test: /\.(ico|jpg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
+        test: /\.svg$/,
+        use: ['html-loader']
+      },
+      {
+        test: /\.(ico|jpg|png|gif|eot|otf|ttf|woff|woff2)(\?.*)?$/,
         use: 'file-loader?limit=8192'
       }
     ]
