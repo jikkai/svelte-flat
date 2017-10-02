@@ -1,0 +1,87 @@
+@import "./var.css";
+
+@component-namespace flat {
+  @c switch {
+    position: relative;
+    size: 48px 24px;
+    line-height: 22px;
+    vertical-align: middle;
+    background-color: var(--SILVER);
+    box-sizing: border-box;
+    display: inline-block;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 2px;
+      size: 20px;
+      background-color: var(--ASBESTOS);
+      border-radius: 20px;
+      cursor: pointer;
+      transform: translateX(2px);
+      transition: all .2s ease-in-out;
+    }
+
+    @when checked {
+      color: var(--TURQUOISE) var(--WET_ASPHALT);
+      &::after {
+        transform: translateX(calc(100% + 5px));
+        background-color: var(--TURQUOISE);
+      }
+    }
+
+    @when square {
+      border-radius: 4px;
+      &::after {
+        top: 0;
+        size: 24px;
+        border-radius: 4px 0 0 4px;
+        transform: translateX(0);
+      }
+      @when checked {
+        &::after {
+          border-radius: 0 4px 4px 0;
+          transform: translateX(calc(100%));
+          background-color: var(--TURQUOISE);
+        }
+      }
+    }
+    @when round {
+      border-radius: 20px;
+    }
+
+    @when warning {
+      @when checked {
+        color: #FFF var(--SUN_FLOWER);
+        &::after {
+          background-color: #FFF;
+        }
+      }
+    }
+    @when danger {
+      @when checked {
+        color: #FFF var(--ALIZARIN);
+        &::after {
+          background-color: #FFF;
+        }
+      }
+    }
+    @when success {
+      @when checked {
+        color: #FFF var(--EMERALD);
+        &::after {
+          background-color: #FFF;
+        }
+      }
+    }
+    @when info {
+      @when checked {
+        color: #FFF var(--PETER_RIVER);
+        &::after {
+          background-color: #FFF;
+        }
+      }
+    }
+  }
+}

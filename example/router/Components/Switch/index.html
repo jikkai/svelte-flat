@@ -1,0 +1,40 @@
+<Main>
+  <h1>Switch 开关</h1>
+
+  <section class="component-block">
+    <h2>开关类型</h2>
+    <Switch checked></Switch>
+    <Switch type="warning" checked></Switch>
+    <Switch type="danger" checked></Switch>
+    <Switch type="success" checked></Switch>
+    <Switch type="info" checked></Switch>
+  </section>
+  
+  <section class="component-block">
+    <h2>开关形状</h2>
+    <Switch checked></Switch>
+    <Switch shape="square" checked></Switch>
+  </section>
+
+  <section class="router-docs">
+    {{{Examples}}}
+  </section>
+</Main>
+
+<script>
+  import Main from '../../Main'
+  import Switch from '../../../../packages/switch/src'
+  import Examples from './examples.md'
+
+  export default {
+    data () {
+      return {
+        Examples
+      }
+    },
+    components: {
+      Main,
+      Switch
+    }
+  }
+</script>

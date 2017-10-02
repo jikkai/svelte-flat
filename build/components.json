@@ -1,4 +1,6 @@
 [
   "button",
-  "message"
+  "switch",
+  "message",
+  "loading"
 ]

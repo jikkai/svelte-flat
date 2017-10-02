@@ -1,0 +1,25 @@
+<section
+  class="flat-switch is-{{type}} {{checked ? 'is-checked' : ''}} is-{{shape}}"
+  on:click="handleCheck()"
+>
+  <div></div>
+  <input type="hidden" />
+</section>
+
+<script>
+  export default {
+    data () {
+      return {
+        type: 'default',
+        shape: 'round',
+        checked: false
+      }
+    },
+    methods: {
+      handleCheck () {
+        const checked = !this.get('checked')
+        this.set({ checked })
+      }
+    }
+  }
+</script>

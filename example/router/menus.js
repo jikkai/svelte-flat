@@ -8,6 +8,12 @@ export default [
     ]
   },
   {
+    title: '表单组件',
+    submenus: [
+      { title: 'Switch 开关', to: '/components/switch' }
+    ]
+  },
+  {
     title: '信息提示组件',
     submenus: [
       { title: 'Message 消息提示', to: '/components/message' }
