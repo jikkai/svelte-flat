@@ -6,5 +6,8 @@ docs
 
 .babelrc
 .gitignore
+.gitattributes
 nodemon.json
 postcss.config.json
+gulpfile.js
+Makefile
