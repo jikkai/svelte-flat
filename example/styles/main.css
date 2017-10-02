@@ -9,4 +9,5 @@
 @import "./router/guide/intro.css";
 
 @import "./router/components/color.css";
+@import "./router/components/icon.css";
 @import "./router/components/block.css";

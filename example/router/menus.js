@@ -4,6 +4,7 @@ export default [
     title: '基础组件',
     submenus: [
       { title: 'Color 色彩', to: '/components/color' },
+      { title: 'Icon 图标', to: '/components/icon' },
       { title: 'Button 按钮', to: '/components/button' }
     ]
   },

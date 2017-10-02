@@ -1,6 +1,7 @@
 import Home from './Root/Home'
 import Intro from './Guide/Intro'
 import Color from './Components/Color'
+import Icon from './Components/Icon'
 import Button from './Components/Button'
 import Switch from './Components/Switch'
 import Message from './Components/Message'
@@ -10,6 +11,7 @@ const routes = {
   '/': Home,
   '/guide/intro': Intro,
   '/components/color': Color,
+  '/components/icon': Icon,
   '/components/button': Button,
   '/components/switch': Switch,
   '/components/message': Message,

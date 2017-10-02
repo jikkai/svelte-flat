@@ -1,0 +1,55 @@
+<Main>
+  <h1>Icon 图标</h1>
+
+  <section class="component-icon">
+    {{#each icons as icon}}
+    <dl on:click="handleCopy(icon)">
+      <dt>
+        <Icon type="{{icon}}"></Icon>
+        <label>{{icon}}</label>
+      </dt>
+    </dl>
+    {{/each}}
+  </section>
+
+  <section class="router-docs">
+    {{{Examples}}}
+  </section>
+</Main>
+
+<script>
+  import Icons from 'feather-icons/dist/icons.json'
+  import Main from '../../Main'
+  import Icon from '../../../../packages/icon/src'
+  import Message from '../../../../packages/message/src'
+  import Examples from './examples.md'
+
+  export default {
+    data () {
+      return {
+        Examples,
+        icons: Object.keys(Icons)
+      }
+    },
+    methods: {
+      handleCopy (type) {
+        const $input = document.createElement('input')
+        $input.display = 'none'
+        $input.value = type
+        document.body.appendChild($input)
+        $input.select()
+        document.execCommand('copy')
+        document.body.removeChild($input)
+
+        Message({
+          content: '复制成功',
+          type: 'success'
+        })
+      }
+    },
+    components: {
+      Main,
+      Icon
+    }
+  }
+</script>
