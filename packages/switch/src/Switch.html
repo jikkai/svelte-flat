@@ -1,8 +1,7 @@
 <section
-  class="flat-switch is-{{type}} {{checked ? 'is-checked' : ''}} is-{{shape}}"
+  class="flat-switch is-{{type}} is-{{shape}} {{disabled ? 'is-disabled' : ''}} {{checked ? 'is-checked' : ''}}"
   on:click="handleCheck()"
 >
-  <div></div>
   <input type="hidden" />
 </section>
 
@@ -12,13 +11,18 @@
       return {
         type: 'default',
         shape: 'round',
-        checked: false
+        checked: false,
+        disabled: false
       }
     },
     methods: {
       handleCheck () {
-        const checked = !this.get('checked')
-        this.set({ checked })
+        const checked = this.get('checked')
+        const disabled = this.get('disabled')
+        console.log(disabled)
+        if (!disabled) {
+          this.set({ checked: !checked })
+        }
       }
     }
   }
