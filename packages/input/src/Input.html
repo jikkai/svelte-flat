@@ -1,0 +1,23 @@
+<section class="flat-input is-{{size}}">
+  <input
+    autocomplete="off"
+    type="{{type}}"
+    placeholder="{{placeholder}}"
+    disabled="{{disabled}}"
+    value='{{value}}'
+  />
+</section>
+
+<script>
+  export default {
+    data () {
+      return {
+        type: 'text',
+        size: 'medium',
+        value: '',
+        placeholder: '',
+        disabled: false
+      }
+    }
+  }
+</script>

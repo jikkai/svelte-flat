@@ -1,0 +1,61 @@
+@import "./var.css";
+
+@component-namespace flat {
+  @c input {
+    position: relative;
+    width: 180px;
+    vertical-align: middle;
+    display: inline-block;
+
+    & input {
+      position: relative;
+      width: 100%;
+      padding: 4px 12px;
+      color: var(--WET_ASPHALT) #FFF;
+      font-size: 14px 1;
+      font-family: inherit;
+      background-image: none;
+      border: 2px solid var(--SILVER);
+      border-radius: 4px;
+      appearance: none;
+      box-sizing: border-box;
+      display: inline-block;
+      transition: all .2s;
+      outline: none;
+      cursor: text;
+      &:focus {
+        border-color: var(--TURQUOISE);
+      }
+      &[disabled] {
+        color: #D5DBDB #F4F6F6;
+        border-color: #D5DBDB;
+        cursor: default;
+      }
+    }
+
+    @when small {
+      & input {
+        height: 32px;
+        font-size: 12px;
+      }
+    }
+    @when medium {
+      & input {
+        height: 36px;
+        font-size: 14px;
+      }
+    }
+    @when large {
+      & input {
+        height: 38px;
+        font-size: 14px;
+      }
+    }
+    @when huge {
+      & input {
+        height: 42px;
+        font-size: 16px;
+      }
+    }
+  }
+}

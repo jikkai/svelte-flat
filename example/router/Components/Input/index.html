@@ -1,0 +1,44 @@
+<Main>
+  <h1>Input 输入框</h1>
+
+  <section class="component-block">
+    <h2>基础用法</h2>
+    <Input placeholder="请输入内容"></Input>
+    <Input type="password" placeholder="请输入密码"></Input>
+  </section>
+
+  <section class="component-block">
+    <h2>禁用状态</h2>
+    <Input disabled></Input>
+  </section>
+
+  <section class="component-block">
+    <h2>输入框尺寸</h2>
+    <Input size="small" placeholder="small"></Input>
+    <Input placeholder="medium"></Input>
+    <Input size="large" placeholder="large"></Input>
+    <Input size="huge" placeholder="huge"></Input>
+  </section>
+
+  <section class="router-docs">
+    {{{Examples}}}
+  </section>
+</Main>
+
+<script>
+  import Main from '../../Main'
+  import Input from '../../../../packages/input/src'
+  import Examples from './examples.md'
+
+  export default {
+    data () {
+      return {
+        Examples
+      }
+    },
+    components: {
+      Main,
+      Input
+    }
+  }
+</script>

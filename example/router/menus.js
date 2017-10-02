@@ -11,6 +11,7 @@ export default [
   {
     title: '表单组件',
     submenus: [
+      { title: 'Input 输入框', to: '/components/input' },
       { title: 'Switch 开关', to: '/components/switch' }
     ]
   },
