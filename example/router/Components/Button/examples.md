@@ -4,7 +4,7 @@
 | ------ | ------ | ------ | ------ | ------ |
 | type | 设置按钮类型 | string | `primary` `warning` `danger` `success` `info` `inverse` | - |
 | size | 设置按钮尺寸 | string | `small` `large` `huge` | - |
-| shape | 设置按钮边框形状 | string | `square` `round` | - |
+| shape | 设置按钮边框形状 | string | `sharp` `round` | - |
 | disabled | 设置按钮禁用状态 | boolean | - | false |
 | embossed | 设置按钮浮雕样式 | boolean | - | false |
 | wide | 设置按钮加宽样式 | boolean | - | false |

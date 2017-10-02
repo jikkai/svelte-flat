@@ -53,11 +53,11 @@
       padding-left: 30px;
     }
 
-    @when roundcorner {
-      border-radius: 4px;
+    @when sharp {
+      border-radius: 0;
     }
     @when square {
-      border-radius: 0;
+      border-radius: 4px;
     }
     @when round {
       border-radius: 20px;
