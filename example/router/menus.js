@@ -18,7 +18,8 @@ export default [
   {
     title: '信息提示组件',
     submenus: [
-      { title: 'Message 消息提示', to: '/components/message' }
+      { title: 'Message 消息提示', to: '/components/message' },
+      { title: 'Spin 加载', to: '/components/spin' }
     ]
   },
   {

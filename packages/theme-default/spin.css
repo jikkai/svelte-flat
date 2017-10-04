@@ -1,0 +1,6 @@
+@import "./var.css";
+
+@component-namespace flat {
+  @c spin {
+  }
+}
