@@ -7,7 +7,7 @@ const base = require('./webpack.base')
 const components = require('./components')
 
 components.forEach(component => {
-  base.entry[component] = `./packages/${component}/src/index.js`
+  base.entry[component] = `./packages/${component}/index.js`
 })
 base.output.filename = '[name].js'
 base.output.libraryTarget = 'commonjs2'
