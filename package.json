@@ -1,6 +1,6 @@
 {
   "name": "svelte-flat",
-  "version": "0.2.0-alpha.2",
+  "version": "0.2.0-alpha.3",
   "description": "Flat UI Components with Svelte",
   "main": "lib/index.js",
   "author": "Jikkai Xiao <sonne@asaki.me>",
@@ -29,7 +29,7 @@
   "devDependencies": {
     "babel-core": "^7.0.0-beta.1",
     "babel-loader": "^7.1.2",
-    "babel-preset-env": "^2.0.0-beta.1",
+    "babel-preset-env": "^2.0.0-beta.2",
     "css-loader": "^0.28.7",
     "express": "^4.16.1",
     "extract-text-webpack-plugin": "^3.0.1",
