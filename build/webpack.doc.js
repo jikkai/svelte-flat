@@ -9,6 +9,10 @@ const config = require('./config')
 
 base.output.path = path.join(__dirname, '../docs')
 base.entry.index = './example/index.js'
+base.entry.vendor = [
+  'highlightjs',
+  'svelte-router'
+]
 base.stats = { children: false }
 
 // Plugins Configuration
@@ -25,6 +29,10 @@ base.plugins.push(
     output: {
       comments: false
     }
+  }),
+  new webpack.optimize.CommonsChunkPlugin({
+    name: 'vendor',
+    filename: 'vendor.[chunkhash:8].js'
   }),
   new HtmlWebpackPlugin({
     title: config.title,

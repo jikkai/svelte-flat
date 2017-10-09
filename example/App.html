@@ -4,16 +4,14 @@
   import routes from './router/routes'
   import img from '../build/logo.png'
 
-  const { createRouter, RouterLink } = SvelteRouter
-
-  const router = createRouter(routes)
+  const router = SvelteRouter.createRouter(routes)
   const codeRender = _ => {
     const $code = document.querySelectorAll('pre')
     for (let i = 0; i < $code.length; i++) {
       hljs.highlightBlock($code[i])
     }
   }
-  createRouter.listen(_ => {
+  SvelteRouter.createRouter.listen(_ => {
     setTimeout(codeRender)
   })
 
@@ -29,7 +27,7 @@
       codeRender()
     },
     components: {
-      RouterLink
+      RouterLink: SvelteRouter.RouterLink
     }
   }
 </script>
