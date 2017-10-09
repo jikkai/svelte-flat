@@ -1,2 +1,2 @@
-example/*  linguist-documentation=false
-build/*     linguist-documentation=false
+example/*   linguist-documentation
+build/*     linguist-documentation
