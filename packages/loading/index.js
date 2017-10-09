@@ -1,17 +1,8 @@
 import Loading from './Loading.html'
 import Singleton from '~/utils/singleton'
+import throttle from '~/utils/throttle'
 
-export default $element => {
-  const loading = new Loading({
-    target: new Singleton()
-  })
-
-  if (typeof $element === 'undefined' || typeof $element === 'null') {
-    $element = document.body
-  } else if (typeof $element === 'string') {
-    $element = document.querySelector($element)
-  }
-
+const handleSize = ($element, loading) => {
   const { width, height } = $element.getBoundingClientRect()
   const top = $element.offsetTop
   const left = $element.offsetLeft
@@ -24,10 +15,31 @@ export default $element => {
       height: `${height}px`
     }
   })
+}
+
+export default $element => {
+  const loading = new Loading({
+    target: new Singleton()
+  })
+
+  if (typeof $element === 'undefined' || typeof $element === 'null') {
+    $element = document.body
+  } else if (typeof $element === 'string') {
+    $element = document.querySelector($element)
+  }
+
+  handleSize($element, loading)
+
+  const handleResize = () => {
+    throttle(handleSize)($element, loading)
+  }
+
+  window.addEventListener('resize', handleResize, false)
 
   return {
     close () {
       loading.destroy()
+      window.removeEventListener('resize', handleResize, false)
     }
   }
 }
