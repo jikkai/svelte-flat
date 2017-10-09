@@ -6,8 +6,8 @@ import Button from './Components/Button'
 import Input from './Components/Input'
 import Switch from './Components/Switch'
 import Message from './Components/Message'
-import Spin from './Components/Spin'
 import Loading from './Components/Loading'
+import LoadingBar from './Components/LoadingBar'
 
 const routes = {
   '/': Home,
@@ -18,8 +18,8 @@ const routes = {
   '/components/input': Input,
   '/components/switch': Switch,
   '/components/message': Message,
-  '/components/spin': Spin,
-  '/components/loading': Loading
+  '/components/loading': Loading,
+  '/components/loading-bar': LoadingBar
 }
 
 export default routes

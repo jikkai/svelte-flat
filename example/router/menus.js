@@ -19,13 +19,13 @@ export default [
     title: '信息提示组件',
     submenus: [
       { title: 'Message 消息提示', to: '/components/message' },
-      { title: 'Spin 加载', to: '/components/spin' }
+      { title: 'Loading 加载', to: '/components/loading' }
     ]
   },
   {
     title: '导航组件',
     submenus: [
-      { title: 'Loading 加载进度条', to: '/components/loading' }
+      { title: 'LoadingBar 加载进度条', to: '/components/loading-bar' }
     ]
   }
 ]

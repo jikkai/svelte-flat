@@ -1,16 +1,26 @@
 <section
-  class="flat-loading is-{{type}} {{visible ? '' : 'is-fadeout'}}"
-  style="width: {{percent}}%;"
+  class="flat-loading"
+  style="position: {{style.position}}; top: {{style.top}}; left: {{style.left}}; width: {{style.width}}; height: {{style.height}}"
 >
+  <div class="flat-loading__container">
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+  </div>
 </section>
 
 <script>
   export default {
     data () {
       return {
-        percent: 0,
-        type: 'primary',
-        visible: true
+        style: {
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%'
+        }
       }
     }
   }

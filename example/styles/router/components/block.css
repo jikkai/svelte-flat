@@ -2,4 +2,8 @@
   @c block {
     margin-bottom: 24px;
   }
+
+  @c item {
+    margin-bottom: 12px;
+  }
 }

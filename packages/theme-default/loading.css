@@ -2,22 +2,91 @@
 
 @component-namespace flat {
   @c loading {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 2px;
-    opacity: 1;
-    transition: all .2s linear;
-    z-index: 100000;
-    @when primary {
-      background-color: var(--TURQUOISE);
-    }
-    @when error {
-      background-color: var(--ALIZARIN);
-    }
+    background: rgba(255, 255, 255, .6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
 
-    @when fadeout {
-      opacity: 0;
+    @d container {
+      position: relative;
+      size: 12px;
+      transform: rotate(45deg);
+      animation: loading 3s ease-in-out infinite;
+
+      & i {
+        position: absolute;
+        size: 12px;
+        border-radius: 50%;
+        display: inline-block;
+        &:nth-child(1) {
+          background: var(--ALIZARIN);
+          transform: translate(0, 16px);
+          animation: loading-child-1 3s ease-in-out infinite;
+        }
+        &:nth-child(2) {
+          background: var(--WET_ASPHALT);
+          transform: rotate(90deg) translate(0, 16px);
+          animation: loading-child-2 3s ease-in-out infinite;
+        }
+        &:nth-child(3) {
+          background: var(--TURQUOISE);
+          transform: rotate(180deg) translate(0, 16px);
+          animation: loading-child-3 3s ease-in-out infinite;
+        }
+        &:nth-child(4) {
+          background: var(--SUN_FLOWER);
+          transform: rotate(270deg) translate(0, 16px);
+          animation: loading-child-4 3s ease-in-out infinite;
+        }
+      }
     }
+  }
+}
+
+@keyframes loading {
+  25% {
+    transform: rotate(135deg);
+  }
+  50% {
+    transform: rotate(225deg);
+  }
+  75% {
+    transform: rotate(315deg);
+  }
+  100% {
+    transform: rotate(405deg);
+  }
+}
+@keyframes loading-child-1 {
+  17.5%, 25%, 42.5%, 50%, 67.5%, 75%, 92.5%, 100% {
+    transform:translate(0, 16px);
+  }
+  12.5%, 37.5%, 62.5%, 87.5% {
+    transform:translate(0, 12px);
+  }
+}
+@keyframes loading-child-2 {
+  17.5%, 25%, 42.5%, 50%, 67.5%, 75%, 92.5%, 100% {
+    transform:rotate(90deg) translate(0, 16px);
+  }
+  12.5%, 37.5%, 62.5%, 87.5% {
+    transform:rotate(90deg) translate(0, 12px);
+  }
+}
+@keyframes loading-child-3 {
+  17.5%, 25%, 42.5%, 50%, 67.5%, 75%, 92.5%, 100% {
+    transform:rotate(180deg) translate(0, 16px);
+  }
+  12.5%, 37.5%, 62.5%, 87.5% {
+    transform:rotate(180deg) translate(0, 12px);
+  }
+}
+@keyframes loading-child-4 {
+  17.5%, 25%, 42.5%, 50%, 67.5%, 75%, 92.5%, 100% {
+    transform:rotate(270deg) translate(0, 16px);
+  }
+  12.5%, 37.5%, 62.5%, 87.5% {
+    transform:rotate(270deg) translate(0, 12px);
   }
 }

@@ -3,6 +3,6 @@
   "button",
   "switch",
   "message",
-  "spin",
-  "loading"
+  "loading",
+  "loading-bar"
 ]

@@ -1,11 +1,17 @@
 <Main>
-  <h1>Loading 加载进度条</h1>
+  <h1>Loading 加载</h1>
 
   <section class="component-block">
-    <h2>基础用法</h2>
-    <Button type="primary" on:click="openLoading('start')">Start</Button>
-    <Button type="primary" on:click="openLoading('finish')">Finish</Button>
-    <Button type="primary" on:click="openLoading('error')">Error</Button>
+    <h2>全局加载</h2>
+    <Button type="primary" on:click="openLoading()">打开全局加载</Button>
+  </section>
+  
+  <section class="component-block">
+    <h2>区域加载</h2>
+    <div class="component-item">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <Button type="primary" on:click="openLoading('.component-item')">区域加载</Button>
   </section>
 
   <section class="router-docs">
@@ -26,9 +32,13 @@
       }
     },
     methods: {
-      openLoading (type) {
-        Loading[type]()
-      }
+      openLoading ($element) {
+        const $loading = Loading($element)
+
+        setTimeout(_ => {
+          $loading.close()
+        }, 3000)
+      },
     },
     components: {
       Main,
