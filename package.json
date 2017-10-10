@@ -27,11 +27,11 @@
     "components"
   ],
   "devDependencies": {
-    "babel-core": "^7.0.0-beta.1",
+    "babel-core": "^7.0.0-beta.2",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^2.0.0-beta.2",
     "css-loader": "^0.28.7",
-    "express": "^4.16.1",
+    "express": "^4.16.2",
     "extract-text-webpack-plugin": "^3.0.1",
     "file-loader": "^1.1.5",
     "gulp": "^3.9.1",
