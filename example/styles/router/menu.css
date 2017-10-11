@@ -1,0 +1,56 @@
+@component-namespace router {
+  @c menu {
+    width: 220px;
+    font-size: 14px;
+    border-right: 1px solid #ECF0F1;
+
+    & label {
+      margin: 10px 0;
+      padding-left: 24px;
+      font-weight: bold;
+      display: block;
+    }
+
+    & a {
+      padding-left: 24px;
+    }
+    
+    & ul a {
+      padding-left: 40px;
+      font-size: 14px;
+    }
+
+    & a {
+      position: relative;
+      size: 100% 42px;
+      color: #7F8C8D;
+      line-height: 42px;
+      text-decoration: none;
+      box-sizing: border-box;
+      display: block;
+      transition: all .2s;
+      &:hover {
+        color: #1ABC9C;
+      }
+      &.router-link-active {
+        color: #1ABC9C #ECF0F1;
+        font-weight: bold;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: -1px;
+          size: 2px 100%;
+          background: #1ABC9C;
+        }
+      }
+    }
+  }
+  @media (max-width: 800px) {
+    @c menu {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #ECF0F1;
+    }
+  }
+}

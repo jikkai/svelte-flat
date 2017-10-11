@@ -1,0 +1,15 @@
+@component-namespace router {
+  @c footer {
+    height: 64px;
+    padding: 0 50px;
+    color: #BAC1C8 #F0F2F5;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+
+    & img {
+      margin-right: 8px;
+      size: 20px;
+    }
+  }
+}

@@ -3,7 +3,7 @@ const postcss = require('gulp-postcss')
 
 const saladrc = require('./postcss.config').plugins['postcss-salad']
 
-gulp.task('css', _ => gulp
+gulp.task('css', () => gulp
   .src('./packages/theme-default/**/*.css')
   .pipe(postcss([
     require('postcss-salad')(saladrc),

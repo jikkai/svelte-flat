@@ -1,0 +1,18 @@
+@component-namespace router {
+  @c header {
+    height: 64px;
+    padding: 0 50px;
+    line-height: 64px;
+    color: #34495E #FFF;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+
+    & a {
+      color: #A84452;
+      font-family: Rajdhani, sans-serif;
+      font-size: 28px;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+@component-namespace router {
+  @c content {
+    padding: 24px 50px;
+    box-sizing: border-box;
+  }
+
+  @c container {
+    padding: 24px 0;
+    background: #FFF;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: flex;
+  }
+  @media (max-width: 800px) {
+    @c container {
+      flex-direction: column;
+    }
+  }
+
+  @c main {
+    width: calc(100% - 190px);
+    padding: 0 24px;
+    box-sizing: border-box;
+
+    & h1 {
+      margin-top: 8px;
+      margin-bottom: 24px;
+      font-size: 28px 40px;
+      font-weight: 500;
+    }
+
+    & h2 {
+      margin-top: 36px;
+      margin-bottom: 12px;
+      font-size: 22px 40px;
+      font-weight: 500;
+    }
+
+    & a {
+      text-decoration: none;
+    }
+
+    & pre,
+    & code {
+      font-size: 14px;
+      font-family: Monaco, Menlo, Consolas, Courier, monospace;
+      font-variant-ligatures: none;
+    }
+
+    & pre {
+      padding-left: 12px;
+      font-weight: bold;
+      line-height: 1.7;
+      background: #34495E;
+    }
+
+    & p code {
+      margin: 0 1px;
+      padding: 2px 5px;
+      color: #2C3E50;
+      font-size: 13px;
+      background: #ECF0F1;
+      border: 1px solid #EEE;
+      border-radius: 3px;
+    }
+  }
+  @media (max-width: 800px) {
+    @c main {
+      width: 100%;
+    }
+  }
+}
