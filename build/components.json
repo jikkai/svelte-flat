@@ -3,6 +3,7 @@
   "button",
   "switch",
   "message",
+  "confirm",
   "loading",
   "loading-bar"
 ]

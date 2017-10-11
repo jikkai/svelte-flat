@@ -19,6 +19,7 @@ export default [
     title: '信息提示组件',
     submenus: [
       { title: 'Message 消息提示', to: '/components/message' },
+      { title: 'MessageBox 弹框', to: '/components/message-box' },
       { title: 'Loading 加载', to: '/components/loading' }
     ]
   },

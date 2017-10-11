@@ -1,0 +1,43 @@
+<Main>
+  <h1>MessageBox 弹框</h1>
+
+  <section class="component-button">
+    <h2>确认消息框</h2>
+    <Button type="info" on:click="openConfirm()">Confirm</Button>
+  </section>
+
+  <section class="router-docs">
+    {{{Examples}}}
+  </section>
+</Main>
+
+<script>
+  import Main from '../../Main'
+  import Button from '../../../../packages/button'
+  import Message from '../../../../packages/message'
+  import Confirm from '../../../../packages/confirm'
+  import Examples from './examples.md'
+
+  export default {
+    data () {
+      return {
+        Examples
+      }
+    },
+    methods: {
+      openConfirm () {
+        Confirm({
+          content: 'Hello Svelte Flat'
+        }).then(() => {
+          Message({ content: 'done', type: 'success' })
+        }).catch(() => {
+          Message({ content: 'closed', type: 'error' })
+        })
+      }
+    },
+    components: {
+      Main,
+      Button
+    }
+  }
+</script>

@@ -6,6 +6,7 @@ import Button from './Components/Button'
 import Input from './Components/Input'
 import Switch from './Components/Switch'
 import Message from './Components/Message'
+import MessageBox from './Components/MessageBox'
 import Loading from './Components/Loading'
 import LoadingBar from './Components/LoadingBar'
 
@@ -18,6 +19,7 @@ const routes = {
   '/components/input': Input,
   '/components/switch': Switch,
   '/components/message': Message,
+  '/components/message-box': MessageBox,
   '/components/loading': Loading,
   '/components/loading-bar': LoadingBar
 }

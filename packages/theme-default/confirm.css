@@ -1,0 +1,60 @@
+@import "./var.css";
+
+@component-namespace flat {
+  @c confirm {
+    position: fixed 0;
+    size: 100%;
+    color: var(--WET_ASPHALT) rgba(0, 0, 0, .4);
+    z-index: 500;
+    @when enter {
+      animation: fadeIn .2s;
+    }
+    @when destroy {
+      opacity: 0;
+      animation: fadeOut .2s;
+    }
+
+    @d container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 420px;
+      padding: 20px;
+      background: #FFF;
+      border-radius: 4px;
+      box-sizing: border-box;
+      transform: translate(-50%, -50%);
+    }
+
+    @d title {
+      font-size: 16px;
+    }
+
+    @d content {
+      margin: 12px 0;
+      font-size: 14px;
+    }
+
+    @d footer {
+      text-align: right;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

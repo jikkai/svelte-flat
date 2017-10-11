@@ -1,0 +1,38 @@
+<div class="flat-confirm {{animation}}" on:click="onCanel()">
+  <section class="flat-confirm__container" on:click="stopEvent(event)">
+    <header class="flat-confirm__title">{{title}}</header>
+
+    <p class="flat-confirm__content">{{content}}</p>
+
+    <footer class="flat-confirm__footer">
+      <Button on:click="fire('cancel')">{{cancelButtonText}}</Button>
+      <Button type="primary" on:click="fire('confirm')">{{confirmButtonText}}</Button>
+    </footer>
+  </section>
+</div>
+
+<script>
+  import Button from '../button'
+
+  export default {
+    data () {
+      return {
+        animation: 'is-enter',
+        content: '',
+        title: ''
+      }
+    },
+    methods: {
+      stopEvent ($event) {
+        $event.stopPropagation()
+      },
+      handleClose () {
+        this.set({ animation: 'is-destroy' })
+        setTimeout(() => this.destroy(), 200)
+      }
+    },
+    components: {
+      Button
+    }
+  }
+</script>
