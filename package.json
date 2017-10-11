@@ -1,6 +1,6 @@
 {
   "name": "svelte-flat",
-  "version": "0.2.0-alpha.3",
+  "version": "0.2.0-alpha.4",
   "description": "Flat UI Components with Svelte",
   "main": "lib/index.js",
   "author": "Jikkai Xiao <sonne@asaki.me>",

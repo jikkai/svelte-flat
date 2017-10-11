@@ -1,6 +1,6 @@
-.PHONY: build
+.PHONY: release
 
-build:
+release:
 	@npm run clean
 	@npm run build:entry
 	@npm run build:components
