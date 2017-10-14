@@ -8,6 +8,6 @@ docs
 .gitignore
 .gitattributes
 nodemon.json
-postcss.config.json
+postcss.config.js
 gulpfile.js
 Makefile
