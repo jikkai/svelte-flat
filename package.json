@@ -1,6 +1,6 @@
 {
   "name": "svelte-flat",
-  "version": "0.2.0-alpha.5",
+  "version": "0.2.0-alpha.6",
   "description": "Flat UI Components with Svelte",
   "main": "lib/index.js",
   "author": "Jikkai Xiao <sonne@asaki.me>",
@@ -43,7 +43,7 @@
     "markdown-loader": "^2.0.1",
     "nodemon": "^1.12.1",
     "postcss-color-mix": "^1.1.0",
-    "postcss-loader": "^2.0.7",
+    "postcss-loader": "^2.0.8",
     "postcss-salad": "^2.0.1",
     "progress-bar-webpack-plugin": "^1.10.0",
     "rimraf": "^2.6.2",
