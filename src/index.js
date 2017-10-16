@@ -1,5 +1,6 @@
 import _Icon from '~packages/icon'
 import _Button from '~packages/button'
+import _Input from '~packages/input'
 import _Switch from '~packages/switch'
 import _Message from '~packages/message'
 import _Confirm from '~packages/confirm'
@@ -9,6 +10,7 @@ import _LoadingBar from '~packages/loading-bar'
 export default {
   Icon: _Icon,
   Button: _Button,
+  Input: _Input,
   Switch: _Switch,
   Message: _Message,
   Confirm: _Confirm,
@@ -18,6 +20,7 @@ export default {
 
 export const Icon = _Icon
 export const Button = _Button
+export const Input = _Input
 export const Switch = _Switch
 export const Message = _Message
 export const Confirm = _Confirm
