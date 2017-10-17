@@ -1,0 +1,35 @@
+<Main>
+  <h1>Card 卡片</h1>
+
+  <section class="component-block">
+    <h2>基础用法</h2>
+    <Card>
+      <span slot="header">Card Title</span>
+      <div slot="body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </Card>
+  </section>
+
+  <section class="router-docs">
+    {{{Examples}}}
+  </section>
+</Main>
+
+<script>
+  import Main from '../../Main'
+  import Card from '../../../../packages/card'
+  import Examples from './examples.md'
+
+  export default {
+    data () {
+      return {
+        Examples
+      }
+    },
+    components: {
+      Main,
+      Card
+    }
+  }
+</script>

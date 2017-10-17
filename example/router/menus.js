@@ -28,5 +28,11 @@ export default [
     submenus: [
       { title: 'LoadingBar 加载进度条', to: '/components/loading-bar' }
     ]
+  },
+  {
+    title: '展示组件',
+    submenus: [
+      { title: 'Card 卡片', to: '/components/card' }
+    ]
   }
 ]

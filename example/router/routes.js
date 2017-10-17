@@ -9,6 +9,7 @@ import Message from './Components/Message'
 import MessageBox from './Components/MessageBox'
 import Loading from './Components/Loading'
 import LoadingBar from './Components/LoadingBar'
+import Card from './Components/Card'
 
 const routes = {
   '/': Home,
@@ -21,7 +22,8 @@ const routes = {
   '/components/message': Message,
   '/components/message-box': MessageBox,
   '/components/loading': Loading,
-  '/components/loading-bar': LoadingBar
+  '/components/loading-bar': LoadingBar,
+  '/components/card': Card
 }
 
 export default routes

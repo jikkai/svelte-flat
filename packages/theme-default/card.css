@@ -1,0 +1,30 @@
+@import "./var.css";
+
+@component-namespace flat {
+  @c card {
+    position: relative;
+    color: var(--WET_ASPHALT) #FFF;
+    font-size: 14px;
+    border: 1px solid var(--CLOUDS);
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: all .3s;
+    &:hover {
+      box-shadow: 0 0 2px 0 rgba(0, 0, 0, .15);
+    }
+
+    @d header {
+      height: 48px;
+      padding: 0 24px;
+      line-height: 48px;
+      border-bottom: 1px solid var(--CLOUDS);
+      box-sizing: border-box;
+      display: flex;
+    }
+
+    @d body {
+      padding: 12px 24px;
+      box-sizing: border-box;
+    }
+  }
+}

@@ -6,6 +6,7 @@ import _Message from '~packages/message'
 import _Confirm from '~packages/confirm'
 import _Loading from '~packages/loading'
 import _LoadingBar from '~packages/loading-bar'
+import _Card from '~packages/card'
 
 export default {
   Icon: _Icon,
@@ -15,7 +16,8 @@ export default {
   Message: _Message,
   Confirm: _Confirm,
   Loading: _Loading,
-  LoadingBar: _LoadingBar
+  LoadingBar: _LoadingBar,
+  Card: _Card
 }
 
 export const Icon = _Icon
@@ -26,3 +28,4 @@ export const Message = _Message
 export const Confirm = _Confirm
 export const Loading = _Loading
 export const LoadingBar = _LoadingBar
+export const Card = _Card
