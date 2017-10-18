@@ -1,11 +1,21 @@
 <section class="flat-input is-{{size}}">
+  {{#if type === 'password'}}
   <input
     autocomplete="off"
-    type="{{type}}"
+    type="password"
     placeholder="{{placeholder}}"
     disabled="{{disabled}}"
-    value='{{value}}'
+    bind:value='value'
   />
+  {{else}}
+  <input
+    autocomplete="off"
+    type="text"
+    placeholder="{{placeholder}}"
+    disabled="{{disabled}}"
+    bind:value='value'
+  />
+  {{/if}}
 </section>
 
 <script>
