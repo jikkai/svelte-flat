@@ -39,12 +39,10 @@ npm i babel-plugin-svelteflat -D
 ```json
 {
   "plugins": [
-    ["svelteflat", [
-      {
-        "libraryName": "svelte-flat",
-        "styleLibraryName": "theme-default"
-      }
-    ]]
+    ["svelteflat", {
+      "libraryName": "svelte-flat",
+      "style": "theme-default"
+    }]
   ]
 }
 ```

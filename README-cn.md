@@ -45,17 +45,15 @@ npm i babel-plugin-svelteflat -D
 ```json
 {
   "plugins": [
-    ["svelteflat", [
-      {
-        "libraryName": "svelte-flat",
-        "styleLibraryName": "theme-default"
-      }
-    ]]
+    ["svelteflat", {
+      "libraryName": "svelte-flat",
+      "style": "theme-default"
+    }]
   ]
 }
 ```
 
-然后就可以在代码中使用了
+插件会根据引入的组件自动按需引入 css 文件：
 
 ```bash
 import { Button } from 'svelte-flat'

@@ -30,7 +30,7 @@ import 'svelte-flat/lib/theme-default/button.css'
 
 ## On demand
 
-### Install [`babel-plugin-svelteflat`](https://github.com/jikkai/babel-plugin-svelteflat)
+Install [`babel-plugin-svelteflat`](https://github.com/jikkai/babel-plugin-svelteflat)
 
 ```bash
 npm i babel-plugin-svelteflat -D
@@ -43,12 +43,10 @@ edit `.babelrc`.
 ```json
 {
   "plugins": [
-    ["svelteflat", [
-      {
-        "libraryName": "svelte-flat",
-        "styleLibraryName": "theme-default"
-      }
-    ]]
+    ["svelteflat", {
+      "libraryName": "svelte-flat",
+      "style": "theme-default"
+    }]
   ]
 }
 ```
